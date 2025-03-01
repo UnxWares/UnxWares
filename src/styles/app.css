@@ -1,0 +1,27 @@
+@import '../../node_modules/tailwindcss/base.css';
+@import '../../node_modules/tailwindcss/components.css';
+@import '../../node_modules/tailwindcss/utilities.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+@font-face {
+    font-family: Peanut;
+    src: url("/src/fonts/Peanut Butter.ttf");
+}
+
+:global(.segoe-regular) {
+    font-family: "Segoe UI", sans-serif;
+}
+
+:global(html) {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+:global(body) {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+}
