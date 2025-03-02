@@ -23,10 +23,10 @@
 <header>
 	<figure>
 		<img src="/images/unxwares_logotype.png" alt="logo" />
-		<h1 class="segoe-regular typing"></h1>
+		<h1 class="poppins-regular typing"></h1>
 	</figure>
 		<div class="scroll-button">
-			<span class="segoe-regular"><i class="bi bi-chevron-double-down"></i> ‎ Découvrez-nous</span>
+			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> ‎ Découvrez-nous</span>
 	</div>
 </header>
 
@@ -100,7 +100,7 @@
         }
 		}
 
-    @media only screen and (max-width: 674px) {
+    @media only screen and (max-width: 682px) {
 
 				header{
 						font-size: 16px;
@@ -116,7 +116,7 @@
         }
     }
 
-    @media only screen and (max-width: 574px) {
+    @media only screen and (max-width: 582px) {
 
         header{
             font-size: 14px;
@@ -129,7 +129,7 @@
 
     }
 
-    @media only screen and (max-width: 474px) {
+    @media only screen and (max-width: 512px) {
         header{
             font-size: 11px;
         }
@@ -138,16 +138,35 @@
             font-size: 18px;
             height: 54px;
         }
+
+        header .scroll-button{
+            bottom: 45px;
+        }
     }
 
-    @media only screen and (max-width: 382px) {
+    @media only screen and (max-width: 418px) {
         header {
             font-size: 9px;
         }
 
         header .scroll-button span {
             font-size: 12px;
-            height: 50px;
+            height: 45px;
+        }
+
+				header .scroll-button{
+            bottom: 35px;
+				}
+    }
+
+    @media only screen and (max-width: 340px) {
+        header {
+            font-size: 8px;
+        }
+
+        header .scroll-button span {
+            font-size: 12px;
+            height: 35px;
         }
 
     }
@@ -158,7 +177,7 @@
 				}
 
 				header .scroll-button span{
-						height: 60px;
+						height: 50px;
         }
 		}
 
@@ -173,7 +192,7 @@
         }
 
         header .scroll-button span{
-            height: 54px;
+            height: 44px;
         }
     }
 
