@@ -26,7 +26,7 @@
 		<h1 class="poppins-regular typing"></h1>
 	</figure>
 		<div class="scroll-button">
-			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> ‎ Découvrez-nous</span>
+			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>Découvrez-nous</span></span>
 	</div>
 </header>
 
@@ -81,6 +81,7 @@
         height: 66px;
         align-items: center;
         transition: all 0.3s ease-in-out;
+				gap: 8px;
     }
     @keyframes go-to-bottom-anim {
         0% {
