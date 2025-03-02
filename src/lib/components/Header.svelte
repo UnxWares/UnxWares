@@ -26,7 +26,7 @@
 		<h1 class="segoe-regular typing"></h1>
 	</figure>
 		<div class="scroll-button">
-			<span><i class="bi bi-chevron-double-down"></i> ‎ Découvrez-nous</span>
+			<span class="segoe-regular"><i class="bi bi-chevron-double-down"></i> ‎ Découvrez-nous</span>
 	</div>
 </header>
 
@@ -38,6 +38,7 @@
         height: 100vh;
         width: 100vw;
         flex-direction: column;
+        font-size: 20px;
     }
 
     header figure{
@@ -47,7 +48,6 @@
         align-items: center;
         flex-direction: column;
         width: auto;
-        font-size: 40px;
     }
 
     header figure img{
@@ -91,6 +91,104 @@
         }
         100% {
             transform: scale(1) translateX(-50%);
+        }
+    }
+
+		@media only screen and (max-width: 1024px) {
+        header figure img{
+            max-width: 60vw;
+        }
+		}
+
+    @media only screen and (max-width: 674px) {
+
+				header{
+						font-size: 16px;
+				}
+
+        header .scroll-button span{
+						font-size: 24px;
+            height: 62px;
+        }
+
+        header figure img{
+            max-width: 80vw;
+        }
+    }
+
+    @media only screen and (max-width: 574px) {
+
+        header{
+            font-size: 14px;
+        }
+
+        header .scroll-button span{
+            font-size: 20px;
+            height: 57px;
+        }
+
+    }
+
+    @media only screen and (max-width: 474px) {
+        header{
+            font-size: 11px;
+        }
+
+        header .scroll-button span{
+            font-size: 18px;
+            height: 54px;
+        }
+    }
+
+    @media only screen and (max-width: 382px) {
+        header {
+            font-size: 9px;
+        }
+
+        header .scroll-button span {
+            font-size: 12px;
+            height: 50px;
+        }
+
+    }
+
+		@media only screen and (max-height: 618px){
+				header .scroll-button{
+						bottom: 50px;
+				}
+
+				header .scroll-button span{
+						height: 60px;
+        }
+		}
+
+    @media only screen and (max-height: 452px){
+
+        header figure{
+						margin-bottom: 110px;
+        }
+
+        header .scroll-button{
+            bottom: 28px;
+        }
+
+        header .scroll-button span{
+            height: 54px;
+        }
+    }
+
+    @media only screen and (max-height: 376px){
+        header .scroll-button{
+            bottom: 20px;
+        }
+
+        header .scroll-button span{
+            height: 40px;
+            font-size: 18px;
+        }
+
+        header {
+            font-size: 14px;
         }
     }
 </style>
