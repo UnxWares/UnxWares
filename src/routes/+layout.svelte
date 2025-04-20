@@ -2,6 +2,7 @@
 	import '../styles/app.css';
 	import Background from "$lib/components/Background.svelte";
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	let { children } = $props();
 </script>
 <svelte:head>
@@ -21,5 +22,5 @@
 
 <Background />
 <Header />
-
 {@render children()}
+<Footer />
