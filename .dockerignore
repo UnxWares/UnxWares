@@ -1,0 +1,48 @@
+# Dépendances
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Fichiers de build
+.svelte-kit
+build
+dist
+
+# Fichiers de développement
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+
+# Cache
+.cache
+.temp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+README.md
+
+# Testing
+coverage
+.coverage
+
+# Autres
+*.tgz
+*.tar.gz
