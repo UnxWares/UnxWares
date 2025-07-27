@@ -22,29 +22,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js 22 LTS
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: latest
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: '22'
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -80,7 +67,6 @@ jobs:
     permissions:
       contents: read      # Lire le repository
       packages: write     # Écrire dans GitHub Container Registry
-      id-token: write     # Pour la signature des images (optionnel)
 
     steps:
       - name: Checkout repository
@@ -88,8 +74,6 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        with:
-          platforms: linux/amd64,linux/arm64
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
@@ -104,37 +88,20 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            # Tag 'latest' pour la branche par défaut
             type=raw,value=latest,enable={{is_default_branch}}
-            # Tag avec le nom de la branche
             type=ref,event=branch
-            # Tag avec le nom du tag Git
             type=ref,event=tag
-            # Tag avec le SHA du commit
-            type=sha,prefix={{branch}}-,suffix=-{{date 'YYYYMMDD-HHmmss'}}
-            # Tag de version sémantique pour les tags v*
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-          labels: |
-            org.opencontainers.image.title=UnxWares
-            org.opencontainers.image.description=UnxWares SvelteKit Application
-            org.opencontainers.image.vendor=UnxWares
-            org.opencontainers.image.licenses=MIT
+            type=sha,prefix={{branch}}-
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          # Build args pour optimisation
-          build-args: |
-            NODE_ENV=production
 
       - name: Generate build summary
         run: |
@@ -143,7 +110,6 @@ jobs:
           echo "### 📦 Image Details" >> $GITHUB_STEP_SUMMARY
           echo "- **Registry:** ${{ env.REGISTRY }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Repository:** ${{ env.IMAGE_NAME }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Platforms:** linux/amd64, linux/arm64" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🏷️ Tags Created" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.meta.outputs.tags }}" | sed 's/^/- `/' | sed 's/$/`/' >> $GITHUB_STEP_SUMMARY
@@ -159,31 +125,3 @@ jobs:
           echo '```bash' >> $GITHUB_STEP_SUMMARY
           echo "docker run -p 3000:3000 ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
-
-      - name: Security scan (optional)
-        uses: docker/scout-action@v1
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        continue-on-error: true
-        with:
-          command: cves
-          image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          only-severities: critical,high
-
-  # Job optionnel pour nettoyer les anciennes images
-  cleanup:
-    name: Cleanup Old Images
-    needs: build-and-push
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    permissions:
-      packages: write
-    
-    steps:
-      - name: Delete old images
-        uses: actions/delete-package-versions@v4
-        continue-on-error: true
-        with:
-          package-name: ${{ github.event.repository.name }}
-          package-type: 'container'
-          min-versions-to-keep: 5
-          delete-only-untagged-versions: true
