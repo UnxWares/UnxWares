@@ -53,4 +53,4 @@ node build
 🇺🇸 At UnxWares, we are deeply committed to actively supporting Open Source. While we remain a company and our work is naturally protected, openness and sharing are core values we uphold. That’s why a significant portion of the code we produce is published and made publicly accessible. We see code sharing as a fundamental pillar: enabling other developers to draw inspiration from, reuse, and improve upon what we create is a given for us. Every project we work on is intended to be useful beyond our own needs. That said, we ask that our intellectual property be respected. As such, our code cannot be reused in its entirety for commercial purposes without our explicit permission. However, each module, component, or feature we release is designed to be reusable, adaptable, and enhanced by the community. We firmly believe that a sustainable software ecosystem relies on collaboration, transparency, and shared innovation.
 
 # Merci ❤️
-UnxWares Studio & Cloud - UnxWares © 2023-2025 - Tous droits réservés
+UnxWares SAS (Studio & Cloud) - SIREN 945207991 - UnxWares © 2023-2025 - Tous droits réservés
