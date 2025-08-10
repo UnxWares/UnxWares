@@ -34,7 +34,7 @@
 					<a href="https://www.instagram.com/unxwares"><i class="bi bi-instagram"></i> Instagram</a>
 				</li>
 				<li class="twitter-x">
-					<a href="https://www.x.com/unxwares"><i class="bi bi-twitter-x"></i> Bluesky</a>
+					<a href="https://bsky.app/profile/unxwares.bsky.social"><i class="bi bi-bluesky"></i> Bluesky</a>
 				</li>
 				<li class="github">
 					<a href="https://www.github.com/UnxWares"><i class="bi bi-github"></i> GitHub</a>
@@ -231,4 +231,5 @@
             width: 80%;
         }
     }
+
 </style>
