@@ -124,12 +124,13 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Pull the image:**" >> $GITHUB_STEP_SUMMARY
           echo '```bash' >> $GITHUB_STEP_SUMMARY
-          echo "docker pull ${{ env.REGISTRY }}/unxwares:latest" >> $GITHUB_STEP_SUMMARY
+          echo "docker pull ${{ env.REGISTRY }}/unxwares/unxwares:latest" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Run locally:**" >> $GITHUB_STEP_SUMMARY
           echo '```bash' >> $GITHUB_STEP_SUMMARY
-          echo "docker run -p 3000:3000 ${{ env.REGISTRY }}/unxwares:latest" >> $GITHUB_STEP_SUMMARY
+          echo "docker run -p 3000:3000 ${{ env.REGISTRY }}/unxwares/unxwares:latest" >> $GITHUB_STEP_SUMMARY
 
           echo '```' >> $GITHUB_STEP_SUMMARY
+
 
