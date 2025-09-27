@@ -13,6 +13,12 @@ WORKDIR /app
 # Copier les fichiers de configuration des dépendances
 COPY package.json pnpm-lock.yaml* ./
 
+# Définir un ARG pour le token GitHub Packages
+ARG GH_ORG_PACKAGES
+
+# Authentification temporaire pour pnpm
+RUN echo "//npm.pkg.github.com/:_authToken=${GH_PACKAGES_TOKEN}" > ~/.npmrc
+
 # Installer les dépendances
 RUN pnpm install --frozen-lockfile
 
@@ -46,4 +52,5 @@ ENV PORT=3000
 ENV HOST=0.0.0.0
 
 # Démarrer l'application
+
 CMD ["node", "build"]
