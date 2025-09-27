@@ -105,6 +105,9 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            GH_ORG_PACKAGES=${{ secrets.GH_ORG_PACKAGES }}
+
 
       - name: Generate build summary
         run: |
@@ -129,3 +132,4 @@ jobs:
           echo "docker run -p 3000:3000 ${{ env.REGISTRY }}/unxwares:latest" >> $GITHUB_STEP_SUMMARY
 
           echo '```' >> $GITHUB_STEP_SUMMARY
+
