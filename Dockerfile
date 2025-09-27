@@ -17,7 +17,7 @@ COPY package.json pnpm-lock.yaml* ./
 ARG GH_ORG_PACKAGES
 
 # Authentification temporaire pour pnpm
-RUN echo "//npm.pkg.github.com/:_authToken=${GH_PACKAGES_TOKEN}" > ~/.npmrc
+RUN echo "//npm.pkg.github.com/:_authToken=${GH_ORG_PACKAGES}" > ~/.npmrc
 
 # Installer les dépendances
 RUN pnpm install --frozen-lockfile
@@ -54,3 +54,4 @@ ENV HOST=0.0.0.0
 # Démarrer l'application
 
 CMD ["node", "build"]
+
