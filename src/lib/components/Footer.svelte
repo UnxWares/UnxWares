@@ -8,32 +8,31 @@
 		<div class="footer-links">
 			<ul class="general-links">
 				<h3>Liens rapides</h3>
-				<li class="idk">
-					<a href="#"><i class="bi bi-cursor"></i> Must be determined</a>
+				<li class="unxwares uw-cloud">
+					<a href="https://www.unxwares.cloud"><i class="bi bi-cloud-fog2"></i> Plateforme Cloud</a>
 				</li>
-				<li class="idk">
-					<a href="#"><i class="bi bi-cursor"></i> Must be determined</a>
+				<li class="unxwares uw-studio">
+					<a href="https://www.unxwares.studio"><i class="bi bi-code-slash"></i> Studio de développement</a>
 				</li>
-				<li class="idk">
-					<a href="#"><i class="bi bi-cursor"></i> Must be determined</a>
+				<li class="unxwares uw-clientarea">
+					<a href="https://customers.unxwares.com"><i class="bi bi-person-fill-gear"></i> Votre espace client</a>
 				</li>
-				<li class="idk">
-					<a href="#"><i class="bi bi-cursor"></i> Must be determined</a>
+				<li class="unxwares uw-status">
+					<a href="https://status.unxwares.com"><i class="bi bi-bar-chart-fill"></i> Statut de nos services</a>
 				</li>
-				<hr>
-				<li class="idk">
-					<a href="#"><i class="bi bi-cursor"></i> Must be determined</a>
+				<li class="unxwares uw-car">
+					<a href="https://www.unxwares.com/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
 				</li>
 			</ul>
 			<ul class="contact-links">
 				<h3>Nous retrouver</h3>
 				<li class="discord">
-					<a href="https://www.discord.com/invite/6SwTfXBx4h"><i class="bi bi-discord"></i> Discord</a>
+					<a href="https://www.discord.com/invite/PPRacEf7yB"><i class="bi bi-discord"></i> Discord</a>
 				</li>
 				<li class="instagram">
 					<a href="https://www.instagram.com/unxwares"><i class="bi bi-instagram"></i> Instagram</a>
 				</li>
-				<li class="twitter-x">
+				<li class="bluesky">
 					<a href="https://bsky.app/profile/unxwares.bsky.social"><i class="bi bi-bluesky"></i> Bluesky</a>
 				</li>
 				<li class="github">
@@ -53,6 +52,9 @@
 				</li>
 				<li class="use-conditions">
 					<a href="/use-conditions"><i class="bi bi-check2-circle"></i> CGU</a>
+				</li>
+				<li class="sales-conditions">
+					<a href="/sales-conditions"><i class="bi bi-check2-circle"></i> CGV</a>
 				</li>
 			</ul>
 		</div>
