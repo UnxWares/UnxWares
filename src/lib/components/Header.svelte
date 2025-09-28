@@ -14,7 +14,7 @@
 		const button = document.querySelector(".scroll-button");
 		if (button) {
 			button.addEventListener("click", () => {
-				window.location.href = "https://github.com/UnxWares";
+				window.location.href = "#short-whoareus";
 			});
 		}
 	})

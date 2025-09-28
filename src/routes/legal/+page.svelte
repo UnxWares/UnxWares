@@ -1,3 +1,7 @@
+<script>
+import { LegalNotices } from '@unxwares/ui-core';
+</script>
+
 <svelte:head>
 	<title>UnxWares - Légal</title>
 
@@ -7,3 +11,11 @@
 	<meta property="og:url" content="https://www.unxwares.com">
 	<meta name="twitter:site" content="https://www.unxwares.com">
 </svelte:head>
+
+<main>
+	<LegalNotices />
+</main>
+
+<style>
+
+</style>

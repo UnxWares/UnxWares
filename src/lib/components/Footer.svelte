@@ -110,9 +110,7 @@
         text-decoration: none;
         color: black;
     }
-    footer .footer-infos .footer-links .general-links hr{
-        width: 100%;
-    }
+
     footer .footer-infos .footer-links .contact-links .unxwares a{
         display: flex;
         align-items: center;
