@@ -15,9 +15,8 @@
 			<h1>UnxWares - Bienvenue ✨</h1>
 		</div>
 		<p>Nous sommes UnxWares, une entreprise française, implantée plus précisément en Normandie,
-			sur les traces de Guillaume, avec un centre de données situé à Caen. Nous réalisons un
-			travail conséquent pour permettre à quiconque souhaite bénéficier de notre expertise,
-			même avec un budget parfois limité.
+			avec un centre de données situé à Caen. Nous réalisons un travail conséquent pour permettre
+			à quiconque souhaite bénéficier de notre expertise, même avec un budget parfois limité.
 		</p>
 		<p>
 			C’est pourquoi nous proposons, via UnxWares Cloud, des solutions d’hébergement prêtes
