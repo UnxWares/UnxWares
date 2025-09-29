@@ -25,4 +25,42 @@
 		de manière préventive. Cette approche proactive constitue le socle sur lequel repose la
 		confiance que nos clients nous accordent.
 	</p>
+	<table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+		<thead>
+		<tr style="background-color:#f2f2f2; text-align:left;">
+			<th style="padding: 12px; border: 1px solid #ddd;">Composant</th>
+			<th style="padding: 12px; border: 1px solid #ddd;">Détails et performances</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Processeurs</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">2 × Intel Xeon E5-2660 v2, 20 cœurs virtuels chacun, soit 40 cœurs virtuels au total, 2,2 GHz (3 GHz en Turbo), 25 Mo cache L3</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Mémoire vive (RAM)</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">192 Go DDR3 ECC RDIMM, correction d’erreurs, haute fiabilité et stabilité</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Stockage principal</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">2 × 1 To Samsung 870 EVO en RAID 1, protection des données, extensible jusqu’à 4 To</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Réseau</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">1 Gigabit Ethernet, optimisé pour la stabilité et la fiabilité</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Virtualisation / Orchestration</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">Kubernetes, Proxmox et déploiements sur mesure</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Redondance & fiabilité</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">RAID 1 pour le stockage, alimentation redondante, haute disponibilité</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos usages</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">Administration, monitoring et gestion de l’infrastructure interne</td>
+		</tr>
+		</tbody>
+	</table>
 </section>

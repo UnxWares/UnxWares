@@ -44,6 +44,27 @@ main > *{
     width: 65%;
     max-width: 1064px;
 }
+@media (max-width: 548px) {
+    main > * {
+        width: 75%;
+    }
+}
+@media (max-width: 406px) {
+    main > * {
+        width: 85%;
+    }
+}
+@media (max-width: 310px) {
+    main > * {
+        width: 90%;
+    }
+}
 p{
     text-align: justify;
+}
+h2, h3{
+    text-align: justify;
+}
+h1{
+    text-align: center;
 }

@@ -2,9 +2,9 @@
 	<h2>
 		La gamme Games : la haute performance pour les applications intensives
 	</h2>
-	<figure>
+	<!-- <figure>
 		<img src="" alt="" width="100%"/>
-	</figure>
+	</figure> -->
 	<p>
 		La gamme Games représente l'excellence en matière de puissance de calcul brute et de réactivité.
 		Dédiée aux environnements les plus exigeants - hébergement de serveurs de jeux multijoueurs, et
@@ -35,4 +35,42 @@
 		environnements de développement de jeux, cette gamme vous offre la puissance et la fiabilité
 		nécessaires pour exceller dans votre domaine.
 	</p>
+	<table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+		<thead>
+		<tr style="background-color:#f2f2f2; text-align:left;">
+			<th style="padding: 12px; border: 1px solid #ddd;">Composant</th>
+			<th style="padding: 12px; border: 1px solid #ddd;">Détails et performances</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Processeur</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">1 × AMD Ryzen 9 9900X, 12 cœurs / 24 threads, 4,4 GHz (5,6 GHz en Boost), 64 Mo cache L3</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Mémoire vive (RAM)</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">64 Go DDR5, haute vitesse pour calcul intensif</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Stockage principal</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">2 × 1 To NVMe Western Digital SN770, très haute vitesse et faible latence</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Réseau</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">10 Gigabits Ethernet pour un trafic rapide et stable</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Virtualisation / Orchestration</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">Kubernetes, Proxmox et déploiements sur mesure</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Redondance & fiabilité</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">RAID logiciel, haute disponibilité</td>
+		</tr>
+		<tr>
+			<td style="padding: 12px; border: 1px solid #ddd;"><strong>Usage recommandé</strong></td>
+			<td style="padding: 12px; border: 1px solid #ddd;">Hébergement de jeux en ligne</td>
+		</tr>
+		</tbody>
+	</table>
 </section>

@@ -2,9 +2,9 @@
 	<h2>
 		Un réseau fibré professionnel : la connectivité sans compromis
 	</h2>
-	<figure>
+	<!-- <figure>
 		<img src="" alt="" width="100%"/>
-	</figure>
+	</figure> -->
 	<p>
 		Dans l'écosystème numérique moderne, la performance des serveurs les plus puissants devient
 		inutile sans une connectivité réseau à la hauteur. Notre infrastructure réseau a été conçue
@@ -31,6 +31,9 @@
 	</h3>
 	<p>Notre réseau s'appuie sur une architecture en couches qui combine sécurité, performance et redondance :</p>
 	<ul>
+		<figure>
+			<img src="/images/uw-cloud/infrastructure/fortinet_fortigate_100e.png" alt="" width="100%"/>
+		</figure>
 		<li>
 			<p>
 				<strong>Fortinet FortiGate 100E :</strong> Ce pare-feu de nouvelle génération constitue
@@ -41,6 +44,9 @@
 				la sécurité.
 			</p>
 		</li>
+		<figure>
+			<img src="/images/uw-cloud/infrastructure/mikrotik_ccr2004.png" alt="" width="100%"/>
+		</figure>
 		<li>
 			<p>
 				<strong>MikroTik CCR2004-1G-12S+2XS :</strong> Ce routeur professionnel haute performance
@@ -50,6 +56,9 @@
 				une continuité de service même en cas de défaillance d'un lien.
 			</p>
 		</li>
+		<figure>
+			<img src="/images/uw-cloud/infrastructure/mikrotik_crs317.png" alt="" width="100%"/>
+		</figure>
 		<li>
 			<p>
 				<strong>MikroTik CRS317-1G-16S+RM :</strong> Ce commutateur 10 gigabits entièrement fibré

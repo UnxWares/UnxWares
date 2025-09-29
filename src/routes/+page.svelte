@@ -50,10 +50,6 @@
 </main>
 
 <style>
-    main #short-whoareus {
-        width: 65%;
-        max-width: 1064px;
-    }
     main #short-whoareus .unxwares-title{
         display: flex;
         align-items: center;
@@ -105,15 +101,8 @@
         main #short-whoareus .unxwares-title{
             font-size: 10px;
         }
-        main #short-whoareus {
-            width: 75%;
-        }
     }
-    @media (max-width: 406px) {
-        main #short-whoareus {
-            width: 85%;
-        }
-    }
+
     main #short-whoareus .unxwares-title h1{
         margin: 0 0 0 10px;
     }
