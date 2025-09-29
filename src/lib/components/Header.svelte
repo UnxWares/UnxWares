@@ -23,7 +23,7 @@
 <header>
 	<figure>
 		<img src="/images/unxwares_logotype.png" alt="logo" />
-		<h1 class="poppins-regular typing"></h1>
+		<h6 class="poppins-regular typing"></h6>
 	</figure>
 		<div class="scroll-button">
 			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>Découvrez-nous</span></span>
@@ -56,9 +56,9 @@
 
     .typing {
         min-height: 66px;
+        font-size: 40px;
         display: inline-block;
     }
-
 
     header .scroll-button{
         position: absolute;
@@ -103,7 +103,11 @@
 
     @media only screen and (max-width: 682px) {
 
-				header{
+				.typing {
+						font-size: 36px;
+				}
+
+        header{
 						font-size: 16px;
 				}
 
@@ -119,6 +123,10 @@
 
     @media only screen and (max-width: 582px) {
 
+        .typing {
+            font-size: 30px;
+        }
+
         header{
             font-size: 14px;
         }
@@ -131,6 +139,9 @@
     }
 
     @media only screen and (max-width: 512px) {
+        .typing {
+            font-size: 26px;
+        }
         header{
             font-size: 11px;
         }
@@ -146,6 +157,9 @@
     }
 
     @media only screen and (max-width: 418px) {
+        .typing {
+            font-size: 22px;
+        }
         header {
             font-size: 9px;
         }
@@ -161,6 +175,9 @@
     }
 
     @media only screen and (max-width: 340px) {
+        .typing {
+            font-size: 16px;
+        }
         header {
             font-size: 8px;
         }
@@ -209,6 +226,9 @@
 
         header {
             font-size: 14px;
+        }
+        .typing {
+            font-size: 28px;
         }
     }
 </style>

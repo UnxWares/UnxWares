@@ -44,3 +44,6 @@ main > *{
     width: 65%;
     max-width: 1064px;
 }
+p{
+    text-align: justify;
+}
