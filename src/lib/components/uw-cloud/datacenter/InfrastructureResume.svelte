@@ -28,7 +28,7 @@
 		<p><strong>Disponibilité :</strong> Nous travaillons pour un SLA de 99,5% - fiabilité de niveau professionnel</p>
 	</li>
 	<li>
-		<p><strong>Observabilité :</strong> Stack Mimir/Grafana/Loki - monitoring temps réel de nouvelle génération</p>
+		<p><strong>Observabilité :</strong> Les solutions de Grafana Labs - monitoring temps réel de nouvelle génération</p>
 	</li>
 	<li>
 		<p><strong>Résilience :</strong> Sauvegarde multi-niveaux (Longhorn + Infomaniak Swiss Backup + Proxmox Backup Server)</p>
