@@ -9,7 +9,7 @@
 </svelte:head>
 
 <main>
-	<section id="short-whoareus">
+	<section id="short-whoarewe">
 		<div class="unxwares-title">
 			<img src="/favicon.png" alt="UnxWares favicon" />
 			<h1>UnxWares - Bienvenue ✨</h1>
@@ -42,78 +42,78 @@
 			avec notamment une reconstitution visuelle de notre infrastructure, et en découvrants nos
 			choix techniques et partenaires éthiques.
 		</p>
-		<div class="short-whoareus-buttons">
-			<a href="/whoareus"><i class="bi bi-people"></i> Notre histoire</a>
+		<div class="short-whoarewe-buttons">
+			<a href="/whoarewe"><i class="bi bi-people"></i> Notre histoire</a>
 			<a href="/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
 		</div>
 	</section>
 </main>
 
 <style>
-    main #short-whoareus .unxwares-title{
+    main #short-whoarewe .unxwares-title{
         display: flex;
         align-items: center;
         justify-content: center;
 				margin-bottom: 20px;
 				font-size: 26px;
     }
-		main #short-whoareus .unxwares-title img{
+		main #short-whoarewe .unxwares-title img{
         width:120px;
 				height:120px;
 		}
     @media (max-width: 1238px) {
-        main #short-whoareus .unxwares-title{
+        main #short-whoarewe .unxwares-title{
             font-size: 22px;
         }
-        main #short-whoareus .unxwares-title img{
+        main #short-whoarewe .unxwares-title img{
             width:100px;
             height:100px;
         }
     }
     @media (max-width: 1048px) {
-        main #short-whoareus .unxwares-title{
+        main #short-whoarewe .unxwares-title{
             font-size: 18px;
         }
-        main #short-whoareus .unxwares-title img{
+        main #short-whoarewe .unxwares-title img{
             width:70px;
             height:70px;
         }
     }
     @media (max-width: 842px) {
-        main #short-whoareus .unxwares-title{
+        main #short-whoarewe .unxwares-title{
             font-size: 14px;
         }
-        main #short-whoareus .unxwares-title img{
+        main #short-whoarewe .unxwares-title img{
             width:50px;
             height:50px;
         }
     }
     @media (max-width: 658px) {
-        main #short-whoareus .unxwares-title{
+        main #short-whoarewe .unxwares-title{
             font-size: 12px;
         }
-        main #short-whoareus .unxwares-title img{
+        main #short-whoarewe .unxwares-title img{
             width:35px;
             height:35px;
         }
     }
     @media (max-width: 548px) {
-        main #short-whoareus .unxwares-title{
+        main #short-whoarewe .unxwares-title{
             font-size: 10px;
         }
     }
 
-    main #short-whoareus .unxwares-title h1{
+    main #short-whoarewe .unxwares-title h1{
         margin: 0 0 0 10px;
     }
-    main #short-whoareus p{
+    main #short-whoarewe p{
         text-align: justify;
     }
-    main #short-whoareus .short-whoareus-buttons{
+    main #short-whoarewe .short-whoarewe-buttons{
         text-align: center;
 				margin-top: 30px;
     }
-    main #short-whoareus .short-whoareus-buttons a{
+    main #short-whoarewe .short-whoarewe-buttons a{
         text-decoration: none;
         border: 0;
         border-radius: 10px;
@@ -130,14 +130,14 @@
         background-color: #050c9c;
         font-family: Gabarito, Poppins, sans-serif;
     }
-    main #short-whoareus .short-whoareus-buttons a i{
+    main #short-whoarewe .short-whoarewe-buttons a i{
 				margin-right: 5px;
     }
-    main #short-whoareus .short-whoareus-buttons a:hover{
+    main #short-whoarewe .short-whoarewe-buttons a:hover{
         text-decoration: none;
         transform: scale(.95);
     }
-    main #short-whoareus .short-whoareus-buttons a:focus{
+    main #short-whoarewe .short-whoarewe-buttons a:focus{
         outline: none;
         box-shadow:
                 0 0 0 2px white,

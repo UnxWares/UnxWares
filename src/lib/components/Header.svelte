@@ -14,7 +14,17 @@
 		const button = document.querySelector(".scroll-button");
 		if (button) {
 			button.addEventListener("click", () => {
-				window.location.href = "#short-whoareus";
+				const current = window.scrollY;
+				const viewportHeight = window.innerHeight;
+				const target = Math.min(
+					Math.floor((current + viewportHeight) / viewportHeight) * viewportHeight,
+					document.body.scrollHeight - viewportHeight
+				)+85;
+
+				window.scrollTo({
+					top: target,
+					behavior: "smooth"
+				});
 			});
 		}
 	})
@@ -25,7 +35,7 @@
 		<img src="/images/unxwares_logotype.png" alt="logo" />
 		<h6 class="poppins-regular typing"></h6>
 	</figure>
-		<div class="scroll-button">
+	<div class="scroll-button">
 			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>Découvrez-nous</span></span>
 	</div>
 </header>
