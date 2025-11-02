@@ -2,6 +2,8 @@
 	import WhoAreWeResume from '$lib/components/whoarewe/WhoAreWeResume.svelte';
 	import WhatWeRemember from '$lib/components/whoarewe/WhatWeRemember.svelte';
 	import WhatIsIt from '$lib/components/whoarewe/WhatIsIt.svelte';
+	import HowItAllBegan from '$lib/components/whoarewe/HowItAllBegan.svelte';
+	import WhyItWasCreated from '$lib/components/whoarewe/WhyItWasCreated.svelte';
 </script>
 
 <svelte:head>
@@ -24,6 +26,8 @@
 
 		<h2 style="margin: 25px 0;">Notre histoire : la vraie</h2>
 		<WhatIsIt/>
+		<HowItAllBegan/>
+		<WhyItWasCreated/>
 		<WhatWeRemember/>
 	</article>
 </main>
