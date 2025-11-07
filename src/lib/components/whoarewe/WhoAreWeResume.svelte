@@ -23,7 +23,7 @@
 		<td style="padding: 12px; border: 1px solid #ddd;">
 			<ul style="margin: 0; padding-left: 18px;">
 				<li><strong>UnxWares Cloud</strong> – Hébergement, orchestration, automatisation, sécurité et supervision.</li>
-				<li><strong>UnxWares Studio</strong> – Développement logiciel, web, API et jeu vidéo (Unreal Engine 5).</li>
+				<li><strong>UnxWares Studio</strong> – Développement logiciel, web, API et jeu vidéo.</li>
 			</ul>
 		</td>
 	</tr>
@@ -33,7 +33,7 @@
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos technologies</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Go, Rust, Laravel, SvelteKit, Kubernetes (K3s), Proxmox, Unreal Engine 5 – choisis pour leur performance, leur modernité et leur fiabilité.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;">Go, Rust, Laravel, SvelteKit, Kubernetes (K3s et Kubeadm), Proxmox – choisis pour leur performance, leur modernité et leur fiabilité.</td>
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos projets</strong></td>

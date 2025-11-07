@@ -4,6 +4,7 @@
 	import WhatIsIt from '$lib/components/whoarewe/WhatIsIt.svelte';
 	import HowItAllBegan from '$lib/components/whoarewe/HowItAllBegan.svelte';
 	import WhyItWasCreated from '$lib/components/whoarewe/WhyItWasCreated.svelte';
+	import WhatWeAreDoingTodayUWC from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWC.svelte';
 </script>
 
 <svelte:head>
@@ -28,6 +29,7 @@
 		<WhatIsIt/>
 		<HowItAllBegan/>
 		<WhyItWasCreated/>
+		<WhatWeAreDoingTodayUWC/>
 		<WhatWeRemember/>
 	</article>
 </main>
