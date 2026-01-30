@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@unxwares/ui-core':
-        specifier: 0.1.30
-        version: 0.1.30(svelte@5.49.1)
+        specifier: 0.1.31
+        version: 0.1.31(svelte@5.49.1)
       typed.js:
         specifier: ^2.1.0
         version: 2.1.0
@@ -639,8 +639,8 @@ packages:
     resolution: {integrity: sha512-VFlhGSl4opC0bprJiItPQ1RfUhGDIBokcPwaFH4yiBCaNPeld/9VeXbiPO1cLyorQi1G1vL+ecBk1x8o1axORA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@unxwares/ui-core@0.1.30':
-    resolution: {integrity: sha512-woxzQhwot0akshiJO9BWRnJbcfroyHxZayiahYBIw1GTKWpY/VGg8OF5zsCIpP9Mw5fpsKpBd2DyCHoEwGINBg==, tarball: https://npm.pkg.github.com/download/@unxwares/ui-core/0.1.30/9a2753c2e935ab5b1d26a80c8e6a8d8e58b85402}
+  '@unxwares/ui-core@0.1.31':
+    resolution: {integrity: sha512-+zj0owFCDCZuptwLtK2j7busBC5lx2fg6GoU6w4wfLnGRUM26ISzDFVaLpLntkz4V2DjEegc5qmChP9z3SoeCA==, tarball: https://npm.pkg.github.com/download/@unxwares/ui-core/0.1.31/a273c536b30b27fabff8e0ffc879298c953ad682}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -1022,8 +1022,8 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
-  jspdf@3.0.4:
-    resolution: {integrity: sha512-dc6oQ8y37rRcHn316s4ngz/nOjayLF/FFxBF4V9zamQKRqXxyiH1zagkCdktdWhtoQId5K20xt1lB90XzkB+hQ==}
+  jspdf@4.0.0:
+    resolution: {integrity: sha512-w12U97Z6edKd2tXDn3LzTLg7C7QLJlx0BPfM3ecjK2BckUl9/81vZ+r5gK4/3KQdhAcEZhENUxRhtgYBj75MqQ==}
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
@@ -1985,11 +1985,11 @@ snapshots:
       '@typescript-eslint/types': 8.54.0
       eslint-visitor-keys: 4.2.1
 
-  '@unxwares/ui-core@0.1.30(svelte@5.49.1)':
+  '@unxwares/ui-core@0.1.31(svelte@5.49.1)':
     dependencies:
       '@melt-ui/svelte': 0.86.6(svelte@5.49.1)
       dompurify: 3.3.1
-      jspdf: 3.0.4
+      jspdf: 4.0.0
       marked: 16.4.2
       svelte: 5.49.1
 
@@ -2387,7 +2387,7 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  jspdf@3.0.4:
+  jspdf@4.0.0:
     dependencies:
       '@babel/runtime': 7.28.6
       fast-png: 6.4.0
