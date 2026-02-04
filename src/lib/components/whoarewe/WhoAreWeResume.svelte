@@ -1,4 +1,4 @@
-<table style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+<table style="width:100%; max-width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; table-layout: fixed; word-wrap: break-word;">
 	<thead>
 	<tr style="background-color:#f2f2f2; text-align:left;">
 		<th style="padding: 12px; border: 1px solid #ddd;">Aspect</th>

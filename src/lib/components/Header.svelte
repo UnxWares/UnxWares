@@ -49,6 +49,8 @@
         width: 100vw;
         flex-direction: column;
         font-size: 20px;
+        position: relative;
+        z-index: 0;
     }
 
     header figure{

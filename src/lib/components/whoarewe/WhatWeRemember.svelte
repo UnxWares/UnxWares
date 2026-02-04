@@ -5,18 +5,55 @@
 	autre.
 </p>
 <p>
-	UnxWares, c’est pas juste un logo ou un SIREN.
+	UnxWares, c'est pas juste un logo ou un SIREN.
 	<br>
-	C’est deux techos qui ont voulu faire un truc carré, utile et propre. Et qui ont décidé que
+	C'est deux techos qui ont voulu faire un truc carré, utile et propre. Et qui ont décidé que
 	si personne ne le faisait, ils allaient le faire eux-mêmes.
 </p>
 <p><strong>
 	Experts du soft et du hard.
 	<br>
-	Construire. Partager. S’émanciper.
+	Construire. Partager. S'émanciper.
 	<br>
-	C’est ce qu’on fait depuis le 19/10/2023.
+	C'est ce qu'on fait depuis le 19/10/2023.
 	<br>
-	Et depuis le 03/06/2025, c’est officiel.
+	Et depuis le 03/06/2025, c'est officiel.
 </strong></p>
-<span style="font-size: 50px; font-weight: bold; display: flex; align-items: center; gap: 10px;">Bienvenue dans l'ère <img height="50px" src="images/unxwares_logotype.png" alt="UnxWares"/></span>
+<span class="welcome-era">Bienvenue dans l'ère <img src="images/unxwares_logotype.png" alt="UnxWares"/></span>
+
+<style>
+	.welcome-era {
+		font-size: 50px;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	.welcome-era img {
+		height: 50px;
+	}
+
+	@media (max-width: 768px) {
+		.welcome-era {
+			font-size: 36px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.welcome-era img {
+			height: 40px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.welcome-era {
+			font-size: 28px;
+		}
+
+		.welcome-era img {
+			height: 32px;
+		}
+	}
+</style>
