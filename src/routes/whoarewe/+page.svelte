@@ -5,6 +5,8 @@
 	import HowItAllBegan from '$lib/components/whoarewe/HowItAllBegan.svelte';
 	import WhyItWasCreated from '$lib/components/whoarewe/WhyItWasCreated.svelte';
 	import WhatWeAreDoingTodayUWC from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWC.svelte';
+	import WhatWeAreDoingTodayUWS from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWS.svelte';
+	import WhatWeAreDoingTodayUNX from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUNX.svelte';
 </script>
 
 <svelte:head>
@@ -30,6 +32,8 @@
 		<HowItAllBegan/>
 		<WhyItWasCreated/>
 		<WhatWeAreDoingTodayUWC/>
+		<WhatWeAreDoingTodayUWS/>
+		<WhatWeAreDoingTodayUNX/>
 		<WhatWeRemember/>
 	</article>
 </main>

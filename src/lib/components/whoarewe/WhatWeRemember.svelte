@@ -1,15 +1,46 @@
-<h3>Ce qu'on retient :</h3>
+<h3>Ce qu'on retient</h3>
+
 <p>
-	On veut construire un écosystème français, souverain, puissant, orienté développeurs, où les
-	gens peuvent déployer, apprendre, contribuer, et, surtout, ne pas être prisonniers des choix d'un
-	autre.
+	<strong>UnxWares</strong>, c'est la preuve qu'on peut faire :
 </p>
+<ul>
+	<li><p>du cloud sans être un géant,</p></li>
+	<li><p>de l'open source sans tout donner,</p></li>
+	<li><p>du logiciel sans renier la souveraineté,</p></li>
+	<li><p>de la technique sans perdre l'humain.</p></li>
+</ul>
+
+<p>
+	On veut construire <strong>un écosystème français, souverain, puissant, orienté développeurs</strong>,
+	où les gens peuvent :
+</p>
+<ul>
+	<li><p>déployer,</p></li>
+	<li><p>apprendre,</p></li>
+	<li><p>contribuer,</p></li>
+	<li><p>et, surtout, <strong>ne pas être prisonniers des choix d'un autre</strong>.</p></li>
+</ul>
+
+<p>
+	On veut <strong>montrer qu'il est possible d'allier performance, souveraineté, accessibilité et
+	transparence</strong>, sans tomber dans le marketing creux. On veut <strong>créer une communauté</strong>
+	où le savoir circule, où les outils sont utiles, et où chacun peut contribuer à quelque chose de plus grand.
+</p>
+
 <p>
 	UnxWares, c'est pas juste un logo ou un SIREN.
 	<br>
 	C'est deux techos qui ont voulu faire un truc carré, utile et propre. Et qui ont décidé que
 	si personne ne le faisait, ils allaient le faire eux-mêmes.
 </p>
+
+<p>
+	UnxWares n'est pas un simple hébergeur, ni un simple studio de dev.
+	<br>
+	C'est un <strong>écosystème complet</strong> — un projet de société numérique fondé sur la technique,
+	la passion et l'éthique.
+</p>
+
 <p><strong>
 	Experts du soft et du hard.
 	<br>

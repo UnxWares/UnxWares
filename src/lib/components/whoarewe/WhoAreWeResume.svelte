@@ -12,7 +12,7 @@
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos origines</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Le projet naît en <strong>octobre 2023</strong> après plusieurs années d’expérimentations techniques. Au départ, nous voulions seulement héberger nos propres serveurs — puis l’idée a grandi : créer une structure capable de tout faire, de l’infra au logiciel, en toute indépendance.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;">Le projet naît le <strong>19 octobre 2023</strong> après plusieurs années d'expérimentations techniques. Au départ, nous voulions seulement héberger nos propres serveurs — puis l'idée a grandi : créer une structure capable de tout faire, de l'infra au logiciel, en toute indépendance.</td>
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre ADN</strong></td>
@@ -29,7 +29,7 @@
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre philosophie</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Faire les choses proprement, avec sens et maîtrise. Être <strong>souverains</strong> sur nos infrastructures, <strong>transparents</strong> sur nos méthodes, et <strong>exigeants</strong> sur notre code. Nous construisons chaque projet comme si c’était le nôtre.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;">Faire les choses proprement, avec sens et maîtrise. Être <strong>souverains</strong> sur nos infrastructures, <strong>transparents</strong> sur nos méthodes, et <strong>exigeants</strong> sur notre code. Nous construisons chaque projet comme si c'était le nôtre.</td>
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos technologies</strong></td>
@@ -41,7 +41,7 @@
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre engagement open-source</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">L’ouverture et le partage font partie de notre ADN. Nous préparons la création de <strong>l’association UnxWares OpenSource</strong> pour aider gratuitement étudiants et indépendants à concrétiser leurs projets, via un système d’accompagnement et de redistribution équitable.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;">L'ouverture et le partage font partie de notre ADN. Nous préparons la création de <strong>l'association UnxWares OpenSource</strong> pour aider gratuitement étudiants et indépendants à concrétiser leurs projets, via un système d'accompagnement et de redistribution équitable.</td>
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre manière de travailler</strong></td>
@@ -53,7 +53,47 @@
 	</tr>
 	<tr>
 		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre vision</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Un numérique plus humain et plus souverain. Construire, partager et transmettre ; prouver qu’une entreprise peut rester technique, honnête et indépendante sans sacrifier la qualité.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;">Un numérique plus humain et plus souverain. Construire, partager et transmettre ; prouver qu'une entreprise peut rester technique, honnête et indépendante sans sacrifier la qualité.</td>
+	</tr>
+	</tbody>
+</table>
+
+<h4 style="margin: 30px 0 15px 0;">Dates clés</h4>
+<table style="width:100%; max-width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+	<thead>
+	<tr style="background-color:#f2f2f2; text-align:left;">
+		<th style="padding: 10px; border: 1px solid #ddd; width: 150px;">Date</th>
+		<th style="padding: 10px; border: 1px solid #ddd;">Événement</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>10/02/2022</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">Racines techniques avec SummumNetwork – premiers développements Forge + APIs custom</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>19/10/2023</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>Naissance du projet UnxWares</strong> – décision de créer une structure indépendante et souveraine</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>19/10/2023</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">Lancement de VFF-Project – encyclopédie ferroviaire française communautaire</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2024</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">Structuration en deux pôles : <strong>UnxWares Studio</strong> (dev) et <strong>UnxWares Cloud</strong> (infra)</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2024-2025</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">Montée en puissance du datacenter normand : HPE ProLiant, Threadripper, réseau 10 Gb/s, Fortinet, MikroTik</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>03/06/2025</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>Création officielle d'UnxWares SAS</strong> – immatriculation au RCS de Paris</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2025+</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">Lancement prévu de l'association <strong>UnxWares OpenSource</strong></td>
 	</tr>
 	</tbody>
 </table>
