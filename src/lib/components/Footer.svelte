@@ -21,7 +21,7 @@
 					<a href="https://status.unxwares.com"><i class="bi bi-bar-chart-fill"></i> Statut de nos services</a>
 				</li>
 				<li class="unxwares uw-car">
-					<a href="https://www.unxwares.com/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
+					<a href="/certifications-and-responsibility" data-sveltekit-preload-data="hover"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
 				</li>
 			</ul>
 			<ul class="contact-links">
@@ -39,22 +39,22 @@
 					<a href="https://www.github.com/UnxWares"><i class="bi bi-github"></i> GitHub</a>
 				</li>
 				<li class="unxwares">
-					<a href="https://www.unxwares.com/datacenter"><img src="/images/unxwares_insigne_baw.png" alt="UnxWares blanck and white icon in a button in the footer"> Centre de données</a>
+					<a href="/datacenter" data-sveltekit-preload-data="hover"><img src="/images/unxwares_insigne_baw.png" alt="UnxWares blanck and white icon in a button in the footer"> Centre de données</a>
 				</li>
 			</ul>
 			<ul class="legal-links">
 				<h3>Légal</h3>
 				<li class="legal">
-					<a href="/legal"><i class="bi bi-folder"></i> Mentions légales</a>
+					<a href="/legal" data-sveltekit-preload-data="hover"><i class="bi bi-folder"></i> Mentions légales</a>
 				</li>
 				<li class="privacy">
-					<a href="/privacy"><i class="bi bi-bell-slash"></i> Confidentialité</a>
+					<a href="/privacy" data-sveltekit-preload-data="hover"><i class="bi bi-bell-slash"></i> Confidentialité</a>
 				</li>
 				<li class="use-conditions">
-					<a href="/use-conditions"><i class="bi bi-check2-circle"></i> CGU</a>
+					<a href="/use-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> CGU</a>
 				</li>
 				<li class="sales-conditions">
-					<a href="/sales-conditions"><i class="bi bi-check2-circle"></i> CGV</a>
+					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> CGV</a>
 				</li>
 			</ul>
 		</div>

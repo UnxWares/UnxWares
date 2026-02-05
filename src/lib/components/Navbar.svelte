@@ -108,6 +108,7 @@
 											class="dropdown-item"
 											class:active={$page.url.pathname === subItem.href}
 											onclick={closeMobileMenu}
+											data-sveltekit-preload-data="hover"
 										>
 											<i class="bi {subItem.icon}"></i>
 											<div class="dropdown-item-content">

@@ -32,7 +32,7 @@
 		<td style="padding: 12px; border: 1px solid #ddd;">Une équipe de techniciens passionnés qui comprennent vraiment ce qu'ils font</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>L'illusion commerciale</strong> : certains font de l'illusion comme CubixServ et d'autres, dashboard violet mais rien derrière</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>L'illusion commerciale</strong> : certains acteurs privilégient l'apparence avec des dashboards tape-à-l'œil mais peu de substance technique derrière</td>
 		<td style="padding: 12px; border: 1px solid #ddd;">Pas de faux-semblants, la substance technique avant l'apparence</td>
 	</tr>
 	</tbody>
