@@ -1,99 +1,103 @@
+<script lang="ts">
+	import { t } from 'svelte-i18n';
+</script>
+
 <table style="width:100%; max-width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; table-layout: fixed; word-wrap: break-word;">
 	<thead>
 	<tr style="background-color:#f2f2f2; text-align:left;">
-		<th style="padding: 12px; border: 1px solid #ddd;">Aspect</th>
-		<th style="padding: 12px; border: 1px solid #ddd;">Présentation</th>
+		<th style="padding: 12px; border: 1px solid #ddd;">{$t('whoarewe.resume.table_header_aspect')}</th>
+		<th style="padding: 12px; border: 1px solid #ddd;">{$t('whoarewe.resume.table_header_presentation')}</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre identité</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">UnxWares est une <strong>SAS française indépendante</strong> fondée par deux passionnés, <strong>Baptiste Gosselin</strong> et <strong>David Gheghea</strong>, avec une vision simple : construire un numérique souverain, transparent et durable, loin du modèle des grands hébergeurs.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.identity_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.identity_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos origines</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Le projet naît le <strong>19 octobre 2023</strong> après plusieurs années d'expérimentations techniques. Au départ, nous voulions seulement héberger nos propres serveurs — puis l'idée a grandi : créer une structure capable de tout faire, de l'infra au logiciel, en toute indépendance.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.origins_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.origins_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre ADN</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Nous sommes avant tout des <strong>techniciens et ingénieurs passionnés</strong>, pas des commerciaux. Nous concevons, développons et administrons tout nous-mêmes : serveurs, orchestrateurs, API, outils internes et environnements clients. Chaque ligne de code et chaque câble est pensé maison.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.dna_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.dna_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos pôles</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.poles_label')}</strong></td>
 		<td style="padding: 12px; border: 1px solid #ddd;">
 			<ul style="margin: 0; padding-left: 18px;">
-				<li><strong>UnxWares Cloud</strong> – Hébergement, orchestration, automatisation, sécurité et supervision.</li>
-				<li><strong>UnxWares Studio</strong> – Développement logiciel, web, API et jeu vidéo.</li>
+				<li>{@html $t('whoarewe.resume.poles_value_uwc')}</li>
+				<li>{@html $t('whoarewe.resume.poles_value_uws')}</li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre philosophie</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Faire les choses proprement, avec sens et maîtrise. Être <strong>souverains</strong> sur nos infrastructures, <strong>transparents</strong> sur nos méthodes, et <strong>exigeants</strong> sur notre code. Nous construisons chaque projet comme si c'était le nôtre.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.philosophy_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.philosophy_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos technologies</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Go, Rust, Laravel, SvelteKit, Kubernetes (K3s et Kubeadm), Proxmox – choisis pour leur performance, leur modernité et leur fiabilité.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.technologies_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{$t('whoarewe.resume.technologies_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos projets</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;"><em>VFF-Project</em> (encyclopédie ferroviaire collaborative), <em>Raiemus</em> (OS léger pour le RDP), et nos outils internes : orchestrateur Go, API de déploiement, panel Laravel.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.projects_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.projects_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre engagement open-source</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">L'ouverture et le partage font partie de notre ADN. Nous préparons la création de <strong>l'association UnxWares OpenSource</strong> pour aider gratuitement étudiants et indépendants à concrétiser leurs projets, via un système d'accompagnement et de redistribution équitable.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.opensource_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.opensource_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre manière de travailler</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Nous collaborons avec des <strong>freelances certifiés</strong>, rémunérés justement, encadrés techniquement, et soutenus par nos ressources internes. Un modèle hybride entre liberté et fiabilité, au bénéfice du client et du développeur.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.workmethod_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.workmethod_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Nos valeurs</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Souveraineté · Transparence · Éthique · Excellence · Communauté · Écoresponsabilité</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.values_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{$t('whoarewe.resume.values_value')}</td>
 	</tr>
 	<tr>
-		<td style="padding: 12px; border: 1px solid #ddd;"><strong>Notre vision</strong></td>
-		<td style="padding: 12px; border: 1px solid #ddd;">Un numérique plus humain et plus souverain. Construire, partager et transmettre ; prouver qu'une entreprise peut rester technique, honnête et indépendante sans sacrifier la qualité.</td>
+		<td style="padding: 12px; border: 1px solid #ddd;"><strong>{$t('whoarewe.resume.vision_label')}</strong></td>
+		<td style="padding: 12px; border: 1px solid #ddd;">{$t('whoarewe.resume.vision_value')}</td>
 	</tr>
 	</tbody>
 </table>
 
-<h4 style="margin: 30px 0 15px 0;">Dates clés</h4>
+<h4 style="margin: 30px 0 15px 0;">{$t('whoarewe.resume.keydates_title')}</h4>
 <table style="width:100%; max-width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
 	<thead>
 	<tr style="background-color:#f2f2f2; text-align:left;">
-		<th style="padding: 10px; border: 1px solid #ddd; width: 150px;">Date</th>
-		<th style="padding: 10px; border: 1px solid #ddd;">Événement</th>
+		<th style="padding: 10px; border: 1px solid #ddd; width: 150px;">{$t('whoarewe.resume.keydates_header_date')}</th>
+		<th style="padding: 10px; border: 1px solid #ddd;">{$t('whoarewe.resume.keydates_header_event')}</th>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>10/02/2022</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;">Racines techniques avec SummumNetwork – premiers développements Forge + APIs custom</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{$t('whoarewe.resume.keydates_20220210')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>19/10/2023</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;"><strong>Naissance du projet UnxWares</strong> – décision de créer une structure indépendante et souveraine</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.keydates_20231019_birth')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>19/10/2023</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;">Lancement de VFF-Project – encyclopédie ferroviaire française communautaire</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{$t('whoarewe.resume.keydates_20231019_vff')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2024</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;">Structuration en deux pôles : <strong>UnxWares Studio</strong> (dev) et <strong>UnxWares Cloud</strong> (infra)</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.keydates_2024')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2024-2025</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;">Montée en puissance du datacenter normand : HPE ProLiant, Threadripper, réseau 10 Gb/s, Fortinet, MikroTik</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{$t('whoarewe.resume.keydates_20242025')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>03/06/2025</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;"><strong>Création officielle d'UnxWares SAS</strong> – immatriculation au RCS de Paris</td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.keydates_20250603')}</td>
 	</tr>
 	<tr>
 		<td style="padding: 10px; border: 1px solid #ddd;"><strong>2025+</strong></td>
-		<td style="padding: 10px; border: 1px solid #ddd;">Lancement prévu de l'association <strong>UnxWares OpenSource</strong></td>
+		<td style="padding: 10px; border: 1px solid #ddd;">{@html $t('whoarewe.resume.keydates_2025plus')}</td>
 	</tr>
 	</tbody>
 </table>

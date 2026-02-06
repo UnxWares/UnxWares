@@ -5,9 +5,10 @@ register('en', () => import('./locales/en.json'));
 register('de', () => import('./locales/de.json'));
 register('nl', () => import('./locales/nl.json'));
 register('es', () => import('./locales/es.json'));
+register('it', () => import('./locales/it.json'));
 
 const LOCALE_STORAGE_KEY = 'unxwares-locale';
-const availableLocales = ['fr', 'en', 'de', 'nl', 'es'];
+const availableLocales = ['fr', 'en', 'de', 'nl', 'es', 'it'];
 
 // Normaliser la locale du navigateur vers nos locales disponibles
 function getNormalizedLocale() {

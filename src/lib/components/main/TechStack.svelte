@@ -3,7 +3,10 @@
 </script>
 
 <section id="tech-stack">
-	<h3>{$t('techstack.title')}</h3>
+	<div class="section-title">
+		<i class="bi bi-stack"></i>
+		<h2>{$t('techstack.title')}</h2>
+	</div>
 	<p class="tech-intro">
 		{$t('techstack.intro')}
 	</p>
@@ -79,12 +82,30 @@
 	#tech-stack{
 		margin: 0;
 	}
-	#tech-stack h3{
+	#tech-stack .section-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		margin-bottom: 15px;
+	}
+	#tech-stack .section-title i{
+		font-size: 32px;
+		animation: float 3s ease-in-out infinite;
+	}
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-5px); }
+	}
+	#tech-stack .section-title h2{
 		text-align: center;
-		font-size: 26px;
-		font-weight: 600;
-		margin: 0 0 15px 0;
-		color: #1a1a1a;
+		margin: 0;
+		font-size: 28px;
+	}
+	@media (max-width: 768px) {
+		#tech-stack .section-title h2{
+			font-size: 22px;
+		}
 	}
 	.tech-intro{
 		text-align: center;

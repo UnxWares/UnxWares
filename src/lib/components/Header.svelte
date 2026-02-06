@@ -1,10 +1,34 @@
 <script>
 	import Typed from 'typed.js';
-	import { t } from 'svelte-i18n';
+	import { t, locale } from 'svelte-i18n';
+
+	const greetings = {
+		fr: 'Salut toi &#x1F44B;, Nous sommes <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
+		en: 'Hi there &#x1F44B;, We are <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
+		de: 'Hallo &#x1F44B;, Wir sind <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
+		nl: 'Hallo &#x1F44B;, Wij zijn <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
+		es: 'Hola &#x1F44B;, Somos <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
+		it: 'Ciao &#x1F44B;, Siamo <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000'
+	};
+
+	const allLanguages = ['fr', 'en', 'de', 'nl', 'es', 'it'];
+
+	let typedInstance;
 
 	$effect(() => {
-		const typed = new Typed('.typing', {
-			strings: ['Hi there &#x1F44B;, We are <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000', 'Salut toi &#x1F44B;, Nous sommes <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000'],
+		const currentLang = $locale || 'fr';
+
+		// Réorganiser pour commencer par la langue actuelle
+		const orderedLanguages = [currentLang, ...allLanguages.filter(lang => lang !== currentLang)];
+		const orderedStrings = orderedLanguages.map(lang => greetings[lang]);
+
+		// Détruire l'instance précédente si elle existe
+		if (typedInstance) {
+			typedInstance.destroy();
+		}
+
+		typedInstance = new Typed('.typing', {
+			strings: orderedStrings,
 			typeSpeed: 140,
 			backSpeed: 30,
 			loop: true,
@@ -12,9 +36,17 @@
 			contentType: 'html'
 		});
 
+		return () => {
+			if (typedInstance) {
+				typedInstance.destroy();
+			}
+		};
+	});
+
+	$effect(() => {
 		const button = document.querySelector(".scroll-button");
 		if (button) {
-			button.addEventListener("click", () => {
+			const handleClick = () => {
 				const current = window.scrollY;
 				const viewportHeight = window.innerHeight;
 				const target = Math.min(
@@ -26,9 +58,15 @@
 					top: target,
 					behavior: "smooth"
 				});
-			});
+			};
+
+			button.addEventListener("click", handleClick);
+
+			return () => {
+				button.removeEventListener("click", handleClick);
+			};
 		}
-	})
+	});
 </script>
 
 <header>

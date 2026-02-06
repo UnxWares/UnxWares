@@ -1,43 +1,36 @@
-<h1>Infrastructure Cloud de UnxWares</h1>
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
+<h1>{$t('datacenter.resume.title')}</h1>
 <p>
-	Notre infrastructure représente l'aboutissement d'une vision technique exigeante :
-	offrir à nos clients un environnement numérique qui allie performance de pointe,
-	sécurité maximale et durabilité environnementale. Chaque composant a été sélectionné
-	pour sa fiabilité éprouvée et son intégration harmonieuse dans un écosystème
-	technique cohérent.
+	{$t('datacenter.resume.intro_p1')}
 </p>
 <p>
-	Nous avons délibérément choisi de nous appuyer sur des technologies reconnues et
-	éprouvées : les serveurs Hewlett Packard Enterprise (HPE) ProLiant pour leur
-	robustesse légendaire, la virtualisation Proxmox pour sa flexibilité et sa
-	stabilité, l'orchestration Kubernetes pour sa scalabilité native, les solutions
-	Fortinet pour une sécurité sans compromis, et une connectivité fibrée obligatoire
-	pour une stabilité maximale, fournie par Netaris SAS. Cette architecture respecte
-	scrupuleusement les standards internationaux de la Cloud Native Computing Foundation,
-	tout en intégrant une démarche écologique responsable qui nous distingue sur le marché.
+	{$t('datacenter.resume.intro_p2')}
 </p>
-<h2>En chiffres : l'excellence mesurable</h2>
+<h2>{$t('datacenter.resume.numbers_title')}</h2>
 <ul>
 	<li>
-		<p><strong>Hébergement souverain :</strong> Centre de données de Caen, France - conformité RGPD garantie</p>
+		<p>{@html $t('datacenter.resume.number1')}</p>
 	</li>
 	<li>
-		<p><strong>Performance réseau :</strong> Latence de 7ms vers Scaleway Paris - réactivité optimale</p>
+		<p>{@html $t('datacenter.resume.number2')}</p>
 	</li>
 	<li>
-		<p><strong>Disponibilité :</strong> Nous travaillons pour un SLA de 99,5% - fiabilité de niveau professionnel</p>
+		<p>{@html $t('datacenter.resume.number3')}</p>
 	</li>
 	<li>
-		<p><strong>Observabilité :</strong> Les solutions de Grafana Labs - monitoring temps réel de nouvelle génération</p>
+		<p>{@html $t('datacenter.resume.number4')}</p>
 	</li>
 	<li>
-		<p><strong>Résilience :</strong> Sauvegarde multi-niveaux (Longhorn + Infomaniak Swiss Backup + Proxmox Backup Server)</p>
+		<p>{@html $t('datacenter.resume.number5')}</p>
 	</li>
 	<li>
-		<p><strong>Connectivité :</strong> 10 Gb/s en fibre optique OM4 - répartie pour tous nos clients</p>
+		<p>{@html $t('datacenter.resume.number6')}</p>
 	</li>
 	<li>
-		<p><strong>Écologie :</strong> Serveurs reconditionnés de moins de 10 ans - impact carbone réduit</p>
+		<p>{@html $t('datacenter.resume.number7')}</p>
 	</li>
 </ul>
 

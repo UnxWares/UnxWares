@@ -3,7 +3,10 @@
 </script>
 
 <section id="our-services">
-	<h2>{$t('services.title')}</h2>
+	<div class="section-title">
+		<i class="bi bi-grid-3x3-gap-fill"></i>
+		<h2>{$t('services.title')}</h2>
+	</div>
 	<div class="services-container">
 		<div class="service-card cloud">
 			<div class="service-header">
@@ -83,16 +86,32 @@
 	#our-services{
 		margin: 0;
 	}
-	#our-services h2{
-		text-align: center;
-		font-size: 28px;
-		font-weight: 600;
+	#our-services .section-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
 		margin-bottom: 50px;
 	}
+	#our-services .section-title i{
+		font-size: 32px;
+		animation: float 3s ease-in-out infinite;
+	}
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-5px); }
+	}
+	#our-services .section-title h2{
+		text-align: center;
+		margin: 0;
+		font-size: 28px;
+	}
 	@media (max-width: 768px) {
-		#our-services h2{
-			font-size: 24px;
+		#our-services .section-title{
 			margin-bottom: 35px;
+		}
+		#our-services .section-title h2{
+			font-size: 22px;
 		}
 	}
 	.services-container{

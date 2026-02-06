@@ -3,7 +3,10 @@
 </script>
 
 <section id="why-unxwares">
-	<h2>{$t('why.title')}</h2>
+	<div class="section-title">
+		<i class="bi bi-gem"></i>
+		<h2>{$t('why.title')}</h2>
+	</div>
 	<div class="why-content">
 		<p class="intro-text">{$t('why.intro')}</p>
 
@@ -35,16 +38,29 @@
 	#why-unxwares{
 		margin: 0;
 	}
-	#why-unxwares h2{
-		text-align: center;
-		font-size: 28px;
-		font-weight: 600;
+	#why-unxwares .section-title{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
 		margin-bottom: 25px;
 	}
+	#why-unxwares .section-title i{
+		font-size: 32px;
+		animation: float 3s ease-in-out infinite;
+	}
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-5px); }
+	}
+	#why-unxwares .section-title h2{
+		text-align: center;
+		margin: 0;
+		font-size: 28px;
+	}
 	@media (max-width: 768px) {
-		#why-unxwares h2{
-			font-size: 24px;
-			margin-bottom: 20px;
+		#why-unxwares .section-title h2{
+			font-size: 22px;
 		}
 	}
 	.why-content{

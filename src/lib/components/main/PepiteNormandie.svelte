@@ -59,7 +59,6 @@
     }
     #pepite-normandie .pepite-title i{
         font-size: 32px;
-        color: #050c9c;
         animation: float 3s ease-in-out infinite;
     }
     @keyframes float {

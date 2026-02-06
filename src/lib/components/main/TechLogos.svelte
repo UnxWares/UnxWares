@@ -3,7 +3,7 @@
 </script>
 
 <section id="tech-logos">
-	<h3>{$t('techlogos.title')}</h3>
+	<h2>{$t('techlogos.title')}</h2>
 	<p class="logos-intro">
 		{$t('techlogos.intro')}
 	</p>
@@ -54,12 +54,15 @@
 			padding: 35px 30px;
 		}
 	}
-	#tech-logos h3{
+	#tech-logos h2{
 		text-align: center;
-		font-size: 22px;
-		font-weight: 600;
 		margin: 0 0 12px 0;
-		color: #1a1a1a;
+		font-size: 28px;
+	}
+	@media (max-width: 768px) {
+		#tech-logos h2{
+			font-size: 22px;
+		}
 	}
 	.logos-intro{
 		text-align: center;

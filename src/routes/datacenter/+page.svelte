@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { t } from 'svelte-i18n';
 	import InfrastructureResume from '$lib/components/uw-cloud/datacenter/InfrastructureResume.svelte'
 	import Internal from '$lib/components/uw-cloud/datacenter/Internal.svelte';
 	import Services from '$lib/components/uw-cloud/datacenter/Services.svelte';
@@ -10,10 +11,10 @@
 </script>
 
 <svelte:head>
-	<title>UnxWares - Datacenter</title>
+	<title>{$t('pages.datacenter.title')}</title>
 
-	<meta property="og:title" content="UnxWares - Datacenter">
-	<meta name="twitter:title" content="UnxWares - Datacenter">
+	<meta property="og:title" content={$t('pages.datacenter.title')}>
+	<meta name="twitter:title" content={$t('pages.datacenter.title')}>
 
 	<meta property="og:url" content="https://www.unxwares.com/datacenter">
 	<meta name="twitter:site" content="https://www.unxwares.com/datacenter">

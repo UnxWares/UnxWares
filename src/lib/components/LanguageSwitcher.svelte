@@ -8,7 +8,8 @@
 		en: 'English',
 		de: 'Deutsch',
 		nl: 'Nederlands',
-		es: 'Español'
+		es: 'Español',
+		it: 'Italiano'
 	};
 
 	const languageFlags = {
@@ -16,7 +17,8 @@
 		en: '🇬🇧',
 		de: '🇩🇪',
 		nl: '🇳🇱',
-		es: '🇪🇸'
+		es: '🇪🇸',
+		it: '🇮🇹'
 	};
 
 	function switchLanguage(lang) {

@@ -1,56 +1,55 @@
-<h3>Ce qu'on retient</h3>
+<script lang="ts">
+	import { t } from 'svelte-i18n';
+</script>
+
+<h3>{$t('whoarewe.remember.title')}</h3>
 
 <p>
-	<strong>UnxWares</strong>, c'est la preuve qu'on peut faire :
+	{@html $t('whoarewe.remember.intro')}
 </p>
 <ul>
-	<li><p>du cloud sans être un géant,</p></li>
-	<li><p>de l'open source sans tout donner,</p></li>
-	<li><p>du logiciel sans renier la souveraineté,</p></li>
-	<li><p>de la technique sans perdre l'humain.</p></li>
+	<li><p>{$t('whoarewe.remember.point1')}</p></li>
+	<li><p>{$t('whoarewe.remember.point2')}</p></li>
+	<li><p>{$t('whoarewe.remember.point3')}</p></li>
+	<li><p>{$t('whoarewe.remember.point4')}</p></li>
 </ul>
 
 <p>
-	On veut construire <strong>un écosystème français, souverain, puissant, orienté développeurs</strong>,
-	où les gens peuvent :
+	{@html $t('whoarewe.remember.ecosystem_intro')}
 </p>
 <ul>
-	<li><p>déployer,</p></li>
-	<li><p>apprendre,</p></li>
-	<li><p>contribuer,</p></li>
-	<li><p>et, surtout, <strong>ne pas être prisonniers des choix d'un autre</strong>.</p></li>
+	<li><p>{$t('whoarewe.remember.eco_point1')}</p></li>
+	<li><p>{$t('whoarewe.remember.eco_point2')}</p></li>
+	<li><p>{$t('whoarewe.remember.eco_point3')}</p></li>
+	<li><p>{@html $t('whoarewe.remember.eco_point4')}</p></li>
 </ul>
 
 <p>
-	On veut <strong>montrer qu'il est possible d'allier performance, souveraineté, accessibilité et
-	transparence</strong>, sans tomber dans le marketing creux. On veut <strong>créer une communauté</strong>
-	où le savoir circule, où les outils sont utiles, et où chacun peut contribuer à quelque chose de plus grand.
+	{@html $t('whoarewe.remember.mission')}
 </p>
 
 <p>
-	UnxWares, c'est pas juste un logo ou un SIREN.
+	{$t('whoarewe.remember.identity1')}
 	<br>
-	C'est deux techos qui ont voulu faire un truc carré, utile et propre. Et qui ont décidé que
-	si personne ne le faisait, ils allaient le faire eux-mêmes.
+	{$t('whoarewe.remember.identity2')}
 </p>
 
 <p>
-	UnxWares n'est pas un simple hébergeur, ni un simple studio de dev.
+	{$t('whoarewe.remember.identity3')}
 	<br>
-	C'est un <strong>écosystème complet</strong> — un projet de société numérique fondé sur la technique,
-	la passion et l'éthique.
+	{@html $t('whoarewe.remember.identity4')}
 </p>
 
 <p><strong>
-	Experts du soft et du hard.
+	{$t('whoarewe.remember.tagline1')}
 	<br>
-	Construire. Partager. S'émanciper.
+	{$t('whoarewe.remember.tagline2')}
 	<br>
-	C'est ce qu'on fait depuis le 19/10/2023.
+	{$t('whoarewe.remember.tagline3')}
 	<br>
-	Et depuis le 03/06/2025, c'est officiel.
+	{$t('whoarewe.remember.tagline4')}
 </strong></p>
-<span class="welcome-era">Bienvenue dans l'ère <img src="images/unxwares_logotype.png" alt="UnxWares"/></span>
+<span class="welcome-era">{$t('whoarewe.remember.welcome')} <img src="images/unxwares_logotype.png" alt="UnxWares"/></span>
 
 <style>
 	.welcome-era {

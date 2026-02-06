@@ -65,14 +65,22 @@
 
 	.section-header i {
 		font-size: 32px;
-		color: #333;
+		animation: float 3s ease-in-out infinite;
+	}
+	@keyframes float {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-5px); }
 	}
 
 	.section-header h2 {
 		margin: 0;
-		color: #333;
 		font-size: 28px;
 		text-align: center;
+	}
+	@media (max-width: 768px) {
+		.section-header h2 {
+			font-size: 22px;
+		}
 	}
 
 	.intro {
