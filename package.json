@@ -41,6 +41,7 @@
 	},
 	"dependencies": {
 		"@unxwares/ui-core": "0.1.31",
+		"svelte-i18n": "^4.0.1",
 		"typed.js": "^2.1.0"
 	},
 	"engines": {

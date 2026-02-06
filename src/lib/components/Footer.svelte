@@ -1,3 +1,7 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <footer class="poppins-regular">
 	<div class="footer-infos">
 		<div class="banner">
@@ -7,25 +11,25 @@
 		</div>
 		<div class="footer-links">
 			<ul class="general-links">
-				<h3>Liens rapides</h3>
+				<h3>{$t('footer.quick_links')}</h3>
 				<li class="unxwares uw-cloud">
-					<a href="https://www.unxwares.cloud"><i class="bi bi-cloud-fog2"></i> Plateforme Cloud</a>
+					<a href="https://www.unxwares.cloud"><i class="bi bi-cloud-fog2"></i> {$t('footer.cloud_platform')}</a>
 				</li>
 				<li class="unxwares uw-studio">
-					<a href="https://www.unxwares.studio"><i class="bi bi-code-slash"></i> Studio de développement</a>
+					<a href="https://www.unxwares.studio"><i class="bi bi-code-slash"></i> {$t('footer.dev_studio')}</a>
 				</li>
 				<li class="unxwares uw-clientarea">
-					<a href="https://customers.unxwares.com"><i class="bi bi-person-fill-gear"></i> Votre espace client</a>
+					<a href="https://customers.unxwares.com"><i class="bi bi-person-fill-gear"></i> {$t('footer.client_area')}</a>
 				</li>
 				<li class="unxwares uw-status">
-					<a href="https://status.unxwares.com"><i class="bi bi-bar-chart-fill"></i> Statut de nos services</a>
+					<a href="https://status.unxwares.com"><i class="bi bi-bar-chart-fill"></i> {$t('footer.service_status')}</a>
 				</li>
 				<li class="unxwares uw-car">
-					<a href="/certifications-and-responsibility" data-sveltekit-preload-data="hover"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
+					<a href="/certifications-and-responsibility" data-sveltekit-preload-data="hover"><i class="bi bi-globe-europe-africa-fill"></i> {$t('footer.certifications')}</a>
 				</li>
 			</ul>
 			<ul class="contact-links">
-				<h3>Nous retrouver</h3>
+				<h3>{$t('footer.find_us')}</h3>
 				<li class="discord">
 					<a href="https://www.discord.com/invite/PPRacEf7yB"><i class="bi bi-discord"></i> Discord</a>
 				</li>
@@ -39,30 +43,30 @@
 					<a href="https://www.github.com/UnxWares"><i class="bi bi-github"></i> GitHub</a>
 				</li>
 				<li class="unxwares">
-					<a href="/datacenter" data-sveltekit-preload-data="hover"><img src="/images/unxwares_insigne_baw.png" alt="UnxWares blanck and white icon in a button in the footer"> Centre de données</a>
+					<a href="/datacenter" data-sveltekit-preload-data="hover"><img src="/images/unxwares_insigne_baw.png" alt="UnxWares blanck and white icon in a button in the footer"> {$t('footer.datacenter')}</a>
 				</li>
 			</ul>
 			<ul class="legal-links">
-				<h3>Légal</h3>
+				<h3>{$t('footer.legal')}</h3>
 				<li class="legal">
-					<a href="/legal" data-sveltekit-preload-data="hover"><i class="bi bi-folder"></i> Mentions légales</a>
+					<a href="/legal" data-sveltekit-preload-data="hover"><i class="bi bi-folder"></i> {$t('footer.legal_notice')}</a>
 				</li>
 				<li class="privacy">
-					<a href="/privacy" data-sveltekit-preload-data="hover"><i class="bi bi-bell-slash"></i> Confidentialité</a>
+					<a href="/privacy" data-sveltekit-preload-data="hover"><i class="bi bi-bell-slash"></i> {$t('footer.privacy')}</a>
 				</li>
 				<li class="use-conditions">
-					<a href="/use-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> CGU</a>
+					<a href="/use-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> {$t('footer.terms')}</a>
 				</li>
 				<li class="sales-conditions">
-					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> CGV</a>
+					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> {$t('footer.sales')}</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<hr>
 	<div class="copyright">
-		<p>UnxWares Studio & Cloud - UnxWares © 2023-2025 - Tous droits réservés</p>
-		<p>Développé et propulsé par <a href="https://www.unxwares.studio/"><img src="/favicon.png" alt="UnxWares icon in the coryright"> UnxWares</a>.</p>
+		<p>{$t('footer.copyright')}</p>
+		<p>{$t('footer.powered_by')} <a href="https://www.unxwares.studio/"><img src="/favicon.png" alt="UnxWares icon in the coryright"> UnxWares</a>.</p>
 	</div>
 </footer>
 

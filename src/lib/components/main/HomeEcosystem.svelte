@@ -1,11 +1,14 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section class="home-ecosystem">
 	<div class="section-header">
 		<i class="bi bi-layers-fill"></i>
-		<h2>L'Écosystème UnxWares</h2>
+		<h2>{$t('ecosystem.title')}</h2>
 	</div>
 	<p class="intro">
-		UnxWares ne se limite pas à l'hébergement et au développement. Nous construisons un ensemble
-		cohérent de projets et d'initiatives pour enrichir le paysage numérique libre et souverain.
+		{$t('ecosystem.intro')}
 	</p>
 
 	<div class="projects-grid">
@@ -14,12 +17,9 @@
 				<i class="bi bi-train-freight-front"></i>
 			</div>
 			<div class="card-content">
-				<h3>VFF Project</h3>
-				<span class="tag">Communautaire</span>
-				<p>
-					L'encyclopédie ferroviaire collaborative française de référence.
-					Cartographie précise, archives et données ouvertes sur le monde du rail.
-				</p>
+				<h3>{$t('ecosystem.vff_title')}</h3>
+				<span class="tag">{$t('ecosystem.vff_tag')}</span>
+				<p>{$t('ecosystem.vff_desc')}</p>
 			</div>
 			<div class="card-arrow">
 				<i class="bi bi-arrow-right-short"></i>
@@ -31,14 +31,10 @@
 				<i class="bi bi-cpu"></i>
 			</div>
 			<div class="card-content">
-				<h3>Raiemus</h3>
-				<span class="tag">Open Source</span>
-				<p>
-					Un système d'exploitation léger et optimisé pour le RDP (Remote Desktop Protocol),
-					pensé pour la performance et la simplicité.
-				</p>
+				<h3>{$t('ecosystem.raiemus_title')}</h3>
+				<span class="tag">{$t('ecosystem.raiemus_tag')}</span>
+				<p>{$t('ecosystem.raiemus_desc')}</p>
 			</div>
-			<!-- No link yet, simplified -->
 		</div>
 
 		<div class="project-card asso">
@@ -46,12 +42,9 @@
 				<i class="bi bi-people"></i>
 			</div>
 			<div class="card-content">
-				<h3>Association OpenSource</h3>
-				<span class="tag">Bientôt</span>
-				<p>
-					Une structure dédiée pour accompagner gratuitement étudiants et indépendants
-					dans la concrétisation de leurs projets numériques.
-				</p>
+				<h3>{$t('ecosystem.asso_title')}</h3>
+				<span class="tag">{$t('ecosystem.asso_tag')}</span>
+				<p>{$t('ecosystem.asso_desc')}</p>
 			</div>
 		</div>
 	</div>

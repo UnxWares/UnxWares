@@ -1,41 +1,43 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section id="our-services">
-	<h2>Nos Services</h2>
+	<h2>{$t('services.title')}</h2>
 	<div class="services-container">
 		<div class="service-card cloud">
 			<div class="service-header">
 				<div class="service-icon">
 					<i class="bi bi-cloud-fill"></i>
 				</div>
-				<h3>UnxWares Cloud</h3>
+				<h3>{$t('services.cloud_title')}</h3>
 			</div>
 			<p class="service-tagline">
-				Du cloud sans être un géant. De la souveraineté sans le prix fort.
+				{$t('services.cloud_tagline')}
 			</p>
 			<div class="service-features">
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Infrastructure Souveraine</strong> – Datacenter à Caen, 100% France, RGPD natif</span>
+					<span><strong>{$t('services.cloud_feat1')}</strong> – {$t('services.cloud_feat1_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Infogérance Incluse</strong> – Nous gérons la maintenance, vous gérez votre métier</span>
+					<span><strong>{$t('services.cloud_feat2')}</strong> – {$t('services.cloud_feat2_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Kubernetes & Cloud Native</strong> – Clusters HA certifiés CNCF, orchestrateur maison</span>
+					<span><strong>{$t('services.cloud_feat3')}</strong> – {$t('services.cloud_feat3_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Prix Transparent</strong> – Forfaitaire, sans frais cachés d'entrée/sortie</span>
+					<span><strong>{$t('services.cloud_feat4')}</strong> – {$t('services.cloud_feat4_desc')}</span>
 				</div>
 			</div>
 			<p class="service-description">
-				Nous proposons des solutions d'hébergement prêtes à l'emploi et sur-mesure, de l'infrastructure simple
-				aux clusters Kubernetes haute disponibilité. Notre infrastructure est pensée pour la durabilité
-				et la performance, avec du matériel de qualité et une architecture réseau optimisée.
+				{$t('services.cloud_desc')}
 			</p>
 			<a href="/datacenter" class="service-link">
-				Découvrir notre infrastructure <i class="bi bi-arrow-right"></i>
+				{$t('services.cloud_link')} <i class="bi bi-arrow-right"></i>
 			</a>
 		</div>
 
@@ -44,37 +46,34 @@
 				<div class="service-icon">
 					<i class="bi bi-code-slash"></i>
 				</div>
-				<h3>UnxWares Studio</h3>
+				<h3>{$t('services.studio_title')}</h3>
 			</div>
 			<p class="service-tagline">
-				Du logiciel sans renier la souveraineté. De l'expertise sans le TJM prohibitif.
+				{$t('services.studio_tagline')}
 			</p>
 			<div class="service-features">
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Technologies Modernes</strong> – Rust, Go, Zig : les langages de demain</span>
+					<span><strong>{$t('services.studio_feat1')}</strong> – {$t('services.studio_feat1_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Développeurs Certifiés</strong> – Équipe interne et freelances qualifiés</span>
+					<span><strong>{$t('services.studio_feat2')}</strong> – {$t('services.studio_feat2_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Gestion Complète</strong> – De la conception au déploiement, nous gérons tout</span>
+					<span><strong>{$t('services.studio_feat3')}</strong> – {$t('services.studio_feat3_desc')}</span>
 				</div>
 				<div class="feature">
 					<i class="bi bi-check-circle-fill"></i>
-					<span><strong>Éthique & Qualité</strong> – Rémunération juste des développeurs, code de qualité</span>
+					<span><strong>{$t('services.studio_feat4')}</strong> – {$t('services.studio_feat4_desc')}</span>
 				</div>
 			</div>
 			<p class="service-description">
-				Création complète de vos projets : sites web, logiciels, progiciels, APIs, applications et jeux vidéo.
-				Nous collaborons avec une équipe interne exceptionnelle et des développeurs indépendants certifiés
-				que nous rémunérons justement. Notre expertise sur les néo-langages nous permet d'accompagner
-				les entreprises dans leur modernisation technologique avec des solutions performantes et sécurisées.
+				{$t('services.studio_desc')}
 			</p>
 			<a href="/uw-studio" class="service-link">
-				Découvrir nos projets <i class="bi bi-arrow-right"></i>
+				{$t('services.studio_link')} <i class="bi bi-arrow-right"></i>
 			</a>
 		</div>
 	</div>

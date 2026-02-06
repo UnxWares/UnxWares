@@ -1,45 +1,31 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section id="why-unxwares">
-	<h2>Ce qui nous différencie</h2>
+	<h2>{$t('why.title')}</h2>
 	<div class="why-content">
-		<p class="intro-text">
-			Le marché actuel vous force à choisir entre les géants américains (performants mais opaques et soumis au Cloud Act),
-			le low-cost (accessible mais sans garantie de qualité ni support) ou la complexité technique (Kubernetes est devenu
-			incontournable, mais difficile à maîtriser). Nous proposons une alternative.
-		</p>
+		<p class="intro-text">{$t('why.intro')}</p>
 
 		<div class="differentiators">
 			<div class="diff-item">
-				<h3>Infrastructure Souveraine & Managée</h3>
-				<p>
-					Datacenter à Caen, infrastructure certifiée CNCF, infogérance incluse. Nous développons nos propres
-					technologies d'orchestration pour maîtriser performance et coûts, sans dépendance à des licences propriétaires.
-				</p>
+				<h3>{$t('why.diff1_title')}</h3>
+				<p>{$t('why.diff1_desc')}</p>
 			</div>
 
 			<div class="diff-item">
-				<h3>Expertise Technique Rare</h3>
-				<p>
-					Développement et conseil sur les néo-langages (Rust, Go, Zig) en pénurie critique sur le marché.
-					Accompagnement des entreprises dans leur transition vers le Cloud Native avec une équipe qui comprend
-					vraiment ces technologies.
-				</p>
+				<h3>{$t('why.diff2_title')}</h3>
+				<p>{$t('why.diff2_desc')}</p>
 			</div>
 
 			<div class="diff-item">
-				<h3>Transparence & Prix Justes</h3>
-				<p>
-					Documentation publique de notre infrastructure, tarification forfaitaire sans frais cachés,
-					technologies et choix techniques expliqués. Pas de marketing trompeur, juste de la technique solide.
-				</p>
+				<h3>{$t('why.diff3_title')}</h3>
+				<p>{$t('why.diff3_desc')}</p>
 			</div>
 
 			<div class="diff-item">
-				<h3>Vision Open Source</h3>
-				<p>
-					Notre modèle s'inspire d'Odoo : le code sera libre pour l'apprentissage et les petits projets,
-					les entreprises paient pour l'infogérance et le support SLA. La communauté contribue et audite,
-					créant un cercle vertueux de qualité et de sécurité.
-				</p>
+				<h3>{$t('why.diff4_title')}</h3>
+				<p>{$t('why.diff4_desc')}</p>
 			</div>
 		</div>
 	</div>

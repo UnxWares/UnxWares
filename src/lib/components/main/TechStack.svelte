@@ -1,19 +1,20 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section id="tech-stack">
-	<h3>Notre Stack Technologique</h3>
+	<h3>{$t('techstack.title')}</h3>
 	<p class="tech-intro">
-		Nous misons sur des technologies open source éprouvées et des standards modernes pour garantir
-		performance, sécurité et pérennité. Pas de dépendance à des licences propriétaires coûteuses,
-		pas de lock-in technologique.
+		{$t('techstack.intro')}
 	</p>
 	<div class="tech-categories">
 		<div class="tech-category">
 			<div class="category-header">
 				<i class="bi bi-server"></i>
-				<h4>Infrastructure & Orchestration</h4>
+				<h4>{$t('techstack.infra_title')}</h4>
 			</div>
 			<p class="category-desc">
-				Orchestration cloud-native avec Kubernetes certifié CNCF et virtualisation Proxmox.
-				Infrastructure as Code pour reproductibilité et scalabilité.
+				{$t('techstack.infra_desc')}
 			</p>
 			<div class="tech-tags">
 				<span class="tech-tag">Kubernetes</span>
@@ -26,11 +27,10 @@
 		<div class="tech-category">
 			<div class="category-header">
 				<i class="bi bi-code-square"></i>
-				<h4>Développement & Backend</h4>
+				<h4>{$t('techstack.dev_title')}</h4>
 			</div>
 			<p class="category-desc">
-				Expertise sur les néo-langages (Rust, Go, Zig) pour performance et sécurité mémoire.
-				Frameworks modernes et APIs performantes pour applications web et logiciels.
+				{$t('techstack.dev_desc')}
 			</p>
 			<div class="tech-tags">
 				<span class="tech-tag">Rust</span>
@@ -44,11 +44,10 @@
 		<div class="tech-category">
 			<div class="category-header">
 				<i class="bi bi-shield-lock"></i>
-				<h4>Réseau & Sécurité</h4>
+				<h4>{$t('techstack.network_title')}</h4>
 			</div>
 			<p class="category-desc">
-				Pare-feu Fortinet, routeurs MikroTik avec RouterOS et tunnels WireGuard pour une infrastructure réseau robuste.
-				Surveillance continue et sécurité multi-niveaux.
+				{$t('techstack.network_desc')}
 			</p>
 			<div class="tech-tags">
 				<span class="tech-tag">Fortinet</span>
@@ -60,11 +59,10 @@
 		<div class="tech-category">
 			<div class="category-header">
 				<i class="bi bi-database"></i>
-				<h4>Bases de Données & Stockage</h4>
+				<h4>{$t('techstack.db_title')}</h4>
 			</div>
 			<p class="category-desc">
-				Solutions de stockage distribuées et bases de données relationnelles et NoSQL pour tous vos besoins.
-				Sauvegardes automatisées et réplication multi-sites.
+				{$t('techstack.db_desc')}
 			</p>
 			<div class="tech-tags">
 				<span class="tech-tag">PostgreSQL</span>

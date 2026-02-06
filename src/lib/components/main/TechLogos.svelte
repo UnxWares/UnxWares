@@ -1,7 +1,11 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section id="tech-logos">
-	<h3>Nos Partenaires de Confiance</h3>
+	<h3>{$t('techlogos.title')}</h3>
 	<p class="logos-intro">
-		Nos infrastructures s'appuient sur des partenaires de confiance et des technologies open source éprouvées.
+		{$t('techlogos.intro')}
 	</p>
 	<div class="logos-grid">
 		<figure class="logo-item">

@@ -1,39 +1,20 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
 <section id="short-whoarewe">
 	<div class="unxwares-title">
 		<img src="/favicon.png" alt="UnxWares favicon" />
-		<h1>UnxWares - Bienvenue ✨</h1>
+		<h1>UnxWares - {$t('home.welcome')} ✨</h1>
 	</div>
-	<p>Nous sommes UnxWares, une entreprise française, implantée plus précisément en Normandie,
-		avec un centre de données situé à Caen. Nous réalisons un travail conséquent pour permettre
-		à quiconque souhaite bénéficier de notre expertise, même avec un budget parfois limité.
-	</p>
-	<p>
-		C'est pourquoi nous proposons, via UnxWares Cloud, des solutions d'hébergement prêtes
-		à l'emploi ainsi que sur-mesure, afin que nos clients puissent sélectionner l'option
-		la mieux adaptée à leurs besoins, à un prix équitable.
-	</p>
-	<p>
-		Grâce à la passion et à la créativité de l'équipe UnxWares Studio, nous assurons également
-		la création complète de vos projets, qu'il s'agisse de sites web, logiciels, progiciels,
-		APIs, applications ou jeux vidéo. Pour la réalisation de ces projets, nous collaborons avec
-		une équipe interne exceptionnelle ainsi qu'avec des développeurs indépendants que nous
-		certifions. Nous leur garantissons une rémunération juste et prenons en charge la gestion
-		complète du projet, afin qu'ils puissent se concentrer pleinement sur la réalisation technique.
-	</p>
-	<p>
-		Nous aspirons à être un modèle d'excellence et d'éthique dans notre secteur, et c'est pourquoi
-		nous mettons un point d'honneur à allier qualité, transparence et innovation dans toutes
-		nos prestations.
-	</p>
-	<p>
-		Découvrez-en plus sur nous, nos certifications, notre engagement, notre infrastructure
-		et les technologies que nous mettons en œuvre pour vous satisfaire en parcourant ce site,
-		avec notamment une reconstitution visuelle de notre infrastructure, et en découvrants nos
-		choix techniques et partenaires éthiques.
-	</p>
+	<p>{$t('home.intro_p1')}</p>
+	<p>{$t('home.intro_p2')}</p>
+	<p>{$t('home.intro_p3')}</p>
+	<p>{$t('home.intro_p4')}</p>
+	<p>{$t('home.intro_p5')}</p>
 	<div class="short-whoarewe-buttons">
-		<a href="/whoarewe"><i class="bi bi-people"></i> Notre histoire</a>
-		<a href="/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> Certifications et Engagement</a>
+		<a href="/whoarewe"><i class="bi bi-people"></i> {$t('home.our_story')}</a>
+		<a href="/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> {$t('home.certifications')}</a>
 	</div>
 </section>
 

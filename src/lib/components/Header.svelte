@@ -1,5 +1,6 @@
 <script>
 	import Typed from 'typed.js';
+	import { t } from 'svelte-i18n';
 
 	$effect(() => {
 		const typed = new Typed('.typing', {
@@ -19,7 +20,7 @@
 				const target = Math.min(
 					Math.floor((current + viewportHeight) / viewportHeight) * viewportHeight,
 					document.body.scrollHeight - viewportHeight
-				)+85;
+				)+15;
 
 				window.scrollTo({
 					top: target,
@@ -36,7 +37,7 @@
 		<h6 class="poppins-regular typing"></h6>
 	</figure>
 	<div class="scroll-button">
-			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>Découvrez-nous</span></span>
+			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>{$t('header.discover')}</span></span>
 	</div>
 </header>
 

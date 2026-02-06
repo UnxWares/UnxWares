@@ -1,5 +1,7 @@
 <script>
 	import { page } from '$app/stores';
+	import { t } from 'svelte-i18n';
+	import LanguageSwitcher from './LanguageSwitcher.svelte';
 
 	let mobileMenuOpen = $state(false);
 	let scrolled = $state(false);
@@ -26,44 +28,6 @@
 	function toggleDropdown(id) {
 		activeDropdown = activeDropdown === id ? null : id;
 	}
-
-	const navItems = [
-		{
-			type: 'link',
-			href: '/',
-			label: 'Accueil',
-		},
-		{
-			type: 'dropdown',
-			id: 'product',
-			label: 'Produit',
-			items: [
-				{ href: '/datacenter', label: 'Infrastructure', description: 'Notre datacenter en Normandie', icon: 'bi-diagram-3' },
-				{ href: '/uw-cloud', label: 'UnxWares Cloud', description: 'Solutions d\'hébergement souverain', icon: 'bi-cloud' },
-				{ href: '/uw-studio', label: 'UnxWares Studio', description: 'Développement sur-mesure', icon: 'bi-code-slash' },
-			]
-		},
-		{
-			type: 'dropdown',
-			id: 'company',
-			label: 'Entreprise',
-			items: [
-				{ href: '/whoarewe', label: 'Qui sommes-nous', description: 'Notre histoire et notre équipe', icon: 'bi-people' },
-				{ href: '/certifications-and-responsibility', label: 'Certifications', description: 'Notre engagement éthique', icon: 'bi-shield-check' },
-			]
-		},
-		{
-			type: 'dropdown',
-			id: 'legal',
-			label: 'Légal',
-			items: [
-				{ href: '/legal', label: 'Mentions légales', description: 'Informations légales', icon: 'bi-file-text' },
-				{ href: '/privacy', label: 'Confidentialité', description: 'Politique de confidentialité', icon: 'bi-lock' },
-				{ href: '/use-conditions', label: 'Conditions d\'utilisation', description: 'CGU', icon: 'bi-clipboard-check' },
-				{ href: '/sales-conditions', label: 'Conditions de vente', description: 'CGV', icon: 'bi-cart' },
-			]
-		},
-	];
 </script>
 
 {#if activeDropdown || mobileMenuOpen}
@@ -79,53 +43,114 @@
 			</a>
 
 			<div class="navbar-center" class:mobile-open={mobileMenuOpen}>
-				{#each navItems as item}
-					{#if item.type === 'link'}
-						<a
-							href={item.href}
-							class="nav-link"
-							class:active={$page.url.pathname === item.href}
-							onclick={closeMobileMenu}
-						>
-							{item.label}
-						</a>
-					{:else}
-						<div class="nav-item-wrapper">
-							<button
-								class="nav-item"
-								class:active={activeDropdown === item.id}
-								onclick={() => toggleDropdown(item.id)}
-							>
-								<span>{item.label}</span>
-								<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === item.id}></i>
-							</button>
+				<div class="mobile-lang-switcher">
+					<LanguageSwitcher />
+				</div>
 
-							{#if activeDropdown === item.id}
-								<div class="dropdown-menu">
-									{#each item.items as subItem}
-										<a
-											href={subItem.href}
-											class="dropdown-item"
-											class:active={$page.url.pathname === subItem.href}
-											onclick={closeMobileMenu}
-											data-sveltekit-preload-data="hover"
-										>
-											<i class="bi {subItem.icon}"></i>
-											<div class="dropdown-item-content">
-												<span class="dropdown-item-label">{subItem.label}</span>
-												<span class="dropdown-item-desc">{subItem.description}</span>
-											</div>
-										</a>
-									{/each}
+				<a href="/" class="nav-link" class:active={$page.url.pathname === '/'} onclick={closeMobileMenu}>
+					{$t('navbar.home')}
+				</a>
+
+				<div class="nav-item-wrapper">
+					<button class="nav-item" class:active={activeDropdown === 'product'} onclick={() => toggleDropdown('product')}>
+						<span>{$t('navbar.product')}</span>
+						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'product'}></i>
+					</button>
+					{#if activeDropdown === 'product'}
+						<div class="dropdown-menu">
+							<a href="/datacenter" class="dropdown-item" class:active={$page.url.pathname === '/datacenter'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-diagram-3"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.infrastructure')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.infrastructure_desc')}</span>
 								</div>
-							{/if}
+							</a>
+							<a href="/uw-cloud" class="dropdown-item" class:active={$page.url.pathname === '/uw-cloud'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-cloud"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.cloud')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.cloud_desc')}</span>
+								</div>
+							</a>
+							<a href="/uw-studio" class="dropdown-item" class:active={$page.url.pathname === '/uw-studio'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-code-slash"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.studio')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.studio_desc')}</span>
+								</div>
+							</a>
 						</div>
 					{/if}
-				{/each}
+				</div>
+
+				<div class="nav-item-wrapper">
+					<button class="nav-item" class:active={activeDropdown === 'company'} onclick={() => toggleDropdown('company')}>
+						<span>{$t('navbar.company')}</span>
+						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'company'}></i>
+					</button>
+					{#if activeDropdown === 'company'}
+						<div class="dropdown-menu">
+							<a href="/whoarewe" class="dropdown-item" class:active={$page.url.pathname === '/whoarewe'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-people"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.about')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.about_desc')}</span>
+								</div>
+							</a>
+							<a href="/certifications-and-responsibility" class="dropdown-item" class:active={$page.url.pathname === '/certifications-and-responsibility'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-shield-check"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.certifications')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.certifications_desc')}</span>
+								</div>
+							</a>
+						</div>
+					{/if}
+				</div>
+
+				<div class="nav-item-wrapper">
+					<button class="nav-item" class:active={activeDropdown === 'legal'} onclick={() => toggleDropdown('legal')}>
+						<span>{$t('navbar.legal')}</span>
+						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'legal'}></i>
+					</button>
+					{#if activeDropdown === 'legal'}
+						<div class="dropdown-menu">
+							<a href="/legal" class="dropdown-item" class:active={$page.url.pathname === '/legal'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-file-text"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.legal_notice')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.legal_notice_desc')}</span>
+								</div>
+							</a>
+							<a href="/privacy" class="dropdown-item" class:active={$page.url.pathname === '/privacy'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-lock"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.privacy')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.privacy_desc')}</span>
+								</div>
+							</a>
+							<a href="/use-conditions" class="dropdown-item" class:active={$page.url.pathname === '/use-conditions'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-clipboard-check"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.terms')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.terms_desc')}</span>
+								</div>
+							</a>
+							<a href="/sales-conditions" class="dropdown-item" class:active={$page.url.pathname === '/sales-conditions'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-cart"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.sales')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.sales_desc')}</span>
+								</div>
+							</a>
+						</div>
+					{/if}
+				</div>
 			</div>
 
 			<div class="navbar-actions">
-				<a href="/contact" class="btn-primary">Nous contacter</a>
+				<LanguageSwitcher />
+				<a href="/contact" class="btn-primary">{$t('navbar.contact')}</a>
 			</div>
 
 			<button class="mobile-menu-toggle" onclick={toggleMobileMenu} aria-label="Toggle menu">
@@ -365,6 +390,7 @@
 	.navbar-actions {
 		display: flex;
 		align-items: center;
+		gap: 16px;
 		flex-shrink: 0;
 	}
 
@@ -420,6 +446,10 @@
 		}
 	}
 
+	.mobile-lang-switcher {
+		display: none;
+	}
+
 	@media (max-width: 900px) {
 		.navbar-wrapper {
 			top: 16px;
@@ -437,6 +467,11 @@
 
 		.navbar-actions {
 			display: none;
+		}
+
+		.mobile-lang-switcher {
+			display: flex;
+			margin-bottom: 24px;
 		}
 
 		.mobile-menu-toggle {
