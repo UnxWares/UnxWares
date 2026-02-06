@@ -12,8 +12,9 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh + 300px);
         object-fit: cover;
+        object-position: left top;
         z-index: -1;
     }
 </style>
