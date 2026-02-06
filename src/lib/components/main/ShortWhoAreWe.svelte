@@ -42,13 +42,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-			margin-bottom: 20px;
+			margin-bottom: 35px;
 			font-size: 26px;
     }
 	#short-whoarewe .unxwares-title img{
         width:120px;
 		height:120px;
+        transition: transform 0.3s ease;
 	}
+    #short-whoarewe .unxwares-title img:hover{
+        transform: rotate(5deg) scale(1.05);
+    }
     @media (max-width: 1238px) {
         #short-whoarewe .unxwares-title{
             font-size: 22px;
@@ -89,17 +93,30 @@
         #short-whoarewe .unxwares-title{
             font-size: 10px;
         }
+        #short-whoarewe .short-whoarewe-buttons a{
+            padding: 10px 22px;
+            font-size: 13px;
+            margin: 6px 10px 15px;
+        }
     }
 
     #short-whoarewe .unxwares-title h1{
-        margin: 0 0 0 10px;
+        margin: 0 0 0 15px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
     }
     #short-whoarewe p{
         text-align: justify;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    #short-whoarewe p strong{
+        font-weight: 600;
     }
     #short-whoarewe .short-whoarewe-buttons{
         text-align: center;
-			margin-top: 30px;
+			margin-top: 45px;
     }
     #short-whoarewe .short-whoarewe-buttons a{
         text-decoration: none;
@@ -107,23 +124,28 @@
         border-radius: 10px;
         font-size: 15px;
         text-transform: uppercase;
-        padding: 9px 26px;
-        margin: 5px 15px 18px;
+        padding: 12px 30px;
+        margin: 8px 15px 18px;
         display: inline-block;
         outline: none;
-        transition: transform .3s ease 0s;
+        transition: all .3s ease;
         transform: initial;
         color: #fff;
 			font-weight: bold;
         background-color: #050c9c;
         font-family: Gabarito, Poppins, sans-serif;
+        box-shadow: 0 2px 8px rgba(5, 12, 156, 0.15);
     }
     #short-whoarewe .short-whoarewe-buttons a i{
-			margin-right: 5px;
+			margin-right: 8px;
     }
     #short-whoarewe .short-whoarewe-buttons a:hover{
         text-decoration: none;
-        transform: scale(.95);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(5, 12, 156, 0.25);
+    }
+    #short-whoarewe .short-whoarewe-buttons a:active{
+        transform: translateY(0);
     }
     #short-whoarewe .short-whoarewe-buttons a:focus{
         outline: none;

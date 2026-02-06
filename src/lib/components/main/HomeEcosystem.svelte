@@ -59,7 +59,7 @@
 
 <style>
 	.home-ecosystem {
-		margin: 40px 0;
+		margin: 0;
 	}
 
 	.section-header {

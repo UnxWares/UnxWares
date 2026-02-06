@@ -71,8 +71,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 0 8px #D3D3D3;
+        border-top: 1px solid #e8e8e8;
 				background-color: #ffffff;
+				padding-top: 40px;
     }
     footer > *{
         width: 80%;

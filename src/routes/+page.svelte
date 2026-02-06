@@ -1,7 +1,12 @@
 <script>
 	import ShortWhoAreWe from '$lib/components/main/ShortWhoAreWe.svelte';
+	import WhyUnxWares from '$lib/components/main/WhyUnxWares.svelte';
+	import OurServices from '$lib/components/main/OurServices.svelte';
+	import TechStack from '$lib/components/main/TechStack.svelte';
+	import TechLogos from '$lib/components/main/TechLogos.svelte';
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
+	import Separator from '$lib/components/Separator.svelte';
 </script>
 
 <svelte:head>
@@ -16,49 +21,26 @@
 
 <main>
 	<ShortWhoAreWe />
-	
-	<div class="classic-separator">
-		<span class="line"></span>
-		<img src="/favicon.png" alt="" />
-		<span class="line"></span>
-	</div>
+
+	<Separator />
+
+	<WhyUnxWares />
+
+	<Separator />
+
+	<OurServices />
+
+	<Separator />
+
+	<TechStack />
+
+	<TechLogos />
+
+	<Separator />
 
 	<PepiteNormandie />
 
-	<div class="classic-separator">
-		<span class="line"></span>
-		<img src="/favicon.png" alt="" />
-		<span class="line"></span>
-	</div>
+	<Separator />
 
 	<HomeEcosystem />
 </main>
-
-<style>
-	.classic-separator {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		max-width: 900px;
-		margin: 65px auto;
-		gap: 20px;
-		opacity: 0.6;
-	}
-
-	.classic-separator .line {
-		height: 1px;
-		flex: 1;
-		background: linear-gradient(to var(--direction, right), transparent, rgba(0, 0, 0, 0.2));
-	}
-
-	.classic-separator .line:last-child {
-		--direction: left;
-	}
-
-	.classic-separator img {
-		width: 20px;
-		height: 20px;
-		filter: grayscale(100%);
-	}
-</style>
