@@ -91,6 +91,8 @@
         line-height: 1.8;
         margin-bottom: 20px;
         font-size: 16px;
+        text-justify: inter-word;
+        word-spacing: -0.05em;
     }
     #short-whoarewe p strong{
         font-weight: 600;

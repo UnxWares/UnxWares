@@ -64,9 +64,12 @@ main > *{
 }
 p{
     text-align: justify;
+    text-justify: inter-word;
+    word-spacing: -0.05em;
 }
 h2, h3{
     text-align: justify;
+    text-justify: inter-word;
 }
 h1{
     text-align: center;

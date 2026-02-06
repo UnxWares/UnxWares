@@ -124,6 +124,8 @@
         margin-bottom: 25px;
         line-height: 1.8;
         font-size: 16px;
+        text-justify: inter-word;
+        word-spacing: -0.05em;
     }
     #pepite-normandie p:last-child{
         margin-bottom: 0;
@@ -176,7 +178,9 @@
         margin: 0;
         font-size: 14px;
         line-height: 1.7;
-        text-align: left;
+        text-align: justify;
+        text-justify: inter-word;
+        word-spacing: -0.05em;
         color: #4a4a4a;
     }
 </style>

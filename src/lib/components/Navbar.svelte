@@ -18,6 +18,9 @@
 
 	function toggleMobileMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
+		if (!mobileMenuOpen) {
+			activeDropdown = null;
+		}
 	}
 
 	function closeMobileMenu() {
@@ -25,17 +28,33 @@
 		activeDropdown = null;
 	}
 
+	// Empêcher le scroll quand le menu mobile est ouvert
+	let scrollPosition = 0;
+	$effect(() => {
+		if (mobileMenuOpen) {
+			scrollPosition = window.scrollY;
+			document.body.style.overflow = 'hidden';
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${scrollPosition}px`;
+			document.body.style.width = '100%';
+			document.documentElement.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+			document.body.style.position = '';
+			document.body.style.top = '';
+			document.body.style.width = '';
+			document.documentElement.style.overflow = '';
+			window.scrollTo(0, scrollPosition);
+		}
+	});
+
 	function toggleDropdown(id) {
 		activeDropdown = activeDropdown === id ? null : id;
 	}
 </script>
 
-{#if activeDropdown || mobileMenuOpen}
-	<div class="overlay" onclick={closeMobileMenu}></div>
-{/if}
-
 <div class="navbar-wrapper">
-	<nav class="navbar" class:scrolled>
+	<nav class="navbar" class:scrolled class:menu-open={mobileMenuOpen}>
 		<div class="navbar-container">
 			<a href="/" class="navbar-brand" onclick={closeMobileMenu}>
 				<img src="/favicon.png" alt="UnxWares Logo" class="logo" />
@@ -43,6 +62,11 @@
 			</a>
 
 			<div class="navbar-center" class:mobile-open={mobileMenuOpen}>
+				<div class="mobile-menu-header">
+					<img src="/favicon.png" alt="UnxWares Logo" class="mobile-logo" />
+					<span class="mobile-brand-name">UnxWares</span>
+				</div>
+
 				<div class="mobile-lang-switcher">
 					<LanguageSwitcher />
 				</div>
@@ -161,25 +185,6 @@
 </div>
 
 <style>
-	.overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(0, 0, 0, 0.4);
-		z-index: 999;
-		animation: fadeIn 0.2s ease-in-out;
-	}
-
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
 
 	.navbar-wrapper {
 		position: fixed !important;
@@ -446,7 +451,8 @@
 		}
 	}
 
-	.mobile-lang-switcher {
+	.mobile-lang-switcher,
+	.mobile-menu-header {
 		display: none;
 	}
 
@@ -469,9 +475,33 @@
 			display: none;
 		}
 
+		.mobile-menu-header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+			padding: 0;
+			margin: 0 0 10px 0;
+		}
+
+		.mobile-logo {
+			width: 50px;
+			height: 50px;
+		}
+
+		.mobile-brand-name {
+			font-family: 'Poppins', sans-serif;
+			font-size: 32px;
+			color: #050c9c;
+			font-weight: 700;
+		}
+
 		.mobile-lang-switcher {
 			display: flex;
-			margin-bottom: 24px;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			margin: 0 0 24px 0;
 		}
 
 		.mobile-menu-toggle {
@@ -488,111 +518,219 @@
 			bottom: 0;
 			width: 100vw;
 			height: 100vh;
-			background: rgba(255, 255, 255, 0.98);
-			backdrop-filter: blur(20px);
-			-webkit-backdrop-filter: blur(20px);
+			background: white;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			gap: 12px;
 			padding: 0;
-			overflow-y: auto;
-			transform: scale(0.95);
+			margin: 0;
+			overflow: hidden;
+			transform: translateY(-100%);
 			opacity: 0;
 			pointer-events: none;
-			transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+			transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 			z-index: 10001;
 		}
 
 		.navbar-center.mobile-open {
-			transform: scale(1);
+			transform: translateY(0);
 			opacity: 1;
 			pointer-events: all;
 		}
 
 		.nav-link {
-			font-size: 22px;
-			padding: 18px 32px;
+			font-size: 18px;
+			font-weight: 600;
+			padding: 14px 32px;
 			width: auto;
-			text-align: left;
+			min-width: 280px;
+			text-align: center;
+			border-radius: 12px;
+			margin: 0;
+			background: #f8f9fa;
+			border: 2px solid transparent;
+			transition: all 0.25s ease;
+		}
+
+		.nav-link:active {
+			transform: scale(0.97);
+		}
+
+		.nav-link.active {
+			background: #050c9c;
+			color: white;
+			border-color: #050c9c;
 		}
 
 		.nav-item-wrapper {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 100%;
-			max-width: 400px;
+			width: auto;
+			padding: 0;
+			margin: 0;
 		}
 
 		.nav-item {
-			font-size: 22px;
-			padding: 18px 32px;
-			width: 100%;
-			text-align: left;
-			justify-content: flex-start;
+			font-size: 18px;
+			font-weight: 600;
+			padding: 14px 32px;
+			width: auto;
+			min-width: 280px;
+			text-align: center;
+			justify-content: center;
+			gap: 10px;
+			border-radius: 12px;
+			background: #f8f9fa;
+			border: 2px solid transparent;
+			transition: all 0.25s ease;
+		}
+
+		.nav-item:active {
+			transform: scale(0.97);
+		}
+
+		.nav-item.active {
+			background: #050c9c;
+			color: white;
+			border-color: #050c9c;
+		}
+
+		.nav-item.active .chevron {
+			color: white;
+		}
+
+		.nav-item .chevron {
+			font-size: 14px;
 		}
 
 		.dropdown-menu {
 			position: static;
 			box-shadow: none;
-			border: 1px solid rgba(0, 0, 0, 0.1);
-			background: rgba(255, 255, 255, 0.5);
-			border-radius: 12px;
-			margin-top: 12px;
-			padding: 8px;
-			width: 100%;
+			border: none;
+			background: transparent;
+			border-radius: 0;
+			margin: 8px 0 0 0;
+			padding: 0;
+			width: auto;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			animation: fadeIn 0.3s ease;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
 		}
 
 		.dropdown-item {
-			padding: 16px 24px;
-			border-radius: 8px;
-			margin: 4px 0;
+			padding: 12px 24px;
+			border-radius: 10px;
+			margin: 0;
+			gap: 10px;
+			background: #ffffff;
+			border: 1px solid rgba(0, 0, 0, 0.08);
+			min-width: 240px;
+			transition: all 0.2s ease;
 		}
 
-		.dropdown-item:hover {
+		.dropdown-item:active {
+			transform: scale(0.97);
+		}
+
+		.dropdown-item.active {
 			background: rgba(5, 12, 156, 0.08);
+			border-color: #050c9c;
 		}
 
 		.dropdown-item i {
-			font-size: 22px;
+			font-size: 18px;
+			color: #050c9c;
+		}
+
+		.dropdown-item-content {
+			text-align: left;
 		}
 
 		.dropdown-item-label {
-			font-size: 17px;
+			font-size: 15px;
+			font-weight: 600;
 		}
 
 		.dropdown-item-desc {
-			font-size: 14px;
+			font-size: 12px;
+			color: #777;
 		}
 	}
 
 	@media (max-width: 480px) {
 		.navbar-wrapper {
-			top: 12px;
-			left: 12px;
-			right: 12px;
+			top: 10px;
+			left: 10px;
+			right: 10px;
 		}
 
 		.navbar-container {
-			padding: 0 16px;
-			height: 56px;
-			gap: 16px;
+			padding: 0 14px;
+			height: 54px;
 		}
 
 		.brand-name {
-			font-size: 20px;
+			font-size: 17px;
 		}
 
 		.logo {
-			width: 32px;
-			height: 32px;
+			width: 30px;
+			height: 30px;
 		}
 
 		.navbar-center {
-			top: 84px;
-			left: 12px;
-			right: 12px;
+			padding: 0;
+		}
+
+		.mobile-logo {
+			width: 42px;
+			height: 42px;
+		}
+
+		.mobile-brand-name {
+			font-size: 28px;
+		}
+
+		.mobile-menu-header {
+			padding: 0;
+			margin: 0 0 8px 0;
+		}
+
+		.mobile-lang-switcher {
+			padding: 0;
+			margin: 0 0 20px 0;
+		}
+
+		.nav-link,
+		.nav-item {
+			font-size: 16px;
+			padding: 12px 28px;
+			min-width: 260px;
+		}
+
+		.dropdown-item {
+			padding: 10px 20px;
+			min-width: 220px;
+		}
+
+		.dropdown-item-label {
+			font-size: 14px;
+		}
+
+		.dropdown-item-desc {
+			font-size: 11px;
 		}
 	}
 </style>

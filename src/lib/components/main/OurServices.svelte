@@ -191,7 +191,9 @@
 		line-height: 1.8;
 		color: #4a4a4a;
 		margin: 0 0 25px 0;
-		text-align: left;
+		text-align: justify;
+		text-justify: inter-word;
+		word-spacing: -0.05em;
 		padding-top: 20px;
 		border-top: 1px solid #f0f0f0;
 	}

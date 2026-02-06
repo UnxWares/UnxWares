@@ -109,6 +109,8 @@
 		line-height: 1.7;
 		color: #4a4a4a;
 		margin: 0;
-		text-align: left;
+		text-align: justify;
+		text-justify: inter-word;
+		word-spacing: -0.05em;
 	}
 </style>

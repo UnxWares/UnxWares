@@ -168,7 +168,9 @@
 		font-size: 14px;
 		color: #666;
 		line-height: 1.5;
-		text-align: left;
+		text-align: justify;
+		text-justify: inter-word;
+		word-spacing: -0.05em;
 	}
 
 	.card-arrow {
