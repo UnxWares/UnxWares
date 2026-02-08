@@ -174,7 +174,7 @@
 
 			<div class="navbar-actions">
 				<LanguageSwitcher />
-				<a href="/contact" class="btn-primary">{$t('navbar.contact')}</a>
+				<a href="https://customers.unxwares.com" target="_blank" rel="noopener noreferrer" class="btn-primary customer-portal-btn">{$t('navbar.customer_portal')}</a>
 			</div>
 
 			<button class="mobile-menu-toggle" onclick={toggleMobileMenu} aria-label="Toggle menu">

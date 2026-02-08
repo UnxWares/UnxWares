@@ -149,6 +149,7 @@
 
 	.infrastructure-cta {
 		text-align: center;
+		padding: 0 20px;
 	}
 
 	.infrastructure-link {
@@ -165,6 +166,8 @@
 		font-weight: 600;
 		transition: all 0.3s ease;
 		border: 2px solid #050c9c;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 
 	.infrastructure-link:hover {
@@ -184,9 +187,15 @@
 	}
 
 	@media (max-width: 548px) {
+		.infrastructure-cta {
+			padding: 0 30px;
+		}
+
 		.infrastructure-link {
 			width: 100%;
 			justify-content: center;
+			font-size: 15px;
+			padding: 14px 28px;
 		}
 
 		.highlight-card {
@@ -195,9 +204,13 @@
 	}
 
 	@media (max-width: 480px) {
+		.infrastructure-cta {
+			padding: 0 20px;
+		}
+
 		.infrastructure-link {
 			font-size: 14px;
-			padding: 12px 24px;
+			padding: 12px 20px;
 			gap: 8px;
 		}
 	}
@@ -224,16 +237,22 @@
 			font-size: 14px;
 		}
 
+		.infrastructure-cta {
+			padding: 0 15px;
+		}
+
 		.infrastructure-link {
-			font-size: 13px;
-			padding: 12px 20px;
+			font-size: 12px;
+			padding: 10px 16px;
 			gap: 6px;
 			white-space: normal;
 			text-align: center;
+			line-height: 1.4;
 		}
 
 		.infrastructure-link i {
-			font-size: 16px;
+			font-size: 14px;
+			flex-shrink: 0;
 		}
 	}
 </style>

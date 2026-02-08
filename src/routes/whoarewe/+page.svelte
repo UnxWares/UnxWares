@@ -8,6 +8,7 @@
 	import WhatWeAreDoingTodayUWC from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWC.svelte';
 	import WhatWeAreDoingTodayUWS from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWS.svelte';
 	import WhatWeAreDoingTodayUNX from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUNX.svelte';
+	import ContactCTA from '$lib/components/ContactCTA.svelte';
 </script>
 
 <svelte:head>
@@ -36,6 +37,8 @@
 		<WhatWeAreDoingTodayUWS/>
 		<WhatWeAreDoingTodayUNX/>
 		<WhatWeRemember/>
+
+		<ContactCTA />
 	</article>
 </main>
 

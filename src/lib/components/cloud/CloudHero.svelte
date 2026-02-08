@@ -207,6 +207,7 @@
 		gap: 20px;
 		flex-wrap: wrap;
 		margin-top: 35px;
+		padding: 0 20px;
 	}
 
 	.hero-buttons a {
@@ -223,6 +224,9 @@
 		font-weight: 600;
 		transition: all 0.3s ease;
 		box-shadow: 0 2px 8px rgba(5, 12, 156, 0.2);
+		max-width: 100%;
+		white-space: nowrap;
+		box-sizing: border-box;
 	}
 
 	.hero-buttons a:hover {
@@ -235,11 +239,66 @@
 		font-size: 16px;
 	}
 
-	@media (max-width: 548px) {
+	@media (max-width: 768px) {
+		.hero-buttons {
+			padding: 0 30px;
+		}
+
 		.hero-buttons a {
-			padding: 10px 22px;
+			font-size: 14px;
+			padding: 11px 24px;
+		}
+	}
+
+	@media (max-width: 548px) {
+		.hero-buttons {
+			gap: 15px;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 25px;
+		}
+
+		.hero-buttons a {
+			padding: 12px 20px;
 			font-size: 13px;
-			margin: 6px 10px 15px;
+			width: 100%;
+			max-width: 300px;
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 420px) {
+		.hero-buttons {
+			padding: 0 20px;
+		}
+
+		.hero-buttons a {
+			font-size: 12px;
+			padding: 11px 18px;
+			gap: 8px;
+			white-space: normal;
+			text-align: center;
+			line-height: 1.3;
+		}
+
+		.hero-buttons a i {
+			flex-shrink: 0;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.hero-buttons {
+			padding: 0 15px;
+		}
+
+		.hero-buttons a {
+			font-size: 11px;
+			padding: 10px 14px;
+			gap: 6px;
+		}
+
+		.hero-buttons a i {
+			font-size: 13px;
 		}
 	}
 </style>

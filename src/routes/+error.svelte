@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>404 - Page introuvable | UnxWares</title>
+	<title>{$t('error_page.title')}</title>
 </svelte:head>
 
 <section class="error-hero">
@@ -14,43 +14,43 @@
 		</div>
 
 		<div class="error-number">404</div>
-		<h1>Page introuvable</h1>
+		<h1>{$t('error_page.heading')}</h1>
 
 		<p class="error-message">
-			Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+			{$t('error_page.message')}
 		</p>
 
 		<div class="error-actions">
 			<a href="/" class="btn-primary">
 				<i class="bi bi-house-fill"></i>
-				Retour à l'accueil
+				{$t('error_page.btn_home')}
 			</a>
 			<a href="/contact" class="btn-secondary">
 				<i class="bi bi-envelope-fill"></i>
-				Nous contacter
+				{$t('error_page.btn_contact')}
 			</a>
 		</div>
 	</div>
 </section>
 
 <section class="suggestions-section">
-	<p class="suggestions-title">Peut-être cherchiez-vous :</p>
+	<p class="suggestions-title">{$t('error_page.suggestions_title')}</p>
 	<div class="suggestions-grid">
 		<a href="/uw-cloud" class="suggestion-card">
 			<i class="bi bi-cloud"></i>
-			<span>UnxWares Cloud</span>
+			<span>{$t('error_page.suggestion_cloud')}</span>
 		</a>
 		<a href="/uw-studio" class="suggestion-card">
 			<i class="bi bi-code-slash"></i>
-			<span>UnxWares Studio</span>
+			<span>{$t('error_page.suggestion_studio')}</span>
 		</a>
 		<a href="/datacenter" class="suggestion-card">
 			<i class="bi bi-diagram-3"></i>
-			<span>Notre Infrastructure</span>
+			<span>{$t('error_page.suggestion_datacenter')}</span>
 		</a>
 		<a href="/whoarewe" class="suggestion-card">
 			<i class="bi bi-people"></i>
-			<span>Qui sommes-nous</span>
+			<span>{$t('error_page.suggestion_whoarewe')}</span>
 		</a>
 	</div>
 </section>

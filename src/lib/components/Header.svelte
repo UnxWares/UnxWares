@@ -110,7 +110,10 @@
     .typing {
         min-height: 66px;
         font-size: 40px;
-        display: inline-block;
+        display: block;
+        text-align: center;
+        max-width: 90vw;
+        line-height: 1.4;
     }
 
     header .scroll-button{
@@ -158,6 +161,7 @@
 
 				.typing {
 						font-size: 36px;
+						min-height: 100px;
 				}
 
         header{
@@ -178,6 +182,7 @@
 
         .typing {
             font-size: 30px;
+            min-height: 90px;
         }
 
         header{
@@ -194,6 +199,7 @@
     @media only screen and (max-width: 512px) {
         .typing {
             font-size: 26px;
+            min-height: 80px;
         }
         header{
             font-size: 11px;
@@ -212,6 +218,7 @@
     @media only screen and (max-width: 418px) {
         .typing {
             font-size: 22px;
+            min-height: 70px;
         }
         header {
             font-size: 9px;
@@ -230,6 +237,7 @@
     @media only screen and (max-width: 340px) {
         .typing {
             font-size: 16px;
+            min-height: 60px;
         }
         header {
             font-size: 8px;
@@ -282,6 +290,7 @@
         }
         .typing {
             font-size: 28px;
+            min-height: 85px;
         }
     }
 </style>

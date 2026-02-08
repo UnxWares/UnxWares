@@ -7,6 +7,7 @@
 	import TrustedPartners from '$lib/components/main/TrustedPartners.svelte';
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
+	import ContactCTA from '$lib/components/ContactCTA.svelte';
 	import Separator from '$lib/components/Separator.svelte';
 	import { t } from 'svelte-i18n';
 </script>
@@ -51,4 +52,8 @@
 	<Separator />
 
 	<HomeEcosystem />
+
+	<Separator />
+
+	<ContactCTA />
 </main>

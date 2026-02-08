@@ -62,6 +62,9 @@
 				<li class="sales-conditions">
 					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> {$t('footer.sales')}</a>
 				</li>
+				<li class="unxwares uw-contact">
+					<a href="/contact" data-sveltekit-preload-data="hover"><i class="bi bi-envelope-fill"></i> {$t('footer.contact')}</a>
+				</li>
 			</ul>
 		</div>
 	</div>
