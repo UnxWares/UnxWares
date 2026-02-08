@@ -43,15 +43,15 @@
 
 <style>
 	#tech-logos{
-		margin: 60px 0 0 0;
-		padding: 45px 40px;
+		margin: 0;
+		padding: 0 40px;
 		background-color: #fafbfc;
 		border-radius: 12px;
 	}
 	@media (max-width: 768px) {
 		#tech-logos{
-			margin: 40px 0 0 0;
-			padding: 35px 30px;
+			margin: 0;
+			padding: 0 30px;
 		}
 	}
 	#tech-logos h2{

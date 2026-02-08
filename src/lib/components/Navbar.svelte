@@ -82,13 +82,6 @@
 					</button>
 					{#if activeDropdown === 'product'}
 						<div class="dropdown-menu">
-							<a href="/datacenter" class="dropdown-item" class:active={$page.url.pathname === '/datacenter'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-diagram-3"></i>
-								<div class="dropdown-item-content">
-									<span class="dropdown-item-label">{$t('navbar.infrastructure')}</span>
-									<span class="dropdown-item-desc">{$t('navbar.infrastructure_desc')}</span>
-								</div>
-							</a>
 							<a href="/uw-cloud" class="dropdown-item" class:active={$page.url.pathname === '/uw-cloud'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
 								<i class="bi bi-cloud"></i>
 								<div class="dropdown-item-content">
@@ -126,6 +119,13 @@
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.certifications')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.certifications_desc')}</span>
+								</div>
+							</a>
+							<a href="/datacenter" class="dropdown-item" class:active={$page.url.pathname === '/datacenter'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<i class="bi bi-diagram-3"></i>
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.infrastructure')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.infrastructure_desc')}</span>
 								</div>
 							</a>
 						</div>

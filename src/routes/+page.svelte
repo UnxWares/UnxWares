@@ -4,6 +4,7 @@
 	import OurServices from '$lib/components/main/OurServices.svelte';
 	import TechStack from '$lib/components/main/TechStack.svelte';
 	import TechLogos from '$lib/components/main/TechLogos.svelte';
+	import TrustedPartners from '$lib/components/main/TrustedPartners.svelte';
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
 	import Separator from '$lib/components/Separator.svelte';
@@ -34,7 +35,13 @@
 
 	<TechStack />
 
+	<Separator />
+
 	<TechLogos />
+
+	<Separator />
+
+	<TrustedPartners />
 
 	<Separator />
 

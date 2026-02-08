@@ -63,6 +63,14 @@
     "db_title": "Databases & Opslag",
     "db_desc": "Gedistribueerde opslagoplossingen en relationele en NoSQL-databases voor al uw behoeften. Geautomatiseerde back-ups en multi-site replicatie."
   },
+  "partners": {
+    "title": "Onze Vertrouwde Partners",
+    "intro": "Om de kwaliteit en betrouwbaarheid van onze diensten te waarborgen, werken wij samen met erkende partners die onze waarden van uitmuntendheid en soevereiniteit delen.",
+    "netario_desc": "Netwerktoegangsplatform, beveiligde tunnels en IP-beheer voor onze cloud-infrastructuur.",
+    "infomaniak_desc": "100% hernieuwbare Zwitserse hostingprovider voor onze secundaire diensten en DNS-infrastructuur.",
+    "bouygues_desc": "Professionele internetprovider voor betrouwbare en krachtige connectiviteit.",
+    "cyberdefense_desc": "Cyberbeveiligingsondersteuning, audits en compliance om het hoogste beveiligingsniveau te handhaven."
+  },
   "techlogos": {
     "title": "Onze Vertrouwde Partners",
     "intro": "Onze infrastructuren vertrouwen op vertrouwde partners en bewezen open source technologieën."
@@ -533,6 +541,219 @@
     },
     "datacenter": {
       "title": "UnxWares - Datacenter"
+    },
+    "studio": {
+      "title": "UnxWares - Ontwikkelingsstudio",
+      "h1": "Studio: Creëren, Innoveren, Voortstuwen"
+    },
+    "cloud": {
+      "title": "UnxWares - Soevereine Cloud",
+      "h1": "Cloud: Europees, Soeverein, Open"
+    }
+  },
+  "studio_page": {
+    "hero": {
+      "title": "UnxWares Studio",
+      "tagline": "Software zonder soevereiniteit op te geven. Expertise zonder onbetaalbare dagprijzen.",
+      "intro": "UnxWares Studio is onze softwareontwikkelingsafdeling, waar technische passie en excellentie samenkomen om uw projecten tot leven te brengen. We creëren oplossingen op maat, van websites tot complexe applicaties, inclusief krachtige API's en videogames. Onze expertise in moderne neo-talen stelt ons in staat om bedrijven te begeleiden bij hun digitale transformatie met geavanceerde technologieën.",
+      "cta_contact": "Bespreek uw project",
+      "cta_projects": "Bekijk onze realisaties"
+    },
+    "what": {
+      "title": "Wat Wij Creëren",
+      "intro": "Van initiële ontwerp tot definitieve implementatie, behandelen wij alle aspecten van uw digitale projecten met een rigoureuze technische aanpak en grenzeloze creativiteit.",
+      "web_title": "Moderne Webapplicaties",
+      "web_desc": "Showcase-websites, bedrijfsapplicaties, SaaS-platforms, klantportalen. We beheersen moderne frameworks (SvelteKit, React, Vue) om snelle, responsieve en elegante interfaces te creëren.",
+      "backend_title": "Krachtige Backend & API's",
+      "backend_desc": "Microservices, REST/GraphQL API's, gedistribueerde systemen. Onze expertise in Go en Rust stelt ons in staat om ultra-krachtige, veilige en schaalbare backends te creëren.",
+      "software_title": "Software & Applicaties",
+      "software_desc": "Desktop-applicaties, bedrijfstools, beheersystemen. We ontwikkelen robuuste software met moderne technologieën (Electron, Tauri, Flutter) voor Windows, macOS en Linux.",
+      "mobile_title": "Mobiele Applicaties",
+      "mobile_desc": "Native of cross-platform iOS- en Android-applicaties. Met Flutter/Dart creëren we krachtige applicaties met één codebase voor alle platforms.",
+      "games_title": "Videogames",
+      "games_desc": "Van indie games tot complexe multiplayer servers. Onze ervaring met Unreal Engine 5 en gameservers stelt ons in staat om meeslepende en technische ervaringen te creëren.",
+      "infra_title": "DevOps & Infrastructuur",
+      "infra_desc": "CI/CD, containerisatie, Kubernetes-orkestratie. We stoppen niet bij code: we implementeren, bewaken en optimaliseren uw applicaties op onze of uw infrastructuur."
+    },
+    "neolang": {
+      "title": "Onze Neo-Talen Expertise",
+      "intro": "Neo-talen (Rust, Go, Zig) vertegenwoordigen de toekomst van softwareontwikkeling: native prestaties, geheugenveiligheid, geoptimaliseerde compilatie. We beheersen deze technologieën die zeldzaam zijn op de Franse markt en begeleiden bedrijven bij hun adoptie.",
+      "why_title": "Waarom Neo-Talen?",
+      "why_intro": "De markt is verzadigd met JavaScript- en PHP-ontwikkelaars, maar vaardigheden in Rust, Go en Zig zijn kritiek schaars. Deze talen bieden beslissende voordelen:",
+      "perf_title": "Native Prestaties",
+      "perf_desc": "10 tot 100 keer sneller dan geïnterpreteerde talen, met verminderd geheugengebruik. Ideaal voor kritieke systemen, API's met hoge belasting en real-time applicaties.",
+      "security_title": "Geheugenveiligheid",
+      "security_desc": "Rust elimineert geheugenbeheersfouten (use-after-free, null pointers) tijdens compilatie. Go vereenvoudigt met een efficiënte garbage collector. Resultaat: minder kwetsbaarheden, meer betrouwbaarheid.",
+      "modern_title": "Moderne Tooling",
+      "modern_desc": "Geïntegreerde pakketbeheerders (Cargo, Go modules), snelle compilatie, native tests, automatisch gegenereerde documentatie. Het ecosysteem is ontworpen voor productiviteit.",
+      "concurrency_title": "Native Gelijktijdigheid",
+      "concurrency_desc": "Go werd gecreëerd voor gelijktijdigheid (goroutines). Rust biedt gelijktijdigheid zonder data races, gegarandeerd tijdens compilatie. Perfect voor gedistribueerde systemen en microservices.",
+      "rust_title": "Rust",
+      "rust_subtitle": "Prestaties + Veiligheid + Betrouwbaarheid",
+      "rust_desc": "De meest geliefde taal door ontwikkelaars (StackOverflow Survey). We gebruiken het voor onze systeemtools, onze beveiligingscomponenten en alle code die absolute betrouwbaarheid vereist. Nul-kosten abstractie, geen compromissen.",
+      "rust_use": "Kritieke systemen, CLI-tools, krachtige backends, WebAssembly",
+      "go_title": "Go",
+      "go_subtitle": "Eenvoud + Schaalbaarheid + Snelheid",
+      "go_desc": "De taal van moderne infrastructuur (Kubernetes, Docker, Terraform). We gebruiken het voor onze microservices, onze cloud-orkestrator en al onze krachtige API's. Eenvoudig te leren, krachtig in productie.",
+      "go_use": "Microservices, API's, orkestrators, DevOps-tools",
+      "zig_title": "Zig",
+      "zig_subtitle": "De Toekomst van Systemen",
+      "zig_desc": "De spirituele opvolger van C, met een moderne benadering van systeemprogrammering. Nog niet rijp voor kritieke productie, maar we verkennen het voor onze toekomstige low-level projecten en als alternatief voor C/C++.",
+      "zig_use": "Systeemprogrammering, C-vervanging, low-level tools"
+    },
+    "projects": {
+      "title": "Onze Projecten & Realisaties",
+      "intro": "Van onze interne projecten tot klantoplossingen, ontdek hoe we onze technische expertise toepassen om oplossingen te creëren die echt werken.",
+      "vff_title": "VFF Project",
+      "vff_tag": "Community Project",
+      "vff_desc": "Collaboratieve Franse spoorweg-encyclopedie met meternauwkeurige cartografie. Moderne stack: SvelteKit, Laravel API, PostgreSQL PostGIS. OpenStreetMap-integratie, community-bijdragesysteem, beheer van duizenden geografische gegevenspunten.",
+      "vff_tech": "SvelteKit · Laravel · PostgreSQL · PostGIS · OpenStreetMap",
+      "site_title": "UnxWares Website",
+      "site_tag": "Technische Showcase",
+      "site_desc": "De site die u momenteel bekijkt. SvelteKit met i18n (6 talen), modern en responsief design, geoptimaliseerd voor prestaties. Open source op GitHub om de community te inspireren.",
+      "site_tech": "SvelteKit · i18n · Design System · SEO",
+      "orchestrator_title": "Cloud Orkestrator",
+      "orchestrator_tag": "Infrastructuur",
+      "orchestrator_desc": "Onze eigen Go-orkestrator die de hele UnxWares Cloud-infrastructuur aanstuurt. Microservices-architectuur, veilige communicatie, modulaire deployment-API. Beheert Proxmox, Kubernetes en al onze klantomgevingen.",
+      "orchestrator_tech": "Go · Microservices · Kubernetes API · Proxmox API",
+      "panel_title": "Klantpanel",
+      "panel_tag": "Webapplicatie",
+      "panel_desc": "Compleet klantportaal ontwikkeld in Laravel. Eigen OIDC Provider-authenticatie, factureringsbeheer, granulaire rechten systeem, servicebeheerinterface. Veilig, schaalbaar en ontworpen voor UX.",
+      "panel_tech": "Laravel · Vue.js · MySQL · OIDC · Stripe",
+      "raiemus_title": "Raiemus OS",
+      "raiemus_tag": "Besturingssysteem",
+      "raiemus_desc": "Lichtgewicht besturingssysteem gebaseerd op ArchLinux, geoptimaliseerd voor RDP en thin clients. Snelle boot, minimaal geheugengebruik, perfect om een oude PC om te toveren tot een krachtige terminal.",
+      "raiemus_tech": "ArchLinux · SystemD · XRDP · Custom Kernel",
+      "game_title": "Videogame (UE5)",
+      "game_tag": "In Ontwikkeling",
+      "game_desc": "Ons independent game-project onder Unreal Engine 5. Ontwikkeld om onze afhankelijkheid van het Minecraft-ecosysteem te vervangen. Innovatieve gameplay, moderne graphics, schaalbare serverarchitectuur.",
+      "game_tech": "Unreal Engine 5 · C++ · Blueprints · Go Server"
+    },
+    "process": {
+      "title": "Ons Werkproces",
+      "intro": "Van idee tot productie volgen we een bewezen proces dat wendbaarheid, kwaliteit en transparantie combineert. U behoudt de controle in elke stap.",
+      "step1_title": "1. Ontdekking & Scoping",
+      "step1_desc": "We beginnen met het begrijpen van uw behoeften, beperkingen en doelstellingen. Geen onnodige technische jargon, alleen een open discussie over wat u wilt bereiken en hoe u daar komt.",
+      "step2_title": "2. Technisch Voorstel",
+      "step2_desc": "We leveren u een gedetailleerde technische architectuur met aanbevolen technologieën, realistische tijdlijnen en transparant budget. Geen verrassingen, geen verborgen kosten.",
+      "step3_title": "3. Iteratieve Ontwikkeling",
+      "step3_desc": "We ontwikkelen in korte iteraties met regelmatige demo's. U kunt de voortgang volgen, functies testen en indien nodig de koers bijstellen. Echte wendbaarheid, niet cosmetisch.",
+      "step4_title": "4. Testen & Kwaliteit",
+      "step4_desc": "Unit tests, integratietests, code review, beveiligingsanalyse. We leveren geen wankele code. Kwaliteit is niet onderhandelbaar.",
+      "step5_title": "5. Deployment & Training",
+      "step5_desc": "We deployen op onze of uw infrastructuur, configureren CI/CD en trainen uw team. U bent autonoom, maar we blijven beschikbaar.",
+      "step6_title": "6. Onderhoud & Support",
+      "step6_desc": "Directe technische ondersteuning van de ontwikkelaars die uw project hebben gecreëerd. Geen niveau 1 die van een script afleest, alleen echte technische expertise."
+    },
+    "tech": {
+      "title": "Onze Technische Stack",
+      "intro": "We beheersen een breed scala aan moderne en bewezen technologieën. We kiezen altijd de beste technologie voor uw behoeften, niet degene die ons past.",
+      "frontend_title": "Modern Frontend",
+      "frontend_tech": "SvelteKit · React · Vue.js · TypeScript · Tailwind CSS",
+      "backend_title": "Krachtig Backend",
+      "backend_tech": "Go · Rust · Laravel (PHP) · Node.js · Python",
+      "mobile_title": "Mobiele Applicaties",
+      "mobile_tech": "Flutter · React Native · SwiftUI · Kotlin",
+      "desktop_title": "Desktop Applicaties",
+      "desktop_tech": "Electron · Tauri · Flutter Desktop · Qt",
+      "database_title": "Databases",
+      "database_tech": "PostgreSQL · MySQL · MongoDB · Redis · ClickHouse",
+      "devops_title": "DevOps & Cloud",
+      "devops_tech": "Kubernetes · Docker · Proxmox · GitLab CI · ArgoCD",
+      "gamedev_title": "Game Development",
+      "gamedev_tech": "Unreal Engine 5 · Unity · Godot · Custom Servers"
+    },
+    "team": {
+      "title": "Ons Samenwerkingsmodel",
+      "intro": "We werken met een gepassioneerd intern team en gecertificeerde onafhankelijke ontwikkelaars die we eerlijk vergoeden. Een hybride model dat kwaliteit, responsiviteit en ethiek garandeert.",
+      "internal_title": "Intern Team",
+      "internal_desc": "Onze oprichters en vaste ontwikkelaars zorgen voor technische consistentie, projectarchitectuur en klantrelaties. Ze kennen de infrastructuur, beheersen de hele stack en zijn uw directe contactpersonen.",
+      "freelance_title": "Gecertificeerde Ontwikkelaars",
+      "freelance_desc": "We werken samen met zorgvuldig geselecteerde freelancers voor hun technische expertise en betrouwbaarheid. We betalen ze binnen korte en eerlijke termijnen, leveren ze technische context en noodzakelijke infrastructuur.",
+      "client_title": "Voor U, de Klant",
+      "client_desc": "Eén enkel contactpunt, een gecoördineerd team, geen verrassingen. Als een ontwikkelaar een onverwacht probleem heeft, hebben we de nodige menselijke redundantie. U lijdt niet onder de onzekerheden van traditioneel freelancen.",
+      "win_title": "Iedereen Wint",
+      "win_desc": "De klant krijgt een project op tijd geleverd met consistente kwaliteit. De ontwikkelaar werkt rustig zonder betalingen na te jagen. UnxWares bouwt langdurige vertrouwensrelaties op. Dat is ethiek in actie."
+    },
+    "cta": {
+      "title": "Klaar om Iets Groots te Creëren?",
+      "desc": "Of u nu een specifiek project of alleen een idee heeft, laten we erover praten. We adviseren u eerlijk over haalbaarheid, technologieën en noodzakelijk budget. Geen verplichtingen, geen onnodige jargon.",
+      "button": "Bespreek uw project"
+    }
+  },
+  "cloud_page": {
+    "hero": {
+      "title": "UnxWares Cloud",
+      "tagline": "Cloud zonder een reus te zijn. Soevereiniteit zonder hoge prijs.",
+      "intro": "UnxWares Cloud is onze soevereine hosting-infrastructuur, ontworpen voor bedrijven die hun data willen beheren zonder concessies te doen aan prestaties. Datacenter in Normandië, gecertificeerde cloud-native technologieën, beheerde diensten inbegrepen. Van eenvoudige VM's tot hoog-beschikbare Kubernetes-clusters bieden wij een Frans alternatief voor Amerikaanse reuzen.",
+      "cta_contact": "Ontdek onze aanbiedingen",
+      "cta_datacenter": "Bezoek ons datacenter",
+      "cta_config": "Configureer mijn aanbod"
+    },
+    "services": {
+      "title": "Onze Cloud Diensten",
+      "intro": "Van eenvoudige hosting tot complexe cloud-native architecturen bieden wij oplossingen aangepast aan alle behoeften. Beheerde infrastructuur, responsieve technische ondersteuning en transparante prijzen.",
+      "vps_title": "VPS & Dedicated Servers",
+      "vps_desc": "Hoogperformante virtuele machines op HPE ProLiant-infrastructuur. AMD Threadripper/Ryzen CPU's, NVMe-opslag, 10 Gb/s netwerk. Deployment in minuten, volledige root-toegang.",
+      "kubernetes_title": "Managed Kubernetes",
+      "kubernetes_desc": "CNCF-gecertificeerde Kubernetes-clusters met gegarandeerde hoge beschikbaarheid. Wij beheren de masters, u deployt uw applicaties. Monitoring, backups, updates inbegrepen.",
+      "storage_title": "Opslag & Backup",
+      "storage_desc": "S3-compatibele objectopslag, geautomatiseerde backups, multi-site replicatie. Uw data is veilig en altijd toegankelijk.",
+      "network_title": "Netwerk & Beveiliging",
+      "network_desc": "Beheerde Fortinet-firewalls, WireGuard VPN, private tunnels. DDoS-bescherming, netwerkmonitoring en volledige isolatie van uw omgevingen.",
+      "database_title": "Databases",
+      "database_desc": "Beheerde PostgreSQL, MySQL, MongoDB, Redis. Hoge beschikbaarheid, automatische backups, synchrone replicatie. U focust op uw data, wij beheren de infrastructuur.",
+      "custom_title": "Maatwerk Oplossingen",
+      "custom_desc": "Complexe architectuur, specifieke behoeften, migratie vanuit een andere cloud. Wij ontwerpen en deployen oplossingen aangepast aan uw context."
+    },
+    "infrastructure": {
+      "title": "Onze Infrastructuur",
+      "intro": "Een Normandisch datacenter uitgerust met professionele hardware, redundante netwerkarchitectuur en eigen technische expertise. Wij controleren elke laag van onze stack om prestaties en betrouwbaarheid te garanderen.",
+      "hardware_title": "Professionele Hardware",
+      "hardware_desc": "HPE ProLiant Gen8/Gen9 servers, AMD Threadripper en Ryzen 9 9900X workstations. Kwaliteitshardware voor duurzame infrastructuur.",
+      "network_title": "10 Gb/s Netwerk",
+      "network_desc": "OM4 glasvezel, 10 Gb/s switches, MikroTik routing. Fortinet FortiGate firewall voor meerlagige beveiliging.",
+      "virtualization_title": "Proxmox Virtualisatie",
+      "virtualization_desc": "Proxmox VE hypervisor cluster, gedistribueerde Ceph-opslag, live migratie. Infrastructure as Code voor reproduceerbaarheid.",
+      "orchestration_title": "Eigen Orchestrator",
+      "orchestration_desc": "Onze in Go ontwikkelde orchestrator bestuurt de gehele infrastructuur. Uniforme API, geautomatiseerde deployments, multi-tenant beheer.",
+      "monitoring_title": "Monitoring & Alerting",
+      "monitoring_desc": "Real-time infrastructuurmonitoring, gedetailleerde metrics, intelligente alerting. Prometheus, Grafana en eigen tools.",
+      "sovereignty_title": "Gegarandeerde Soevereiniteit",
+      "sovereignty_desc": "Datacenter in Frankrijk, native AVG-compliance, geen Cloud Act. Uw data blijft onder Franse controle."
+    },
+    "advantages": {
+      "title": "Waarom UnxWares Cloud Kiezen",
+      "intro": "Een geloofwaardig alternatief voor Amerikaanse reuzen, met de voordelen van een lokale speler die hun infrastructuur end-to-end beheerst.",
+      "perf_title": "Prestaties",
+      "perf_desc": "Moderne hardware, 10 Gb/s netwerk, NVMe-opslag. Prestaties vergelijkbaar met grote spelers, zonder transatlantische latentie.",
+      "control_title": "Totale Controle",
+      "control_desc": "Wij ontwikkelen onze eigen orchestratie-tools. Geen afhankelijkheid van propriëtaire API's, geen technische lock-in.",
+      "support_title": "Expert Ondersteuning",
+      "support_desc": "Directe technische ondersteuning van de ingenieurs die de infrastructuur beheren. Geen tickets die verloren gaan in een anoniem systeem.",
+      "price_title": "Eerlijke Prijzen",
+      "price_desc": "Transparante vaste prijzen, geen verborgen ingress/egress kosten. U betaalt wat u verbruikt, punt.",
+      "rgpd_title": "Native AVG",
+      "rgpd_desc": "AVG-compliance by design, hosting in Frankrijk, gegarandeerde soevereiniteit. Geen Cloud Act, geen juridische grijze zones.",
+      "openness_title": "Openheid",
+      "openness_desc": "Open source technologieën, publieke documentatie van onze infrastructuur. U weet precies waar uw applicaties draaien."
+    },
+    "usecases": {
+      "title": "Gebruikscases & Typische Klanten",
+      "intro": "Van het bij ons gehoste VFF-project tot bedrijfsarchitecturen, onze oplossingen passen zich aan alle behoeften aan.",
+      "startup_title": "Startups & Scale-ups",
+      "startup_desc": "Schaalbare infrastructuur, gecontroleerde kosten, responsieve ondersteuning. Begin klein, schaal groot zonder van provider te wisselen.",
+      "saas_title": "SaaS Leveranciers",
+      "saas_desc": "Host uw platform op soevereine infrastructuur. Multi-tenancy, volledige isolatie, gegarandeerde AVG-compliance.",
+      "agency_title": "Bureaus & Studio's",
+      "agency_desc": "Host uw klanten op onze cloud, profiteer van onze partnertarieven, gebruik onze technische ondersteuning.",
+      "enterprise_title": "Ondernemingen",
+      "enterprise_desc": "Cloud-migratie, hybride architecturen, ontwikkelomgevingen. Maatwerk ondersteuning, gegarandeerde SLA's."
+    },
+    "cta": {
+      "title": "Klaar om te Migreren naar een Soevereine Cloud?",
+      "desc": "Of u nu een eenvoudige VPS of een complexe Kubernetes-architectuur nodig heeft, wij hebben een oplossing voor u. Laten we uw behoeften bespreken, zonder verplichtingen.",
+      "button": "Ontdek onze aanbiedingen"
     }
   },
   "datacenter": {

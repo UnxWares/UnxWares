@@ -1,0 +1,229 @@
+<script>
+	import { t } from 'svelte-i18n';
+</script>
+
+<section id="studio-hero">
+	<div class="studio-title">
+		<img src="/favicon.png" alt="UnxWares Studio" />
+		<h1>{$t('pages.studio.h1')}</h1>
+	</div>
+
+	<div class="hero-stats">
+		<div class="stat-item">
+			<div class="stat-number">10+</div>
+			<div class="stat-label">Technologies</div>
+		</div>
+		<div class="stat-divider"></div>
+		<div class="stat-item">
+			<div class="stat-number">6</div>
+			<div class="stat-label">Projets actifs</div>
+		</div>
+		<div class="stat-divider"></div>
+		<div class="stat-item">
+			<div class="stat-number">3</div>
+			<div class="stat-label">Néo-langages</div>
+		</div>
+	</div>
+
+	<p class="tagline">{$t('studio_page.hero.tagline')}</p>
+	<p class="intro">{$t('studio_page.hero.intro')}</p>
+
+	<div class="hero-buttons">
+		<a href="https://www.unxwares.studio" target="_blank" rel="noopener noreferrer"><i class="bi bi-chat-dots-fill"></i> {$t('studio_page.hero.cta_contact')}</a>
+		<a href="#projects"><i class="bi bi-folder-fill"></i> {$t('studio_page.hero.cta_projects')}</a>
+	</div>
+</section>
+
+<style>
+	#studio-hero {
+		margin: 0;
+	}
+
+	.studio-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		margin-bottom: 40px;
+		font-size: 26px;
+	}
+
+	.studio-title img {
+		width: 120px;
+		height: 120px;
+		transition: transform 0.3s ease;
+	}
+
+	.studio-title img:hover {
+		transform: rotate(5deg) scale(1.05);
+	}
+
+	.studio-title h1 {
+		margin: 0;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	@media (max-width: 1238px) {
+		.studio-title img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	@media (max-width: 1048px) {
+		.studio-title img {
+			width: 70px;
+			height: 70px;
+		}
+	}
+
+	@media (max-width: 842px) {
+		.studio-title img {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	@media (max-width: 658px) {
+		.studio-title img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	.tagline {
+		font-size: 18px;
+		font-style: italic;
+		color: #666;
+		margin: 0 0 25px 0;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.tagline {
+			font-size: 16px;
+		}
+	}
+
+	.hero-stats {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		margin: 0 auto 40px auto;
+		max-width: 700px;
+	}
+
+	.stat-item {
+		text-align: center;
+	}
+
+	.stat-number {
+		font-size: 42px;
+		font-weight: 800;
+		color: #050c9c;
+		line-height: 1;
+		margin-bottom: 8px;
+	}
+
+	.stat-label {
+		font-size: 14px;
+		color: #666;
+		font-weight: 500;
+	}
+
+	.stat-divider {
+		width: 1px;
+		height: 50px;
+		background: linear-gradient(to bottom, transparent, #e8e8e8, transparent);
+	}
+
+	@media (max-width: 768px) {
+		.hero-stats {
+			gap: 25px;
+		}
+
+		.stat-number {
+			font-size: 36px;
+		}
+
+		.stat-label {
+			font-size: 13px;
+		}
+
+		.stat-divider {
+			height: 40px;
+		}
+	}
+
+	@media (max-width: 548px) {
+		.hero-stats {
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		.stat-divider {
+			width: 80px;
+			height: 1px;
+			background: linear-gradient(to right, transparent, #e8e8e8, transparent);
+		}
+
+		.stat-number {
+			font-size: 32px;
+		}
+	}
+
+	#studio-hero p.intro {
+		font-size: 16px;
+		line-height: 1.8;
+		color: #4a4a4a;
+		margin: 0 0 35px 0;
+		text-align: justify;
+		text-justify: inter-word;
+		word-spacing: -0.05em;
+	}
+
+	.hero-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		flex-wrap: wrap;
+		margin-top: 35px;
+	}
+
+	.hero-buttons a {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		padding: 12px 28px;
+		background: #050c9c;
+		color: white;
+		text-decoration: none;
+		border-radius: 8px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 15px;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(5, 12, 156, 0.2);
+	}
+
+	.hero-buttons a:hover {
+		background: #040a7a;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.3);
+	}
+
+	.hero-buttons a i {
+		font-size: 16px;
+	}
+
+	@media (max-width: 548px) {
+		.hero-buttons a {
+			padding: 10px 22px;
+			font-size: 13px;
+			margin: 6px 10px 15px;
+		}
+	}
+</style>

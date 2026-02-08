@@ -63,6 +63,14 @@
     "db_title": "Bases de Données & Stockage",
     "db_desc": "Solutions de stockage distribuées et bases de données relationnelles et NoSQL pour tous vos besoins. Sauvegardes automatisées et réplication multi-sites."
   },
+  "partners": {
+    "title": "Nos Partenaires de Confiance",
+    "intro": "Pour garantir la qualité et la fiabilité de nos services, nous collaborons avec des acteurs reconnus qui partagent nos valeurs d'excellence et de souveraineté.",
+    "netario_desc": "Plateforme d'accès réseau, tunnels sécurisés et gestion des IPs pour notre infrastructure cloud.",
+    "infomaniak_desc": "Hébergeur suisse 100% renouvelable pour nos services secondaires et notre infrastructure DNS.",
+    "bouygues_desc": "Fournisseur d'accès internet professionnel pour une connectivité fiable et performante.",
+    "cyberdefense_desc": "Accompagnement en cybersécurité, audits et conformité pour maintenir le plus haut niveau de sécurité."
+  },
   "techlogos": {
     "title": "Nos Partenaires de Confiance",
     "intro": "Nos infrastructures s'appuient sur des partenaires de confiance et des technologies open source éprouvées."
@@ -690,6 +698,219 @@
     },
     "datacenter": {
       "title": "UnxWares - Datacenter"
+    },
+    "studio": {
+      "title": "UnxWares - Studio de développement",
+      "h1": "Studio : Créer, Innover, Propulser"
+    },
+    "cloud": {
+      "title": "UnxWares - Cloud souverain",
+      "h1": "Cloud : Européen, Souverain, Ouvert"
+    }
+  },
+  "studio_page": {
+    "hero": {
+      "title": "UnxWares Studio",
+      "tagline": "Du logiciel sans renier la souveraineté. De l'expertise sans le TJM prohibitif.",
+      "intro": "UnxWares Studio est notre pôle de développement logiciel, où passion technique et excellence se rencontrent pour donner vie à vos projets. Nous créons des solutions sur-mesure, du site web à l'application complexe, en passant par les APIs performantes et les jeux vidéo. Notre expertise sur les néo-langages modernes nous permet d'accompagner les entreprises dans leur transformation numérique avec des technologies de pointe.",
+      "cta_contact": "Discuter de votre projet",
+      "cta_projects": "Voir nos réalisations"
+    },
+    "what": {
+      "title": "Ce que nous créons",
+      "intro": "De la conception initiale au déploiement final, nous prenons en charge l'intégralité de vos projets numériques avec une approche technique rigoureuse et une créativité sans limite.",
+      "web_title": "Applications Web Modernes",
+      "web_desc": "Sites vitrines, applications métier, plateformes SaaS, portails clients. Nous maîtrisons les frameworks modernes (SvelteKit, React, Vue) pour créer des interfaces rapides, réactives et élégantes.",
+      "backend_title": "Backend & APIs Performantes",
+      "backend_desc": "Microservices, APIs REST/GraphQL, systèmes distribués. Notre expertise en Go et Rust nous permet de créer des backends ultra-performants, sécurisés et scalables.",
+      "software_title": "Logiciels & Progiciels",
+      "software_desc": "Applications desktop, outils métier, systèmes de gestion. Nous développons des logiciels robustes avec des technologies modernes (Electron, Tauri, Flutter) pour Windows, macOS et Linux.",
+      "mobile_title": "Applications Mobiles",
+      "mobile_desc": "Applications iOS et Android natives ou multiplateformes. Avec Flutter/Dart, nous créons des applications performantes avec une seule base de code pour tous les supports.",
+      "games_title": "Jeux Vidéo",
+      "games_desc": "De l'indie game au serveur multijoueur complexe. Notre expérience sur Unreal Engine 5 et les serveurs de jeu nous permet de créer des expériences immersives et techniques.",
+      "infra_title": "DevOps & Infrastructure",
+      "infra_desc": "CI/CD, conteneurisation, orchestration Kubernetes. Nous ne nous arrêtons pas au code : nous déployons, surveillons et optimisons vos applications sur notre infrastructure ou la vôtre."
+    },
+    "neolang": {
+      "title": "Notre Expertise Néo-Langages",
+      "intro": "Les néo-langages (Rust, Go, Zig) représentent l'avenir du développement logiciel : performance native, sécurité mémoire, compilation optimisée. Nous maîtrisons ces technologies rares sur le marché français et accompagnons les entreprises dans leur adoption.",
+      "why_title": "Pourquoi les néo-langages ?",
+      "why_intro": "Le marché est saturé de développeurs JavaScript et PHP, mais les compétences en Rust, Go et Zig sont en pénurie critique. Ces langages offrent des avantages décisifs :",
+      "perf_title": "Performance Native",
+      "perf_desc": "10 à 100 fois plus rapide que les langages interprétés, avec une consommation mémoire réduite. Idéal pour les systèmes critiques, les APIs haute charge, et les applications temps réel.",
+      "security_title": "Sécurité Mémoire",
+      "security_desc": "Rust élimine les bugs de gestion mémoire (use-after-free, null pointers) à la compilation. Go simplifie avec un garbage collector efficace. Résultat : moins de vulnérabilités, plus de fiabilité.",
+      "modern_title": "Outillage Moderne",
+      "modern_desc": "Gestionnaires de paquets intégrés (Cargo, Go modules), compilation rapide, tests natifs, documentation générée automatiquement. L'écosystème est conçu pour la productivité.",
+      "concurrency_title": "Concurrence Native",
+      "concurrency_desc": "Go a été créé pour la concurrence (goroutines). Rust offre une concurrence sans data races garantie à la compilation. Parfait pour les systèmes distribués et les microservices.",
+      "rust_title": "Rust",
+      "rust_subtitle": "Performance + Sécurité + Fiabilité",
+      "rust_desc": "Le langage le plus aimé des développeurs (StackOverflow Survey). Nous l'utilisons pour nos outils systèmes, nos briques de sécurité, et tout code nécessitant une fiabilité absolue. Zéro coût d'abstraction, zéro compromis.",
+      "rust_use": "Systèmes critiques, outils CLI, backends performants, WebAssembly",
+      "go_title": "Go",
+      "go_subtitle": "Simplicité + Scalabilité + Vitesse",
+      "go_desc": "Le langage de l'infrastructure moderne (Kubernetes, Docker, Terraform). Nous l'utilisons pour nos microservices, notre orchestrateur cloud, et toutes nos APIs haute performance. Simple à apprendre, puissant en production.",
+      "go_use": "Microservices, APIs, orchestrateurs, outils DevOps",
+      "zig_title": "Zig",
+      "zig_subtitle": "Le Futur du Système",
+      "zig_desc": "Le successeur spirituel du C, avec une approche moderne de la programmation système. Pas encore mature pour la production critique, mais nous l'explorons pour nos futurs projets bas-niveau et comme alternative à C/C++.",
+      "zig_use": "Programmation système, remplacement de C, outils bas-niveau"
+    },
+    "projects": {
+      "title": "Nos Projets & Réalisations",
+      "intro": "De nos projets internes aux solutions clients, découvrez comment nous mettons en pratique notre expertise technique pour créer des solutions qui fonctionnent vraiment.",
+      "vff_title": "VFF Project",
+      "vff_tag": "Projet Communautaire",
+      "vff_desc": "Encyclopédie ferroviaire collaborative française avec cartographie au mètre près. Stack moderne : SvelteKit, Laravel API, PostgreSQL PostGIS. Intégration OpenStreetMap, système de contribution communautaire, gestion de milliers de données géographiques.",
+      "vff_tech": "SvelteKit · Laravel · PostgreSQL · PostGIS · OpenStreetMap",
+      "site_title": "Site UnxWares",
+      "site_tag": "Vitrine Technique",
+      "site_desc": "Le site que vous consultez actuellement. SvelteKit avec i18n (6 langues), design moderne et responsive, optimisé pour les performances. Open source sur GitHub pour inspirer la communauté.",
+      "site_tech": "SvelteKit · i18n · Design System · SEO",
+      "orchestrator_title": "Orchestrateur Cloud",
+      "orchestrator_tag": "Infrastructure",
+      "orchestrator_desc": "Notre orchestrateur maison en Go qui pilote toute l'infrastructure UnxWares Cloud. Architecture microservices, communication sécurisée, API de déploiement modulaire. Gère Proxmox, Kubernetes, et tous nos environnements clients.",
+      "orchestrator_tech": "Go · Microservices · Kubernetes API · Proxmox API",
+      "panel_title": "Panel Client",
+      "panel_tag": "Application Web",
+      "panel_desc": "Espace client complet développé en Laravel. Authentification OIDC Provider maison, gestion de facturation, système de droits granulaire, interface de gestion des services. Sécurisé, évolutif, et pensé pour l'UX.",
+      "panel_tech": "Laravel · Vue.js · MySQL · OIDC · Stripe",
+      "raiemus_title": "Raiemus OS",
+      "raiemus_tag": "Système d'Exploitation",
+      "raiemus_desc": "Système d'exploitation léger basé sur ArchLinux, optimisé pour le RDP et les thin clients. Boot rapide, consommation mémoire minimale, parfait pour transformer un vieux PC en terminal performant.",
+      "raiemus_tech": "ArchLinux · SystemD · XRDP · Custom Kernel",
+      "game_title": "Jeu Vidéo (UE5)",
+      "game_tag": "En Développement",
+      "game_desc": "Notre projet de jeu indépendant sous Unreal Engine 5. Développé pour remplacer notre dépendance à l'écosystème Minecraft. Gameplay innovant, graphismes modernes, architecture serveur scalable.",
+      "game_tech": "Unreal Engine 5 · C++ · Blueprints · Serveur Go"
+    },
+    "process": {
+      "title": "Notre Processus de Travail",
+      "intro": "De l'idée à la production, nous suivons un processus éprouvé qui allie agilité, qualité et transparence. Vous gardez le contrôle à chaque étape.",
+      "step1_title": "1. Découverte & Cadrage",
+      "step1_desc": "Nous commençons par comprendre votre besoin, vos contraintes, et vos objectifs. Pas de jargon technique inutile, juste une discussion franche sur ce que vous voulez accomplir et comment y arriver.",
+      "step2_title": "2. Proposition Technique",
+      "step2_desc": "Nous vous proposons une architecture technique détaillée, avec les technologies recommandées, les délais réalistes, et un budget transparent. Pas de surprises, pas de frais cachés.",
+      "step3_title": "3. Développement Itératif",
+      "step3_desc": "Nous développons par itérations courtes avec des démos régulières. Vous pouvez suivre l'avancement, tester les fonctionnalités, et ajuster le cap si nécessaire. Agilité réelle, pas cosmétique.",
+      "step4_title": "4. Tests & Qualité",
+      "step4_desc": "Tests unitaires, tests d'intégration, revue de code, analyse de sécurité. Nous ne livrons pas de code bancal. La qualité n'est pas négociable.",
+      "step5_title": "5. Déploiement & Formation",
+      "step5_desc": "Nous déployons sur notre infrastructure ou la vôtre, configurons le CI/CD, et formons votre équipe. Vous êtes autonomes, mais nous restons disponibles.",
+      "step6_title": "6. Maintenance & Support",
+      "step6_desc": "Support technique direct par les développeurs qui ont créé votre projet. Pas de niveau 1 qui lit un script, juste de la vraie expertise technique."
+    },
+    "tech": {
+      "title": "Notre Stack Technique",
+      "intro": "Nous maîtrisons un large éventail de technologies modernes et éprouvées. Nous choisissons toujours la meilleure technologie pour votre besoin, pas celle qui nous arrange.",
+      "frontend_title": "Frontend Moderne",
+      "frontend_tech": "SvelteKit · React · Vue.js · TypeScript · Tailwind CSS",
+      "backend_title": "Backend Performant",
+      "backend_tech": "Go · Rust · Laravel (PHP) · Node.js · Python",
+      "mobile_title": "Applications Mobiles",
+      "mobile_tech": "Flutter · React Native · SwiftUI · Kotlin",
+      "desktop_title": "Applications Desktop",
+      "desktop_tech": "Electron · Tauri · Flutter Desktop · Qt",
+      "database_title": "Bases de Données",
+      "database_tech": "PostgreSQL · MySQL · MongoDB · Redis · ClickHouse",
+      "devops_title": "DevOps & Cloud",
+      "devops_tech": "Kubernetes · Docker · Proxmox · GitLab CI · ArgoCD",
+      "gamedev_title": "Game Development",
+      "gamedev_tech": "Unreal Engine 5 · Unity · Godot · Custom Servers"
+    },
+    "team": {
+      "title": "Notre Modèle de Collaboration",
+      "intro": "Nous travaillons avec une équipe interne passionnée et des développeurs indépendants certifiés que nous rémunérons justement. Un modèle hybride qui garantit qualité, réactivité et éthique.",
+      "internal_title": "Équipe Interne",
+      "internal_desc": "Nos fondateurs et développeurs permanents assurent la cohérence technique, l'architecture des projets, et la relation client. Ils connaissent l'infrastructure, maîtrisent toute la stack, et sont vos interlocuteurs directs.",
+      "freelance_title": "Développeurs Certifiés",
+      "freelance_desc": "Nous collaborons avec des freelances sélectionnés pour leur expertise technique et leur fiabilité. Nous les payons dans des délais courts et justes, leur fournissons le contexte technique et l'infrastructure nécessaire.",
+      "client_title": "Pour Vous, le Client",
+      "client_desc": "Un seul interlocuteur, une équipe coordonnée, pas de surprise. Si un développeur a un imprévu, nous avons la redondance humaine nécessaire. Vous ne subissez pas les aléas du freelancing classique.",
+      "win_title": "Tout le Monde Gagne",
+      "win_desc": "Le client a un projet livré dans les temps avec une qualité constante. Le développeur travaille sereinement sans courir après les paiements. UnxWares construit une relation de confiance long terme. C'est ça, l'éthique en action."
+    },
+    "cta": {
+      "title": "Prêt à Créer Quelque Chose de Grand ?",
+      "desc": "Que vous ayez un projet précis ou juste une idée, discutons-en. Nous vous conseillerons honnêtement sur la faisabilité, les technologies, et le budget nécessaire. Sans engagement, sans jargon inutile.",
+      "button": "Discuter de votre projet"
+    }
+  },
+  "cloud_page": {
+    "hero": {
+      "title": "UnxWares Cloud",
+      "tagline": "Du cloud sans être un géant. De la souveraineté sans le prix fort.",
+      "intro": "UnxWares Cloud est notre infrastructure d'hébergement souveraine, pensée pour les entreprises qui veulent maîtriser leurs données sans compromis sur la performance. Datacenter en Normandie, technologies cloud-native certifiées, infogérance incluse. De la simple VM aux clusters Kubernetes haute disponibilité, nous vous offrons une alternative française aux géants américains.",
+      "cta_contact": "Découvrir nos offres",
+      "cta_datacenter": "Visiter notre datacenter",
+      "cta_config": "Configurer mon offre"
+    },
+    "services": {
+      "title": "Nos Services Cloud",
+      "intro": "De l'hébergement simple aux architectures cloud-native complexes, nous proposons des solutions adaptées à tous les besoins. Infrastructure managée, support technique réactif, et prix transparents.",
+      "vps_title": "VPS & Serveurs Dédiés",
+      "vps_desc": "Machines virtuelles performantes sur infrastructure HPE ProLiant. CPU AMD Threadripper/Ryzen, stockage NVMe, réseau 10 Gb/s. Déploiement en quelques minutes, accès root complet.",
+      "kubernetes_title": "Kubernetes Managé",
+      "kubernetes_desc": "Clusters Kubernetes certifiés CNCF, haute disponibilité garantie. Nous gérons les masters, vous déployez vos applications. Monitoring, backups, mises à jour incluses.",
+      "storage_title": "Stockage & Backup",
+      "storage_desc": "Stockage objet S3-compatible, backups automatisés, réplication multi-sites. Vos données sont sécurisées et accessibles à tout moment.",
+      "network_title": "Réseau & Sécurité",
+      "network_desc": "Pare-feu managés Fortinet, VPN WireGuard, tunnels privés. Protection DDoS, monitoring réseau, et isolation totale de vos environnements.",
+      "database_title": "Bases de Données",
+      "database_desc": "PostgreSQL, MySQL, MongoDB, Redis managés. Haute disponibilité, sauvegardes automatiques, réplication synchrone. Vous vous concentrez sur vos données, on gère l'infrastructure.",
+      "custom_title": "Solutions Sur-Mesure",
+      "custom_desc": "Architecture complexe, besoins spécifiques, migration depuis un autre cloud. Nous concevons et déployons des solutions adaptées à votre contexte."
+    },
+    "infrastructure": {
+      "title": "Notre Infrastructure",
+      "intro": "Un datacenter normand équipé de matériel professionnel, une architecture réseau redondante, et une expertise technique maison. Nous contrôlons chaque couche de notre stack pour vous garantir performance et fiabilité.",
+      "hardware_title": "Matériel Professionnel",
+      "hardware_desc": "Serveurs HPE ProLiant Gen8/Gen9, stations AMD Threadripper et Ryzen 9 9900X. Du matériel de qualité pour une infrastructure durable.",
+      "network_title": "Réseau 10 Gb/s",
+      "network_desc": "Fibre optique OM4, switches 10 Gb/s, routage MikroTik. Pare-feu Fortinet FortiGate pour une sécurité multicouche.",
+      "virtualization_title": "Virtualisation Proxmox",
+      "virtualization_desc": "Hyperviseur Proxmox VE en cluster, stockage distribué Ceph, live migration. Infrastructure as Code pour reproductibilité.",
+      "orchestration_title": "Orchestrateur Maison",
+      "orchestration_desc": "Notre orchestrateur développé en Go pilote toute l'infrastructure. API unifiée, déploiements automatisés, gestion multi-tenants.",
+      "monitoring_title": "Monitoring & Alerting",
+      "monitoring_desc": "Surveillance temps réel de l'infrastructure, métriques détaillées, alerting intelligent. Prometheus, Grafana, et outils maison.",
+      "sovereignty_title": "Souveraineté Garantie",
+      "sovereignty_desc": "Datacenter en France, conformité RGPD native, pas de Cloud Act. Vos données restent sous contrôle français."
+    },
+    "advantages": {
+      "title": "Pourquoi Choisir UnxWares Cloud",
+      "intro": "Une alternative crédible aux géants américains, avec les avantages d'un acteur local qui maîtrise son infrastructure de bout en bout.",
+      "perf_title": "Performance",
+      "perf_desc": "Matériel moderne, réseau 10 Gb/s, stockage NVMe. Des performances comparables aux grands acteurs, sans la latence transatlantique.",
+      "control_title": "Maîtrise Totale",
+      "control_desc": "Nous développons nos propres outils d'orchestration. Pas de dépendance à des API propriétaires, pas de lock-in technique.",
+      "support_title": "Support Expert",
+      "support_desc": "Support technique direct par les ingénieurs qui gèrent l'infrastructure. Pas de tickets perdus dans un système anonyme.",
+      "price_title": "Prix Justes",
+      "price_desc": "Tarification forfaitaire transparente, sans frais cachés d'entrée/sortie. Vous payez ce que vous consommez, point.",
+      "rgpd_title": "RGPD Natif",
+      "rgpd_desc": "Conformité RGPD par conception, hébergement en France, souveraineté garantie. Pas de Cloud Act, pas de zones grises juridiques.",
+      "openness_title": "Ouverture",
+      "openness_desc": "Technologies open source, documentation publique de notre infrastructure. Vous savez exactement où tournent vos applications."
+    },
+    "usecases": {
+      "title": "Cas d'Usage & Clients Types",
+      "intro": "Du projet VFF hébergé chez nous aux architectures d'entreprise, nos solutions s'adaptent à tous les besoins.",
+      "startup_title": "Startups & Scale-ups",
+      "startup_desc": "Infrastructure évolutive, prix maîtrisés, support réactif. Démarrez petit, scalez grand sans changer de provider.",
+      "saas_title": "Éditeurs SaaS",
+      "saas_desc": "Hébergez votre plateforme sur une infrastructure souveraine. Multi-tenancy, isolation complète, conformité RGPD garantie.",
+      "agency_title": "Agences & Studios",
+      "agency_desc": "Hébergez vos clients sur notre cloud, profitez de nos tarifs partenaires, bénéficiez de notre support technique.",
+      "enterprise_title": "Entreprises",
+      "enterprise_desc": "Migration cloud, architectures hybrides, environnements de développement. Accompagnement sur-mesure, SLA garantis."
+    },
+    "cta": {
+      "title": "Prêt à Migrer vers un Cloud Souverain ?",
+      "desc": "Que vous ayez besoin d'un simple VPS ou d'une architecture Kubernetes complexe, nous avons une solution pour vous. Discutons de vos besoins, sans engagement.",
+      "button": "Découvrir nos offres"
     }
   }
 }
