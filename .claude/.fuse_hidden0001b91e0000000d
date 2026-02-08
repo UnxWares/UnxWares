@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:www.outseta.com)",
-      "WebFetch(domain:bazenville-dev.baptiste-gosselin.fr)",
-      "Bash(curl:*)"
-    ]
-  }
-}

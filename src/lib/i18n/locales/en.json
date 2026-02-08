@@ -72,8 +72,8 @@
     "cyberdefense_desc": "Cybersecurity support, audits and compliance to maintain the highest level of security."
   },
   "techlogos": {
-    "title": "Our Trusted Partners",
-    "intro": "Our infrastructures rely on trusted partners and proven open source technologies."
+    "title": "Our Trusted Technologies",
+    "intro": "Our infrastructures rely on proven open source technologies and professional-grade hardware."
   },
   "pepite": {
     "title": "Our Pépite Normandie Application",
@@ -532,6 +532,9 @@
     }
   },
   "pages": {
+    "home": {
+      "title": "UnxWares - Welcome"
+    },
     "whoarewe": {
       "title": "UnxWares - Who are we",
       "h1": "Our identity: Who are we, what is our story?",
@@ -688,7 +691,10 @@
       "intro": "UnxWares Cloud is our sovereign hosting infrastructure, designed for companies that want to control their data without compromising on performance. Datacenter in Normandy, certified cloud-native technologies, managed services included. From simple VMs to high-availability Kubernetes clusters, we offer a French alternative to American giants.",
       "cta_contact": "Discover our offers",
       "cta_datacenter": "Visit our datacenter",
-      "cta_config": "Configure my offer"
+      "cta_config": "Configure my offer",
+      "stat_availability": "Availability",
+      "stat_datacenter": "Datacenter",
+      "stat_support": "Support"
     },
     "services": {
       "title": "Our Cloud Services",
@@ -720,7 +726,8 @@
       "monitoring_title": "Monitoring & Alerting",
       "monitoring_desc": "Real-time infrastructure monitoring, detailed metrics, intelligent alerting. Prometheus, Grafana, and in-house tools.",
       "sovereignty_title": "Guaranteed Sovereignty",
-      "sovereignty_desc": "Datacenter in France, native GDPR compliance, no Cloud Act. Your data remains under French control."
+      "sovereignty_desc": "Datacenter in France, native GDPR compliance, no Cloud Act. Your data remains under French control.",
+      "cta_link": "Discover our infrastructure"
     },
     "advantages": {
       "title": "Why Choose UnxWares Cloud",

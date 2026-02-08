@@ -11,17 +11,17 @@
 	<div class="hero-stats">
 		<div class="stat-item">
 			<div class="stat-number">99.5%</div>
-			<div class="stat-label">Disponibilité</div>
+			<div class="stat-label">{$t('cloud_page.hero.stat_availability')}</div>
 		</div>
 		<div class="stat-divider"></div>
 		<div class="stat-item">
 			<div class="stat-number">1</div>
-			<div class="stat-label">Datacenter</div>
+			<div class="stat-label">{$t('cloud_page.hero.stat_datacenter')}</div>
 		</div>
 		<div class="stat-divider"></div>
 		<div class="stat-item">
 			<div class="stat-number">24/7</div>
-			<div class="stat-label">Support</div>
+			<div class="stat-label">{$t('cloud_page.hero.stat_support')}</div>
 		</div>
 	</div>
 
@@ -89,6 +89,22 @@
 		.cloud-title img {
 			width: 35px;
 			height: 35px;
+		}
+	}
+
+	@media (max-width: 548px) {
+		.cloud-title {
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		.cloud-title img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.cloud-title h1 {
+			font-size: 24px;
 		}
 	}
 

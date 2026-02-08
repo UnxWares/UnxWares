@@ -1,5 +1,7 @@
 <script>
 	import { t } from 'svelte-i18n';
+
+	const currentYear = new Date().getFullYear();
 </script>
 
 <footer class="poppins-regular">
@@ -65,7 +67,7 @@
 	</div>
 	<hr>
 	<div class="copyright">
-		<p>{$t('footer.copyright')}</p>
+		<p>{$t('footer.copyright').replace('2025', currentYear)}</p>
 		<p>{$t('footer.powered_by')} <a href="https://www.unxwares.studio/"><img src="/favicon.png" alt="UnxWares icon in the coryright"> UnxWares</a>.</p>
 	</div>
 </footer>

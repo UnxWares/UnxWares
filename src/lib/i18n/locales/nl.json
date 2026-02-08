@@ -72,8 +72,8 @@
     "cyberdefense_desc": "Cyberbeveiligingsondersteuning, audits en compliance om het hoogste beveiligingsniveau te handhaven."
   },
   "techlogos": {
-    "title": "Onze Vertrouwde Partners",
-    "intro": "Onze infrastructuren vertrouwen op vertrouwde partners en bewezen open source technologieën."
+    "title": "Onze Vertrouwde Technologieën",
+    "intro": "Onze infrastructuren vertrouwen op bewezen open source technologieën en professionele hardware van hoge kwaliteit."
   },
   "pepite": {
     "title": "Onze Pépite Normandie Aanvraag",
@@ -532,6 +532,9 @@
     }
   },
   "pages": {
+    "home": {
+      "title": "UnxWares - Welkom"
+    },
     "whoarewe": {
       "title": "UnxWares - Wie zijn we",
       "h1": "Onze identiteit: Wie zijn we, wat is ons verhaal?",
@@ -688,7 +691,10 @@
       "intro": "UnxWares Cloud is onze soevereine hosting-infrastructuur, ontworpen voor bedrijven die hun data willen beheren zonder concessies te doen aan prestaties. Datacenter in Normandië, gecertificeerde cloud-native technologieën, beheerde diensten inbegrepen. Van eenvoudige VM's tot hoog-beschikbare Kubernetes-clusters bieden wij een Frans alternatief voor Amerikaanse reuzen.",
       "cta_contact": "Ontdek onze aanbiedingen",
       "cta_datacenter": "Bezoek ons datacenter",
-      "cta_config": "Configureer mijn aanbod"
+      "cta_config": "Configureer mijn aanbod",
+      "stat_availability": "Beschikbaarheid",
+      "stat_datacenter": "Datacenter",
+      "stat_support": "Ondersteuning"
     },
     "services": {
       "title": "Onze Cloud Diensten",
@@ -720,7 +726,8 @@
       "monitoring_title": "Monitoring & Alerting",
       "monitoring_desc": "Real-time infrastructuurmonitoring, gedetailleerde metrics, intelligente alerting. Prometheus, Grafana en eigen tools.",
       "sovereignty_title": "Gegarandeerde Soevereiniteit",
-      "sovereignty_desc": "Datacenter in Frankrijk, native AVG-compliance, geen Cloud Act. Uw data blijft onder Franse controle."
+      "sovereignty_desc": "Datacenter in Frankrijk, native AVG-compliance, geen Cloud Act. Uw data blijft onder Franse controle.",
+      "cta_link": "Ontdek onze infrastructuur"
     },
     "advantages": {
       "title": "Waarom UnxWares Cloud Kiezen",

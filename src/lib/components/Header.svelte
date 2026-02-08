@@ -1,6 +1,8 @@
 <script>
 	import Typed from 'typed.js';
 	import { t, locale } from 'svelte-i18n';
+	import { fade, scale } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	const greetings = {
 		fr: 'Salut toi &#x1F44B;, Nous sommes <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
@@ -70,11 +72,11 @@
 </script>
 
 <header>
-	<figure>
+	<figure in:scale={{ duration: 800, delay: 150, easing: quintOut, start: 0.8 }}>
 		<img src="/images/unxwares_logotype.png" alt="logo" />
 		<h6 class="poppins-regular typing"></h6>
 	</figure>
-	<div class="scroll-button">
+	<div class="scroll-button" in:fade={{ duration: 600, delay: 800 }}>
 			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>{$t('header.discover')}</span></span>
 	</div>
 </header>

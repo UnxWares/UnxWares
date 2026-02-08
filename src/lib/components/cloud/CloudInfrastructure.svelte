@@ -39,7 +39,7 @@
 	<div class="infrastructure-cta">
 		<a href="/datacenter" class="infrastructure-link">
 			<i class="bi bi-arrow-right-circle-fill"></i>
-			Découvrir notre infrastructure
+			{$t('cloud_page.infrastructure.cta_link')}
 		</a>
 	</div>
 </section>
@@ -187,6 +187,53 @@
 		.infrastructure-link {
 			width: 100%;
 			justify-content: center;
+		}
+
+		.highlight-card {
+			padding: 30px 25px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.infrastructure-link {
+			font-size: 14px;
+			padding: 12px 24px;
+			gap: 8px;
+		}
+	}
+
+	@media (max-width: 380px) {
+		.highlight-card {
+			padding: 25px 20px;
+		}
+
+		.highlight-icon {
+			width: 60px;
+			height: 60px;
+		}
+
+		.highlight-icon i {
+			font-size: 28px;
+		}
+
+		.highlight-card h3 {
+			font-size: 18px;
+		}
+
+		.highlight-card p {
+			font-size: 14px;
+		}
+
+		.infrastructure-link {
+			font-size: 13px;
+			padding: 12px 20px;
+			gap: 6px;
+			white-space: normal;
+			text-align: center;
+		}
+
+		.infrastructure-link i {
+			font-size: 16px;
 		}
 	}
 </style>

@@ -68,10 +68,18 @@ p{
     text-align: justify;
     text-justify: inter-word;
     word-spacing: -0.05em;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 2;
 }
 h2, h3{
     text-align: justify;
     text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 2;
 }
 h1{
     text-align: center;

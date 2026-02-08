@@ -72,8 +72,8 @@
     "cyberdefense_desc": "Accompagnement en cybersécurité, audits et conformité pour maintenir le plus haut niveau de sécurité."
   },
   "techlogos": {
-    "title": "Nos Partenaires de Confiance",
-    "intro": "Nos infrastructures s'appuient sur des partenaires de confiance et des technologies open source éprouvées."
+    "title": "Nos Technologies de Confiance",
+    "intro": "Nos infrastructures s'appuient sur des technologies open source éprouvées et du matériel professionnel de qualité."
   },
   "pepite": {
     "title": "Notre Candidature Pépite Normandie",
@@ -689,6 +689,9 @@
     }
   },
   "pages": {
+    "home": {
+      "title": "UnxWares - Bienvenue"
+    },
     "whoarewe": {
       "title": "UnxWares - Qui sommes-nous",
       "h1": "Notre identité : Qui sommes-nous, quelle est notre histoire ?",
@@ -845,7 +848,10 @@
       "intro": "UnxWares Cloud est notre infrastructure d'hébergement souveraine, pensée pour les entreprises qui veulent maîtriser leurs données sans compromis sur la performance. Datacenter en Normandie, technologies cloud-native certifiées, infogérance incluse. De la simple VM aux clusters Kubernetes haute disponibilité, nous vous offrons une alternative française aux géants américains.",
       "cta_contact": "Découvrir nos offres",
       "cta_datacenter": "Visiter notre datacenter",
-      "cta_config": "Configurer mon offre"
+      "cta_config": "Configurer mon offre",
+      "stat_availability": "Disponibilité",
+      "stat_datacenter": "Datacenter",
+      "stat_support": "Support"
     },
     "services": {
       "title": "Nos Services Cloud",
@@ -877,7 +883,8 @@
       "monitoring_title": "Monitoring & Alerting",
       "monitoring_desc": "Surveillance temps réel de l'infrastructure, métriques détaillées, alerting intelligent. Prometheus, Grafana, et outils maison.",
       "sovereignty_title": "Souveraineté Garantie",
-      "sovereignty_desc": "Datacenter en France, conformité RGPD native, pas de Cloud Act. Vos données restent sous contrôle français."
+      "sovereignty_desc": "Datacenter en France, conformité RGPD native, pas de Cloud Act. Vos données restent sous contrôle français.",
+      "cta_link": "Découvrir notre infrastructure"
     },
     "advantages": {
       "title": "Pourquoi Choisir UnxWares Cloud",

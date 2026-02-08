@@ -8,13 +8,14 @@
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
 	import Separator from '$lib/components/Separator.svelte';
+	import { t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
-	<title>UnxWares - Welcome</title>
+	<title>{$t('pages.home.title')}</title>
 
-	<meta property="og:title" content="UnxWares - Welcome">
-	<meta name="twitter:title" content="UnxWares - Welcome">
+	<meta property="og:title" content="{$t('pages.home.title')}">
+	<meta name="twitter:title" content="{$t('pages.home.title')}">
 
 	<meta property="og:url" content="https://www.unxwares.com">
 	<meta name="twitter:site" content="https://www.unxwares.com">

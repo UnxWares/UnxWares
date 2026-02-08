@@ -177,4 +177,28 @@
 			padding: 12px 24px;
 		}
 	}
+
+	@media (max-width: 380px) {
+		.cta-container {
+			padding: 25px 20px;
+			gap: 25px;
+		}
+
+		.cta-left {
+			gap: 20px;
+		}
+
+		h3 {
+			font-size: 17px;
+		}
+
+		p {
+			font-size: 13px;
+		}
+
+		.cta-button {
+			font-size: 14px;
+			padding: 10px 20px;
+		}
+	}
 </style>

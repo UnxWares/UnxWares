@@ -72,8 +72,8 @@
     "cyberdefense_desc": "Soporte de ciberseguridad, auditorías y cumplimiento para mantener el más alto nivel de seguridad."
   },
   "techlogos": {
-    "title": "Nuestros Socios de Confianza",
-    "intro": "Nuestras infraestructuras se basan en socios de confianza y tecnologías de código abierto probadas."
+    "title": "Nuestras Tecnologías de Confianza",
+    "intro": "Nuestras infraestructuras se basan en tecnologías de código abierto probadas y hardware profesional de calidad."
   },
   "pepite": {
     "title": "Nuestra Solicitud Pépite Normandie",
@@ -532,6 +532,9 @@
     }
   },
   "pages": {
+    "home": {
+      "title": "UnxWares - Bienvenido"
+    },
     "whoarewe": {
       "title": "UnxWares - Quiénes somos",
       "h1": "Nuestra identidad: ¿Quiénes somos, cuál es nuestra historia?",
@@ -688,7 +691,10 @@
       "intro": "UnxWares Cloud es nuestra infraestructura de alojamiento soberana, diseñada para empresas que desean controlar sus datos sin comprometer el rendimiento. Centro de datos en Normandía, tecnologías cloud-native certificadas, servicios gestionados incluidos. Desde VMs simples hasta clusters Kubernetes de alta disponibilidad, ofrecemos una alternativa francesa a los gigantes americanos.",
       "cta_contact": "Descubrir nuestras ofertas",
       "cta_datacenter": "Visitar nuestro centro de datos",
-      "cta_config": "Configurar mi oferta"
+      "cta_config": "Configurar mi oferta",
+      "stat_availability": "Disponibilidad",
+      "stat_datacenter": "Centro de datos",
+      "stat_support": "Soporte"
     },
     "services": {
       "title": "Nuestros Servicios Cloud",
@@ -720,7 +726,8 @@
       "monitoring_title": "Monitoreo y Alertas",
       "monitoring_desc": "Monitoreo de infraestructura en tiempo real, métricas detalladas, alertas inteligentes. Prometheus, Grafana y herramientas propias.",
       "sovereignty_title": "Soberanía Garantizada",
-      "sovereignty_desc": "Centro de datos en Francia, cumplimiento RGPD nativo, sin Cloud Act. Sus datos permanecen bajo control francés."
+      "sovereignty_desc": "Centro de datos en Francia, cumplimiento RGPD nativo, sin Cloud Act. Sus datos permanecen bajo control francés.",
+      "cta_link": "Descubrir nuestra infraestructura"
     },
     "advantages": {
       "title": "Por Qué Elegir UnxWares Cloud",

@@ -92,6 +92,22 @@
 		}
 	}
 
+	@media (max-width: 548px) {
+		.studio-title {
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		.studio-title img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.studio-title h1 {
+			font-size: 24px;
+		}
+	}
+
 	.tagline {
 		font-size: 18px;
 		font-style: italic;

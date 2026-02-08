@@ -171,4 +171,27 @@
 		text-justify: inter-word;
 		word-spacing: -0.05em;
 	}
+
+	@media (max-width: 380px) {
+		.feature-card {
+			padding: 20px;
+		}
+
+		.feature-icon {
+			width: 50px;
+			height: 50px;
+		}
+
+		.feature-icon i {
+			font-size: 24px;
+		}
+
+		.feature-card h3 {
+			font-size: 16px;
+		}
+
+		.feature-card p {
+			font-size: 13px;
+		}
+	}
 </style>

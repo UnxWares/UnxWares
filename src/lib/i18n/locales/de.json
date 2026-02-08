@@ -72,8 +72,8 @@
     "cyberdefense_desc": "Cybersicherheitsunterstützung, Audits und Compliance zur Aufrechterhaltung höchster Sicherheitsstandards."
   },
   "techlogos": {
-    "title": "Unsere Vertrauenspartner",
-    "intro": "Unsere Infrastrukturen stützen sich auf vertrauenswürdige Partner und bewährte Open-Source-Technologien."
+    "title": "Unsere Vertrauenstechnologien",
+    "intro": "Unsere Infrastrukturen stützen sich auf bewährte Open-Source-Technologien und professionelle Hardware."
   },
   "pepite": {
     "title": "Unsere Pépite Normandie Bewerbung",
@@ -532,6 +532,9 @@
     }
   },
   "pages": {
+    "home": {
+      "title": "UnxWares - Willkommen"
+    },
     "whoarewe": {
       "title": "UnxWares - Wer sind wir",
       "h1": "Unsere Identität: Wer sind wir, was ist unsere Geschichte?",
@@ -688,7 +691,10 @@
       "intro": "UnxWares Cloud ist unsere souveräne Hosting-Infrastruktur, entwickelt für Unternehmen, die ihre Daten kontrollieren möchten, ohne Kompromisse bei der Leistung einzugehen. Rechenzentrum in der Normandie, zertifizierte Cloud-native-Technologien, Managed Services inklusive. Von einfachen VMs bis zu hochverfügbaren Kubernetes-Clustern bieten wir eine französische Alternative zu amerikanischen Giganten.",
       "cta_contact": "Unsere Angebote entdecken",
       "cta_datacenter": "Unser Rechenzentrum besuchen",
-      "cta_config": "Mein Angebot konfigurieren"
+      "cta_config": "Mein Angebot konfigurieren",
+      "stat_availability": "Verfügbarkeit",
+      "stat_datacenter": "Rechenzentrum",
+      "stat_support": "Support"
     },
     "services": {
       "title": "Unsere Cloud-Dienste",
@@ -720,7 +726,8 @@
       "monitoring_title": "Monitoring & Alarmierung",
       "monitoring_desc": "Echtzeit-Infrastruktur-Monitoring, detaillierte Metriken, intelligente Alarmierung. Prometheus, Grafana und hauseigene Tools.",
       "sovereignty_title": "Garantierte Souveränität",
-      "sovereignty_desc": "Rechenzentrum in Frankreich, native DSGVO-Konformität, kein Cloud Act. Ihre Daten bleiben unter französischer Kontrolle."
+      "sovereignty_desc": "Rechenzentrum in Frankreich, native DSGVO-Konformität, kein Cloud Act. Ihre Daten bleiben unter französischer Kontrolle.",
+      "cta_link": "Unsere Infrastruktur entdecken"
     },
     "advantages": {
       "title": "Warum UnxWares Cloud wählen",

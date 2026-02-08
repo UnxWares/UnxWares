@@ -44,14 +44,14 @@
 <style>
 	#tech-logos{
 		margin: 0;
-		padding: 0 40px;
+		padding: 25px 40px;
 		background-color: #fafbfc;
 		border-radius: 12px;
 	}
 	@media (max-width: 768px) {
 		#tech-logos{
 			margin: 0;
-			padding: 0 30px;
+			padding: 20px 30px;
 		}
 	}
 	#tech-logos h2{

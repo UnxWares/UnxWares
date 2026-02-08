@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../styles/app.css';
 	import '$lib/i18n';
-	import { isLoading } from 'svelte-i18n';
+	import { isLoading, locale } from 'svelte-i18n';
 	import Background from "$lib/components/Background.svelte";
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Header from '$lib/components/Header.svelte';
@@ -11,19 +11,25 @@
 	let { children } = $props();
 
 	let previousPath = $state($page.url.pathname);
+	let headerKey = $state(0);
 
 	$effect(() => {
 		const currentPath = $page.url.pathname;
-		if (currentPath !== previousPath && currentPath !== '/') {
-			setTimeout(() => {
-				const viewportHeight = window.innerHeight;
-				window.scrollTo({
-					top: viewportHeight,
-					behavior: 'smooth'
-				});
-			}, 100);
+		if (currentPath !== previousPath) {
+			window.scrollTo({ top: 0, behavior: 'instant' });
+			// Incrémenter la clé pour forcer le re-rendu du Header quand on revient sur /
+			if (currentPath === '/') {
+				headerKey++;
+			}
+			previousPath = currentPath;
 		}
-		previousPath = currentPath;
+	});
+
+	// Update HTML lang attribute when locale changes
+	$effect(() => {
+		if ($locale && typeof document !== 'undefined') {
+			document.documentElement.lang = $locale;
+		}
 	});
 </script>
 <svelte:head>
@@ -48,7 +54,11 @@
 {:else}
 	<Background />
 	<Navbar />
-	<Header />
+	{#if $page.url.pathname === '/'}
+		{#key headerKey}
+			<Header />
+		{/key}
+	{/if}
 	{#key $page.url.pathname}
 		<div class="page-content" in:fade={{ duration: 300, delay: 150 }} out:fade={{ duration: 150 }}>
 			{@render children()}
