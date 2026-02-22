@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { CloudFog, Code, UserCog, BarChart, Globe, MessageCircle, Instagram, Cloud as CloudIcon, Github, Folder, BellOff, CheckCircle2, Mail } from 'lucide-svelte';
 
 	const currentYear = new Date().getFullYear();
 </script>
@@ -15,34 +16,34 @@
 			<ul class="general-links">
 				<h3>{$t('footer.quick_links')}</h3>
 				<li class="unxwares uw-cloud">
-					<a href="https://www.unxwares.cloud"><i class="bi bi-cloud-fog2"></i> {$t('footer.cloud_platform')}</a>
+					<a href="https://www.unxwares.cloud"><CloudFog size={16} /> {$t('footer.cloud_platform')}</a>
 				</li>
 				<li class="unxwares uw-studio">
-					<a href="https://www.unxwares.studio"><i class="bi bi-code-slash"></i> {$t('footer.dev_studio')}</a>
+					<a href="https://www.unxwares.studio"><Code size={16} /> {$t('footer.dev_studio')}</a>
 				</li>
 				<li class="unxwares uw-clientarea">
-					<a href="https://customers.unxwares.com"><i class="bi bi-person-fill-gear"></i> {$t('footer.client_area')}</a>
+					<a href="https://customers.unxwares.com"><UserCog size={16} /> {$t('footer.client_area')}</a>
 				</li>
 				<li class="unxwares uw-status">
-					<a href="https://status.unxwares.com"><i class="bi bi-bar-chart-fill"></i> {$t('footer.service_status')}</a>
+					<a href="https://status.unxwares.com"><BarChart size={16} /> {$t('footer.service_status')}</a>
 				</li>
 				<li class="unxwares uw-car">
-					<a href="/certifications-and-responsibility" data-sveltekit-preload-data="hover"><i class="bi bi-globe-europe-africa-fill"></i> {$t('footer.certifications')}</a>
+					<a href="/certifications-and-responsibility" data-sveltekit-preload-data="hover"><Globe size={16} /> {$t('footer.certifications')}</a>
 				</li>
 			</ul>
 			<ul class="contact-links">
 				<h3>{$t('footer.find_us')}</h3>
 				<li class="discord">
-					<a href="https://www.discord.com/invite/PPRacEf7yB"><i class="bi bi-discord"></i> Discord</a>
+					<a href="https://www.discord.com/invite/PPRacEf7yB"><MessageCircle size={16} /> Discord</a>
 				</li>
 				<li class="instagram">
-					<a href="https://www.instagram.com/unxwares"><i class="bi bi-instagram"></i> Instagram</a>
+					<a href="https://www.instagram.com/unxwares"><Instagram size={16} /> Instagram</a>
 				</li>
 				<li class="bluesky">
-					<a href="https://bsky.app/profile/unxwares.bsky.social"><i class="bi bi-bluesky"></i> Bluesky</a>
+					<a href="https://bsky.app/profile/unxwares.bsky.social"><CloudIcon size={16} /> Bluesky</a>
 				</li>
 				<li class="github">
-					<a href="https://www.github.com/UnxWares"><i class="bi bi-github"></i> GitHub</a>
+					<a href="https://www.github.com/UnxWares"><Github size={16} /> GitHub</a>
 				</li>
 				<li class="unxwares">
 					<a href="/datacenter" data-sveltekit-preload-data="hover"><img src="/images/unxwares_insigne_baw.png" alt="UnxWares blanck and white icon in a button in the footer"> {$t('footer.datacenter')}</a>
@@ -51,19 +52,19 @@
 			<ul class="legal-links">
 				<h3>{$t('footer.legal')}</h3>
 				<li class="legal">
-					<a href="/legal" data-sveltekit-preload-data="hover"><i class="bi bi-folder"></i> {$t('footer.legal_notice')}</a>
+					<a href="/legal" data-sveltekit-preload-data="hover"><Folder size={16} /> {$t('footer.legal_notice')}</a>
 				</li>
 				<li class="privacy">
-					<a href="/privacy" data-sveltekit-preload-data="hover"><i class="bi bi-bell-slash"></i> {$t('footer.privacy')}</a>
+					<a href="/privacy" data-sveltekit-preload-data="hover"><BellOff size={16} /> {$t('footer.privacy')}</a>
 				</li>
 				<li class="use-conditions">
-					<a href="/use-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> {$t('footer.terms')}</a>
+					<a href="/use-conditions" data-sveltekit-preload-data="hover"><CheckCircle2 size={16} /> {$t('footer.terms')}</a>
 				</li>
 				<li class="sales-conditions">
-					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><i class="bi bi-check2-circle"></i> {$t('footer.sales')}</a>
+					<a href="/sales-conditions" data-sveltekit-preload-data="hover"><CheckCircle2 size={16} /> {$t('footer.sales')}</a>
 				</li>
 				<li class="unxwares uw-contact">
-					<a href="/contact" data-sveltekit-preload-data="hover"><i class="bi bi-envelope-fill"></i> {$t('footer.contact')}</a>
+					<a href="/contact" data-sveltekit-preload-data="hover"><Mail size={16} /> {$t('footer.contact')}</a>
 				</li>
 			</ul>
 		</div>

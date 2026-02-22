@@ -2,6 +2,12 @@
 	import { t } from 'svelte-i18n';
 	import Separator from '$lib/components/Separator.svelte';
 	import ContactCTA from '$lib/components/ContactCTA.svelte';
+	import {
+		ShieldCheck, Award, Lock, CloudCheck, Trees, Recycle, Zap, MapPin,
+		Eye, CodeSquare, Euro, Users, Package, Octagon, Database, Cloud,
+		BarChart, Settings, Heart, Lightbulb, GitBranch, TrendingUp, TriangleAlert,
+		CheckCircle, Check, CalendarCheck
+	} from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -17,7 +23,7 @@
 <main>
 	<section class="hero-section">
 		<div class="hero-icon">
-			<i class="bi bi-shield-check"></i>
+			<ShieldCheck size={50} color="#050c9c" />
 		</div>
 		<h1>{$t('certifications_page.h1')}</h1>
 		<p class="intro">{$t('certifications_page.intro')}</p>
@@ -28,7 +34,7 @@
 	<!-- Compliance & Certifications -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-award"></i>
+			<Award size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.compliance_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.compliance_intro')}</p>
@@ -36,7 +42,7 @@
 			<div class="cards-grid">
 				<div class="cert-card">
 					<div class="card-icon">
-						<i class="bi bi-shield-lock-fill"></i>
+						<ShieldCheck size={28} color="#050c9c" />
 					</div>
 					<h3>{$t('certifications_page.rgpd_title')}</h3>
 					<p>{$t('certifications_page.rgpd_desc')}</p>
@@ -44,7 +50,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon">
-						<i class="bi bi-lock-fill"></i>
+						<Lock size={28} color="#050c9c" />
 					</div>
 					<h3>{$t('certifications_page.iso_title')}</h3>
 					<p>{$t('certifications_page.iso_desc')}</p>
@@ -52,7 +58,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon">
-						<i class="bi bi-cloud-check-fill"></i>
+						<CloudCheck size={28} color="#050c9c" />
 					</div>
 					<h3>{$t('certifications_page.cncf_title')}</h3>
 					<p>{$t('certifications_page.cncf_desc')}</p>
@@ -65,7 +71,7 @@
 	<!-- Environmental Responsibility -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-tree"></i>
+			<Trees size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.responsibility_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.responsibility_intro')}</p>
@@ -73,7 +79,7 @@
 			<div class="cards-grid">
 				<div class="cert-card">
 					<div class="card-icon green">
-						<i class="bi bi-recycle"></i>
+						<Recycle size={28} />
 					</div>
 					<h3>{$t('certifications_page.refurbished_title')}</h3>
 					<p>{$t('certifications_page.refurbished_desc')}</p>
@@ -81,7 +87,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon green">
-						<i class="bi bi-lightning-charge-fill"></i>
+						<Zap size={28} />
 					</div>
 					<h3>{$t('certifications_page.energy_title')}</h3>
 					<p>{$t('certifications_page.energy_desc')}</p>
@@ -89,7 +95,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon green">
-						<i class="bi bi-geo-alt-fill"></i>
+						<MapPin size={28} />
 					</div>
 					<h3>{$t('certifications_page.local_title')}</h3>
 					<p>{$t('certifications_page.local_desc')}</p>
@@ -102,7 +108,7 @@
 	<!-- Transparency & Ethics -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-eye"></i>
+			<Eye size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.transparency_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.transparency_intro')}</p>
@@ -110,7 +116,7 @@
 			<div class="cards-grid">
 				<div class="cert-card">
 					<div class="card-icon orange">
-						<i class="bi bi-code-square"></i>
+						<CodeSquare size={28} />
 					</div>
 					<h3>{$t('certifications_page.opensource_title')}</h3>
 					<p>{$t('certifications_page.opensource_desc')}</p>
@@ -118,7 +124,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon orange">
-						<i class="bi bi-currency-euro"></i>
+						<Euro size={28} />
 					</div>
 					<h3>{$t('certifications_page.pricing_title')}</h3>
 					<p>{$t('certifications_page.pricing_desc')}</p>
@@ -126,7 +132,7 @@
 
 				<div class="cert-card">
 					<div class="card-icon orange">
-						<i class="bi bi-people-fill"></i>
+						<Users size={28} />
 					</div>
 					<h3>{$t('certifications_page.support_title')}</h3>
 					<p>{$t('certifications_page.support_desc')}</p>
@@ -139,7 +145,7 @@
 	<!-- CNCF Stack & Open Source Tools -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-box-seam"></i>
+			<Package size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.cncf_stack_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.cncf_stack_intro')}</p>
@@ -147,7 +153,7 @@
 		<div class="cards-grid">
 			<div class="cert-card">
 				<div class="card-icon purple">
-					<i class="bi bi-heptagon-fill"></i>
+					<Octagon size={28} />
 				</div>
 				<h3>{$t('certifications_page.kubernetes_title')}</h3>
 				<p>{$t('certifications_page.kubernetes_desc')}</p>
@@ -155,7 +161,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon purple">
-					<i class="bi bi-database-fill"></i>
+					<Database size={28} />
 				</div>
 				<h3>{$t('certifications_page.longhorn_title')}</h3>
 				<p>{$t('certifications_page.longhorn_desc')}</p>
@@ -163,7 +169,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon purple">
-					<i class="bi bi-cloud-fill"></i>
+					<Cloud size={28} />
 				</div>
 				<h3>{$t('certifications_page.cloudstack_title')}</h3>
 				<p>{$t('certifications_page.cloudstack_desc')}</p>
@@ -171,7 +177,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon purple">
-					<i class="bi bi-bar-chart-line-fill"></i>
+					<BarChart size={28} />
 				</div>
 				<h3>{$t('certifications_page.prometheus_title')}</h3>
 				<p>{$t('certifications_page.prometheus_desc')}</p>
@@ -179,7 +185,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon purple">
-					<i class="bi bi-gear-fill"></i>
+					<Settings size={28} />
 				</div>
 				<h3>{$t('certifications_page.other_tools_title')}</h3>
 				<p>{$t('certifications_page.other_tools_desc')}</p>
@@ -192,7 +198,7 @@
 	<!-- Open Source Credo -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-heart-fill"></i>
+			<Heart size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.opensource_credo_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.opensource_credo_intro')}</p>
@@ -200,7 +206,7 @@
 		<div class="cards-grid cards-grid-4">
 			<div class="cert-card">
 				<div class="card-icon teal">
-					<i class="bi bi-lightbulb-fill"></i>
+					<Lightbulb size={28} />
 				</div>
 				<h3>{$t('certifications_page.why_opensource_title')}</h3>
 				<p>{$t('certifications_page.why_opensource_desc')}</p>
@@ -208,7 +214,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon teal">
-					<i class="bi bi-git"></i>
+					<GitBranch size={28} />
 				</div>
 				<h3>{$t('certifications_page.our_contributions_title')}</h3>
 				<p>{$t('certifications_page.our_contributions_desc')}</p>
@@ -216,7 +222,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon teal">
-					<i class="bi bi-graph-up-arrow"></i>
+					<TrendingUp size={28} />
 				</div>
 				<h3>{$t('certifications_page.opensource_business_title')}</h3>
 				<p>{$t('certifications_page.opensource_business_desc')}</p>
@@ -224,7 +230,7 @@
 
 			<div class="cert-card">
 				<div class="card-icon teal">
-					<i class="bi bi-exclamation-triangle-fill"></i>
+					<TriangleAlert size={28} />
 				</div>
 				<h3>{$t('certifications_page.proprietary_critique_title')}</h3>
 				<p>{$t('certifications_page.proprietary_critique_desc')}</p>
@@ -237,34 +243,34 @@
 	<!-- Concrete Commitments -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-check-circle"></i>
+			<CheckCircle size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.commitment_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.commitment_intro')}</p>
 
 		<div class="commitments-list">
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_1')}</p>
 			</div>
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_2')}</p>
 			</div>
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_3')}</p>
 			</div>
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_4')}</p>
 			</div>
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_5')}</p>
 			</div>
 			<div class="commitment-item">
-				<i class="bi bi-check-lg"></i>
+				<Check size={24} color="#050c9c" />
 				<p>{$t('certifications_page.commitment_6')}</p>
 			</div>
 		</div>
@@ -275,7 +281,7 @@
 	<!-- Roadmap -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-calendar-check"></i>
+			<CalendarCheck size={32} color="#050c9c" />
 			<h2>{$t('certifications_page.roadmap_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('certifications_page.roadmap_intro')}</p>
@@ -348,9 +354,7 @@
 		border-radius: 50%;
 	}
 
-	.hero-icon i {
-		font-size: 50px;
-		color: #050c9c;
+	.hero-icon :global(svg) {
 		animation: pulse 2s ease-in-out infinite;
 	}
 
@@ -386,11 +390,6 @@
 		justify-content: center;
 		gap: 15px;
 		margin-bottom: 20px;
-	}
-
-	.section-header i {
-		font-size: 32px;
-		color: #050c9c;
 	}
 
 	.section-header h2 {
@@ -461,24 +460,19 @@
 		background: #e0f2f1;
 	}
 
-	.card-icon i {
-		font-size: 28px;
-		color: #050c9c;
-	}
-
-	.card-icon.green i {
+	.card-icon.green :global(svg) {
 		color: #22c55e;
 	}
 
-	.card-icon.orange i {
+	.card-icon.orange :global(svg) {
 		color: #f97316;
 	}
 
-	.card-icon.purple i {
+	.card-icon.purple :global(svg) {
 		color: #9333ea;
 	}
 
-	.card-icon.teal i {
+	.card-icon.teal :global(svg) {
 		color: #0d9488;
 	}
 
@@ -557,10 +551,6 @@
 			height: 50px;
 		}
 
-		.card-icon i {
-			font-size: 24px;
-		}
-
 		.cert-card h3 {
 			font-size: 16px;
 		}
@@ -596,9 +586,7 @@
 		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.1);
 	}
 
-	.commitment-item i {
-		font-size: 24px;
-		color: #050c9c;
+	.commitment-item :global(svg) {
 		flex-shrink: 0;
 		margin-top: 2px;
 	}
@@ -679,10 +667,6 @@
 	@media (max-width: 548px) {
 		.commitment-item {
 			padding: 15px;
-		}
-
-		.commitment-item i {
-			font-size: 20px;
 		}
 
 		.commitment-item p {

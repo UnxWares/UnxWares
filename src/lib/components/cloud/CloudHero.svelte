@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { CloudCheck, SlidersHorizontal } from 'lucide-svelte';
 </script>
 
 <section id="cloud-hero">
@@ -29,8 +30,8 @@
 	<p class="intro">{$t('cloud_page.hero.intro')}</p>
 
 	<div class="hero-buttons">
-		<a href="https://www.unxwares.cloud" target="_blank" rel="noopener noreferrer"><i class="bi bi-cloud-check-fill"></i> {$t('cloud_page.hero.cta_contact')}</a>
-		<a href="https://www.unxwares.cloud/config" target="_blank" rel="noopener noreferrer"><i class="bi bi-sliders"></i> {$t('cloud_page.hero.cta_config')}</a>
+		<a href="https://www.unxwares.cloud" target="_blank" rel="noopener noreferrer"><CloudCheck size={16} /> {$t('cloud_page.hero.cta_contact')}</a>
+		<a href="https://www.unxwares.cloud/config" target="_blank" rel="noopener noreferrer"><SlidersHorizontal size={16} /> {$t('cloud_page.hero.cta_config')}</a>
 	</div>
 </section>
 
@@ -235,7 +236,7 @@
 		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.3);
 	}
 
-	.hero-buttons a i {
+	.hero-buttons a :global(svg) {
 		font-size: 16px;
 	}
 
@@ -281,7 +282,7 @@
 			line-height: 1.3;
 		}
 
-		.hero-buttons a i {
+		.hero-buttons a :global(svg) {
 			flex-shrink: 0;
 		}
 	}
@@ -297,7 +298,7 @@
 			gap: 6px;
 		}
 
-		.hero-buttons a i {
+		.hero-buttons a :global(svg) {
 			font-size: 13px;
 		}
 	}

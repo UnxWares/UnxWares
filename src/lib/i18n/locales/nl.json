@@ -3,6 +3,7 @@
     "discover": "Ontdek ons"
   },
   "home": {
+    "blog": "Blog",
     "welcome": "Welkom",
     "intro_p1": "Wij zijn UnxWares, een Frans bedrijf gevestigd in Normandië, met een datacenter in Caen. We werken hard om iedereen die wil profiteren van onze expertise in staat te stellen dit te doen, zelfs met een soms beperkt budget.",
     "intro_p2": "Daarom bieden we via UnxWares Cloud kant-en-klare en op maat gemaakte hostingoplossingen, zodat onze klanten de optie kunnen selecteren die het beste bij hun behoeften past, tegen een eerlijke prijs.",
@@ -104,6 +105,7 @@
   },
   "navbar": {
     "home": "Home",
+    "blog": "Blog",
     "product": "Product",
     "company": "Bedrijf",
     "legal": "Juridisch",
@@ -535,6 +537,7 @@
   },
   "pages": {
     "home": {
+    "blog": "Blog",
       "title": "UnxWares - Welkom"
     },
     "whoarewe": {
@@ -1038,5 +1041,24 @@
     "normal_desc": "< 24u voor contact@unxwares.com. We laten emails niet slepen.",
     "sales_contact_title": "Commerciële Vragen",
     "sales_contact_desc": "< 48u voor gedetailleerde offerte. We nemen tijd om uw behoefte te begrijpen."
+  }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Ontdek onze laatste technische artikelen en nieuws",
+    "read_more": "Lees meer",
+    "reading_time": "Leestijd",
+    "category": "Categorie",
+    "tags": "Tags",
+    "all_categories": "Alle categorieën",
+    "all_tags": "Alle tags",
+    "no_posts": "Geen artikelen beschikbaar",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "back_to_list": "Terug naar artikelen",
+    "category_description": "Artikelen in categorie {category}",
+    "posts_in_category": "{count, plural, =0 {Geen artikelen} =1 {1 artikel} other {# artikelen}} in categorie {category}",
+    "tag_description": "Artikelen met tag {tag}",
+    "posts_with_tag": "{count, plural, =0 {Geen artikelen} =1 {1 artikel} other {# artikelen}} met tag {tag}"
   }
 }

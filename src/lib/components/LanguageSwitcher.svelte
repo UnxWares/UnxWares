@@ -1,5 +1,6 @@
 <script>
 	import { locale, locales } from 'svelte-i18n';
+	import { ChevronDown } from 'lucide-svelte';
 
 	let dropdownOpen = $state(false);
 
@@ -48,7 +49,7 @@
 	<button class="lang-button" onclick={toggleDropdown}>
 		<span class="flag">{languageFlags[$locale]}</span>
 		<span class="lang-code">{$locale?.toUpperCase()}</span>
-		<i class="bi bi-chevron-down" class:rotated={dropdownOpen}></i>
+		<ChevronDown size={10} class={dropdownOpen ? 'rotated' : ''} />
 	</button>
 
 	{#if dropdownOpen}
@@ -104,12 +105,11 @@
 		min-width: 20px;
 	}
 
-	.lang-button i {
-		font-size: 10px;
+	.lang-button :global(svg) {
 		transition: transform 0.2s ease;
 	}
 
-	.lang-button i.rotated {
+	.lang-button :global(.rotated) {
 		transform: rotate(180deg);
 	}
 

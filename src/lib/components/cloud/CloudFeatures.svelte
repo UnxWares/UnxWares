@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Cloud, Server, HardDrive, Database, ShieldCheck, Grid3x3, Settings } from 'lucide-svelte';
 </script>
 
 <section id="cloud-features">
 	<div class="section-title">
-		<i class="bi bi-cloud-fill"></i>
+		<Cloud size={32} color="#050c9c" />
 		<h2>{$t('cloud_page.services.title')}</h2>
 	</div>
 
@@ -13,7 +14,7 @@
 	<div class="features-grid">
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-server"></i>
+				<Server size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.vps_title')}</h3>
 			<p>{$t('cloud_page.services.vps_desc')}</p>
@@ -21,7 +22,7 @@
 
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-hdd-stack"></i>
+				<HardDrive size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.storage_title')}</h3>
 			<p>{$t('cloud_page.services.storage_desc')}</p>
@@ -29,7 +30,7 @@
 
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-database"></i>
+				<Database size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.database_title')}</h3>
 			<p>{$t('cloud_page.services.database_desc')}</p>
@@ -37,7 +38,7 @@
 
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-shield-lock"></i>
+				<ShieldCheck size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.network_title')}</h3>
 			<p>{$t('cloud_page.services.network_desc')}</p>
@@ -45,7 +46,7 @@
 
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-grid-3x3"></i>
+				<Grid3x3 size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.kubernetes_title')}</h3>
 			<p>{$t('cloud_page.services.kubernetes_desc')}</p>
@@ -53,7 +54,7 @@
 
 		<div class="feature-card">
 			<div class="feature-icon">
-				<i class="bi bi-gear-fill"></i>
+				<Settings size={28} color="#050c9c" />
 			</div>
 			<h3>{$t('cloud_page.services.custom_title')}</h3>
 			<p>{$t('cloud_page.services.custom_desc')}</p>
@@ -74,10 +75,8 @@
 		margin-bottom: 25px;
 	}
 
-	.section-title i {
-		font-size: 32px;
+	.section-title :global(svg) {
 		animation: float 3s ease-in-out infinite;
-		color: #050c9c;
 	}
 
 	@keyframes float {
@@ -150,11 +149,6 @@
 		justify-content: center;
 	}
 
-	.feature-icon i {
-		font-size: 28px;
-		color: #050c9c;
-	}
-
 	.feature-card h3 {
 		font-size: 18px;
 		font-weight: 600;
@@ -180,10 +174,6 @@
 		.feature-icon {
 			width: 50px;
 			height: 50px;
-		}
-
-		.feature-icon i {
-			font-size: 24px;
 		}
 
 		.feature-card h3 {

@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { CodeSquare, Zap, ShieldCheck, Wrench, Network, Hexagon, Box } from 'lucide-svelte';
 </script>
 
 <section id="neo-languages">
 	<div class="section-title">
-		<i class="bi bi-code-square"></i>
+		<CodeSquare size={32} color="#050c9c" />
 		<h2>{$t('studio_page.neolang.title')}</h2>
 	</div>
 
@@ -16,22 +17,22 @@
 
 		<div class="advantages">
 			<div class="advantage-card">
-				<i class="bi bi-lightning-charge-fill"></i>
+				<Zap size={28} color="#050c9c" />
 				<h4>{$t('studio_page.neolang.perf_title')}</h4>
 				<p>{$t('studio_page.neolang.perf_desc')}</p>
 			</div>
 			<div class="advantage-card">
-				<i class="bi bi-shield-fill-check"></i>
+				<ShieldCheck size={28} color="#050c9c" />
 				<h4>{$t('studio_page.neolang.security_title')}</h4>
 				<p>{$t('studio_page.neolang.security_desc')}</p>
 			</div>
 			<div class="advantage-card">
-				<i class="bi bi-tools"></i>
+				<Wrench size={28} color="#050c9c" />
 				<h4>{$t('studio_page.neolang.modern_title')}</h4>
 				<p>{$t('studio_page.neolang.modern_desc')}</p>
 			</div>
 			<div class="advantage-card">
-				<i class="bi bi-diagram-3-fill"></i>
+				<Network size={28} color="#050c9c" />
 				<h4>{$t('studio_page.neolang.concurrency_title')}</h4>
 				<p>{$t('studio_page.neolang.concurrency_desc')}</p>
 			</div>
@@ -42,7 +43,7 @@
 		<div class="lang-card rust">
 			<div class="lang-header">
 				<div class="lang-icon">
-					<i class="bi bi-hexagon-fill"></i>
+					<Hexagon size={24} />
 				</div>
 				<div class="lang-title-group">
 					<h3>{$t('studio_page.neolang.rust_title')}</h3>
@@ -58,7 +59,7 @@
 		<div class="lang-card go">
 			<div class="lang-header">
 				<div class="lang-icon">
-					<i class="bi bi-box-fill"></i>
+					<Box size={24} />
 				</div>
 				<div class="lang-title-group">
 					<h3>{$t('studio_page.neolang.go_title')}</h3>
@@ -74,7 +75,7 @@
 		<div class="lang-card zig">
 			<div class="lang-header">
 				<div class="lang-icon">
-					<i class="bi bi-lightning-fill"></i>
+					<Zap size={24} />
 				</div>
 				<div class="lang-title-group">
 					<h3>{$t('studio_page.neolang.zig_title')}</h3>
@@ -102,10 +103,8 @@
 		margin-bottom: 25px;
 	}
 
-	.section-title i {
-		font-size: 32px;
+	.section-title :global(svg) {
 		animation: float 3s ease-in-out infinite;
-		color: #050c9c;
 	}
 
 	@keyframes float {
@@ -186,9 +185,7 @@
 		border-color: #050c9c;
 	}
 
-	.advantage-card i {
-		font-size: 28px;
-		color: #050c9c;
+	.advantage-card :global(svg) {
 		margin-bottom: 15px;
 		display: block;
 	}
@@ -275,7 +272,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-shrink: 0;
-		font-size: 24px;
 	}
 
 	.rust .lang-icon {

@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Folder } from 'lucide-svelte';
 </script>
 
 <section id="studio-projects">
 	<div class="section-title">
-		<i class="bi bi-folder-fill"></i>
+		<Folder size={32} />
 		<h2>{$t('studio_page.projects.title')}</h2>
 	</div>
 
@@ -68,8 +69,7 @@
 		margin-bottom: 25px;
 	}
 
-	.section-title i {
-		font-size: 32px;
+	.section-title :global(svg) {
 		animation: float 3s ease-in-out infinite;
 		color: #050c9c;
 	}

@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { t } from 'svelte-i18n';
+	import { TriangleAlert, Home, Mail, Cloud, Code, Network, Users } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
 <section class="error-hero">
 	<div class="error-content">
 		<div class="error-icon">
-			<i class="bi bi-exclamation-triangle-fill"></i>
+			<TriangleAlert size={80} />
 		</div>
 
 		<div class="error-number">404</div>
@@ -22,11 +23,11 @@
 
 		<div class="error-actions">
 			<a href="/" class="btn-primary">
-				<i class="bi bi-house-fill"></i>
+				<Home size={18} />
 				{$t('error_page.btn_home')}
 			</a>
 			<a href="/contact" class="btn-secondary">
-				<i class="bi bi-envelope-fill"></i>
+				<Mail size={18} />
 				{$t('error_page.btn_contact')}
 			</a>
 		</div>
@@ -37,19 +38,19 @@
 	<p class="suggestions-title">{$t('error_page.suggestions_title')}</p>
 	<div class="suggestions-grid">
 		<a href="/uw-cloud" class="suggestion-card">
-			<i class="bi bi-cloud"></i>
+			<Cloud size={32} />
 			<span>{$t('error_page.suggestion_cloud')}</span>
 		</a>
 		<a href="/uw-studio" class="suggestion-card">
-			<i class="bi bi-code-slash"></i>
+			<Code size={32} />
 			<span>{$t('error_page.suggestion_studio')}</span>
 		</a>
 		<a href="/datacenter" class="suggestion-card">
-			<i class="bi bi-diagram-3"></i>
+			<Network size={32} />
 			<span>{$t('error_page.suggestion_datacenter')}</span>
 		</a>
 		<a href="/whoarewe" class="suggestion-card">
-			<i class="bi bi-people"></i>
+			<Users size={32} />
 			<span>{$t('error_page.suggestion_whoarewe')}</span>
 		</a>
 	</div>
@@ -80,8 +81,7 @@
 		justify-content: center;
 	}
 
-	.error-icon i {
-		font-size: 80px;
+	.error-icon :global(svg) {
 		color: #050c9c;
 		animation: float 3s ease-in-out infinite;
 	}
@@ -214,9 +214,6 @@
 		box-shadow: 0 4px 16px rgba(5, 12, 156, 0.15);
 	}
 
-	.suggestion-card i {
-		font-size: 32px;
-	}
 
 	@media (max-width: 768px) {
 		.error-hero {
@@ -224,9 +221,6 @@
 			min-height: 60vh;
 		}
 
-		.error-icon i {
-			font-size: 60px;
-		}
 
 		.error-number {
 			font-size: 90px;
@@ -254,9 +248,6 @@
 			font-size: 14px;
 		}
 
-		.suggestion-card i {
-			font-size: 28px;
-		}
 	}
 
 	@media (max-width: 548px) {

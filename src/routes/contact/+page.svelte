@@ -1,6 +1,7 @@
 <script>
 	import { t } from 'svelte-i18n';
 	import Separator from '$lib/components/Separator.svelte';
+	import { Mail, MessageCircle, AtSign, Mailbox, UserCog, Headphones, ShoppingCart, ShieldCheck, MapPin, Building2, Clock, Zap, Calendar } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -16,7 +17,7 @@
 <main>
 	<section class="hero-section">
 		<div class="hero-icon">
-			<i class="bi bi-envelope-fill"></i>
+			<Mail size={50} />
 		</div>
 		<h1>{$t('contact_page.h1')}</h1>
 		<p class="intro">{$t('contact_page.intro')}</p>
@@ -27,7 +28,7 @@
 	<!-- Contact Methods -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-chat-dots-fill"></i>
+			<MessageCircle size={32} />
 			<h2>{$t('contact_page.methods_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('contact_page.methods_intro')}</p>
@@ -36,7 +37,7 @@
 			<!-- Email -->
 			<div class="contact-card">
 				<div class="card-icon">
-					<i class="bi bi-envelope-at-fill"></i>
+					<AtSign size={28} />
 				</div>
 				<h3>{$t('contact_page.email_title')}</h3>
 				<p class="contact-detail">
@@ -48,7 +49,7 @@
 			<!-- Discord -->
 			<div class="contact-card">
 				<div class="card-icon purple">
-					<i class="bi bi-discord"></i>
+					<MessageCircle size={28} />
 				</div>
 				<h3>{$t('contact_page.discord_title')}</h3>
 				<p class="contact-detail">
@@ -60,7 +61,7 @@
 			<!-- Mail -->
 			<div class="contact-card">
 				<div class="card-icon teal">
-					<i class="bi bi-mailbox-flag"></i>
+					<Mailbox size={28} />
 				</div>
 				<h3>{$t('contact_page.mail_title')}</h3>
 				<p class="contact-detail address-text">
@@ -79,7 +80,7 @@
 	<!-- Specialized Contacts -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-person-fill-gear"></i>
+			<UserCog size={32} />
 			<h2>{$t('contact_page.specialized_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('contact_page.specialized_intro')}</p>
@@ -88,7 +89,7 @@
 			<!-- Support -->
 			<div class="contact-card">
 				<div class="card-icon orange">
-					<i class="bi bi-headset"></i>
+					<Headphones size={28} />
 				</div>
 				<h3>{$t('contact_page.support_title')}</h3>
 				<p class="contact-detail">
@@ -100,7 +101,7 @@
 			<!-- Sales -->
 			<div class="contact-card">
 				<div class="card-icon green">
-					<i class="bi bi-cart-fill"></i>
+					<ShoppingCart size={28} />
 				</div>
 				<h3>{$t('contact_page.sales_title')}</h3>
 				<p class="contact-detail">
@@ -112,7 +113,7 @@
 			<!-- DPO -->
 			<div class="contact-card">
 				<div class="card-icon">
-					<i class="bi bi-shield-lock-fill"></i>
+					<ShieldCheck size={28} />
 				</div>
 				<h3>{$t('contact_page.dpo_title')}</h3>
 				<p class="contact-detail">
@@ -128,7 +129,7 @@
 	<!-- Location -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-geo-alt-fill"></i>
+			<MapPin size={32} />
 			<h2>{$t('contact_page.location_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('contact_page.location_intro')}</p>
@@ -137,7 +138,7 @@
 			<div class="location-content">
 				<h3>{$t('contact_page.datacenter_title')}</h3>
 				<p class="address">
-					<i class="bi bi-building"></i>
+					<Building2 size={24} />
 					<span>Datacenter Caen - Normandie, France</span>
 				</p>
 				<p class="location-desc">{$t('contact_page.datacenter_desc')}</p>
@@ -150,28 +151,28 @@
 	<!-- Response Times -->
 	<section class="content-section">
 		<div class="section-header">
-			<i class="bi bi-clock-fill"></i>
+			<Clock size={32} />
 			<h2>{$t('contact_page.response_title')}</h2>
 		</div>
 		<p class="section-intro">{$t('contact_page.response_intro')}</p>
 
 		<div class="response-list">
 			<div class="response-item">
-				<i class="bi bi-lightning-charge-fill"></i>
+				<Zap size={28} />
 				<div>
 					<h4>{$t('contact_page.urgent_title')}</h4>
 					<p>{$t('contact_page.urgent_desc')}</p>
 				</div>
 			</div>
 			<div class="response-item">
-				<i class="bi bi-clock"></i>
+				<Clock size={28} />
 				<div>
 					<h4>{$t('contact_page.normal_title')}</h4>
 					<p>{$t('contact_page.normal_desc')}</p>
 				</div>
 			</div>
 			<div class="response-item">
-				<i class="bi bi-calendar-check"></i>
+				<Calendar size={28} />
 				<div>
 					<h4>{$t('contact_page.sales_contact_title')}</h4>
 					<p>{$t('contact_page.sales_contact_desc')}</p>
@@ -198,8 +199,7 @@
 		border-radius: 50%;
 	}
 
-	.hero-icon i {
-		font-size: 50px;
+	.hero-icon :global(svg) {
 		color: #050c9c;
 		animation: pulse 2s ease-in-out infinite;
 	}
@@ -240,8 +240,7 @@
 		margin-bottom: 20px;
 	}
 
-	.section-header i {
-		font-size: 32px;
+	.section-header :global(svg) {
 		color: #050c9c;
 	}
 
@@ -309,24 +308,23 @@
 		background: #e0f2f1;
 	}
 
-	.card-icon i {
-		font-size: 28px;
+	.card-icon :global(svg) {
 		color: #050c9c;
 	}
 
-	.card-icon.purple i {
+	.card-icon.purple :global(svg) {
 		color: #5865f2;
 	}
 
-	.card-icon.orange i {
+	.card-icon.orange :global(svg) {
 		color: #f97316;
 	}
 
-	.card-icon.green i {
+	.card-icon.green :global(svg) {
 		color: #22c55e;
 	}
 
-	.card-icon.teal i {
+	.card-icon.teal :global(svg) {
 		color: #0d9488;
 	}
 
@@ -401,9 +399,6 @@
 		margin: 0 0 20px 0;
 	}
 
-	.address i {
-		font-size: 24px;
-	}
 
 	.location-desc {
 		font-size: 15px;
@@ -437,8 +432,7 @@
 		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.1);
 	}
 
-	.response-item > i {
-		font-size: 28px;
+	.response-item > :global(svg) {
 		color: #050c9c;
 		flex-shrink: 0;
 		margin-top: 2px;
@@ -516,9 +510,6 @@
 			height: 50px;
 		}
 
-		.card-icon i {
-			font-size: 24px;
-		}
 
 		.contact-card h3 {
 			font-size: 16px;

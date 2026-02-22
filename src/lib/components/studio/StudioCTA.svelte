@@ -1,12 +1,13 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Lightbulb, ArrowRight } from 'lucide-svelte';
 </script>
 
 <section id="studio-cta">
 	<div class="cta-container">
 		<div class="cta-left">
 			<div class="cta-icon">
-				<i class="bi bi-lightbulb-fill"></i>
+				<Lightbulb size={28} />
 			</div>
 			<div class="cta-text">
 				<h3>{$t('studio_page.cta.title')}</h3>
@@ -16,7 +17,7 @@
 		<div class="cta-right">
 			<a href="https://www.unxwares.studio" target="_blank" rel="noopener noreferrer" class="cta-button">
 				{$t('studio_page.cta.button')}
-				<i class="bi bi-arrow-right"></i>
+				<ArrowRight size={16} />
 			</a>
 		</div>
 	</div>
@@ -62,8 +63,7 @@
 		flex-shrink: 0;
 	}
 
-	.cta-icon i {
-		font-size: 28px;
+	.cta-icon :global(svg) {
 		color: white;
 	}
 
@@ -114,12 +114,11 @@
 		transform: translateX(5px);
 	}
 
-	.cta-button i {
-		font-size: 16px;
+	.cta-button :global(svg) {
 		transition: transform 0.3s ease;
 	}
 
-	.cta-button:hover i {
+	.cta-button:hover :global(svg) {
 		transform: translateX(3px);
 	}
 
@@ -157,10 +156,6 @@
 		.cta-icon {
 			width: 50px;
 			height: 50px;
-		}
-
-		.cta-icon i {
-			font-size: 24px;
 		}
 
 		h3 {

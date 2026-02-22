@@ -1,22 +1,26 @@
+<script>
+	import { ShieldCheck, Eye, Headphones, Banknote } from 'lucide-svelte';
+</script>
+
 <section id="key-values">
 	<div class="values-grid">
 		<div class="value-item">
-			<i class="bi bi-shield-check"></i>
+			<ShieldCheck size={36} />
 			<h3>Souveraineté Garantie</h3>
 			<p>Infrastructure 100% française hébergée à Caen, indépendante des GAFAM et du Cloud Act.</p>
 		</div>
 		<div class="value-item">
-			<i class="bi bi-eye"></i>
+			<Eye size={36} />
 			<h3>Transparence Totale</h3>
 			<p>Documentation publique de notre infrastructure, technologies et choix techniques.</p>
 		</div>
 		<div class="value-item">
-			<i class="bi bi-headset"></i>
+			<Headphones size={36} />
 			<h3>Support Humain</h3>
 			<p>Des techniciens passionnés qui comprennent vos besoins, pas des réponses automatisées.</p>
 		</div>
 		<div class="value-item">
-			<i class="bi bi-cash-coin"></i>
+			<Banknote size={36} />
 			<h3>Prix Justes</h3>
 			<p>Tarification forfaitaire claire basée sur les coûts réels, sans frais cachés.</p>
 		</div>
@@ -45,11 +49,12 @@
 		text-align: center;
 		padding: 30px 20px;
 	}
-	.value-item i{
-		font-size: 36px;
+	.value-item :global(svg){
 		color: #050c9c;
 		margin-bottom: 15px;
 		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.value-item h3{
 		font-size: 18px;

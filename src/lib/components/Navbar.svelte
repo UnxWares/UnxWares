@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { t } from 'svelte-i18n';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
+	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
 	let mobileMenuOpen = $state(false);
 	let scrolled = $state(false);
@@ -75,22 +76,26 @@
 					{$t('navbar.home')}
 				</a>
 
+				<a href="/blog" class="nav-link" class:active={$page.url.pathname.startsWith('/blog')} onclick={closeMobileMenu}>
+					{$t('navbar.blog')}
+				</a>
+
 				<div class="nav-item-wrapper">
 					<button class="nav-item" class:active={activeDropdown === 'product'} onclick={() => toggleDropdown('product')}>
 						<span>{$t('navbar.product')}</span>
-						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'product'}></i>
+						<ChevronDown size={12} class={activeDropdown === 'product' ? 'chevron rotated' : 'chevron'} />
 					</button>
 					{#if activeDropdown === 'product'}
 						<div class="dropdown-menu">
 							<a href="/uw-cloud" class="dropdown-item" class:active={$page.url.pathname === '/uw-cloud'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-cloud"></i>
+								<Cloud size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.cloud')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.cloud_desc')}</span>
 								</div>
 							</a>
 							<a href="/uw-studio" class="dropdown-item" class:active={$page.url.pathname === '/uw-studio'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-code-slash"></i>
+								<Code size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.studio')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.studio_desc')}</span>
@@ -103,26 +108,26 @@
 				<div class="nav-item-wrapper">
 					<button class="nav-item" class:active={activeDropdown === 'company'} onclick={() => toggleDropdown('company')}>
 						<span>{$t('navbar.company')}</span>
-						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'company'}></i>
+						<ChevronDown size={12} class={activeDropdown === 'company' ? 'chevron rotated' : 'chevron'} />
 					</button>
 					{#if activeDropdown === 'company'}
 						<div class="dropdown-menu">
 							<a href="/whoarewe" class="dropdown-item" class:active={$page.url.pathname === '/whoarewe'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-people"></i>
+								<Users size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.about')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.about_desc')}</span>
 								</div>
 							</a>
 							<a href="/certifications-and-responsibility" class="dropdown-item" class:active={$page.url.pathname === '/certifications-and-responsibility'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-shield-check"></i>
+								<ShieldCheck size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.certifications')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.certifications_desc')}</span>
 								</div>
 							</a>
 							<a href="/datacenter" class="dropdown-item" class:active={$page.url.pathname === '/datacenter'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-diagram-3"></i>
+								<Network size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.infrastructure')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.infrastructure_desc')}</span>
@@ -135,33 +140,33 @@
 				<div class="nav-item-wrapper">
 					<button class="nav-item" class:active={activeDropdown === 'legal'} onclick={() => toggleDropdown('legal')}>
 						<span>{$t('navbar.legal')}</span>
-						<i class="bi bi-chevron-down chevron" class:rotated={activeDropdown === 'legal'}></i>
+						<ChevronDown size={12} class={activeDropdown === 'legal' ? 'chevron rotated' : 'chevron'} />
 					</button>
 					{#if activeDropdown === 'legal'}
 						<div class="dropdown-menu">
 							<a href="/legal" class="dropdown-item" class:active={$page.url.pathname === '/legal'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-file-text"></i>
+								<FileText size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.legal_notice')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.legal_notice_desc')}</span>
 								</div>
 							</a>
 							<a href="/privacy" class="dropdown-item" class:active={$page.url.pathname === '/privacy'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-lock"></i>
+								<Lock size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.privacy')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.privacy_desc')}</span>
 								</div>
 							</a>
 							<a href="/use-conditions" class="dropdown-item" class:active={$page.url.pathname === '/use-conditions'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-clipboard-check"></i>
+								<ClipboardCheck size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.terms')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.terms_desc')}</span>
 								</div>
 							</a>
 							<a href="/sales-conditions" class="dropdown-item" class:active={$page.url.pathname === '/sales-conditions'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
-								<i class="bi bi-cart"></i>
+								<ShoppingCart size={20} />
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.sales')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.sales_desc')}</span>
@@ -178,7 +183,11 @@
 			</div>
 
 			<button class="mobile-menu-toggle" onclick={toggleMobileMenu} aria-label="Toggle menu">
-				<i class="bi {mobileMenuOpen ? 'bi-x-lg' : 'bi-list'}"></i>
+				{#if mobileMenuOpen}
+					<X size={24} />
+				{:else}
+					<Menu size={24} />
+				{/if}
 			</button>
 		</div>
 	</nav>
@@ -312,12 +321,11 @@
 		color: #050c9c;
 	}
 
-	.chevron {
-		font-size: 12px;
+	:global(.chevron) {
 		transition: transform 0.2s ease-in-out;
 	}
 
-	.chevron.rotated {
+	:global(.chevron.rotated) {
 		transform: rotate(180deg);
 	}
 
@@ -365,8 +373,7 @@
 		background: rgba(5, 12, 156, 0.08);
 	}
 
-	.dropdown-item i {
-		font-size: 20px;
+	.dropdown-item :global(svg) {
 		color: #050c9c;
 		margin-top: 2px;
 		flex-shrink: 0;
@@ -623,12 +630,8 @@
 			border-color: #050c9c;
 		}
 
-		.nav-item.active .chevron {
+		.nav-item.active :global(.chevron) {
 			color: white;
-		}
-
-		.nav-item .chevron {
-			font-size: 14px;
 		}
 
 		.dropdown-menu {
@@ -677,8 +680,7 @@
 			border-color: #050c9c;
 		}
 
-		.dropdown-item i {
-			font-size: 18px;
+		.dropdown-item :global(svg) {
 			color: #050c9c;
 		}
 

@@ -3,6 +3,7 @@
 	import { t, locale } from 'svelte-i18n';
 	import { fade, scale } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { ChevronsDown } from 'lucide-svelte';
 
 	const greetings = {
 		fr: 'Salut toi &#x1F44B;, Nous sommes <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
@@ -77,7 +78,7 @@
 		<h6 class="poppins-regular typing"></h6>
 	</figure>
 	<div class="scroll-button" in:fade={{ duration: 600, delay: 800 }}>
-			<span class="poppins-regular"><i class="bi bi-chevron-double-down"></i> <span>{$t('header.discover')}</span></span>
+			<span class="poppins-regular"><ChevronsDown size={24} /> <span>{$t('header.discover')}</span></span>
 	</div>
 </header>
 

@@ -1,17 +1,18 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Grid3x3, Cloud, Code, CheckCircle, ArrowRight } from 'lucide-svelte';
 </script>
 
 <section id="our-services">
 	<div class="section-title">
-		<i class="bi bi-grid-3x3-gap-fill"></i>
+		<Grid3x3 size={32} />
 		<h2>{$t('services.title')}</h2>
 	</div>
 	<div class="services-container">
 		<div class="service-card cloud">
 			<div class="service-header">
 				<div class="service-icon">
-					<i class="bi bi-cloud-fill"></i>
+					<Cloud size={24} />
 				</div>
 				<h3>{$t('services.cloud_title')}</h3>
 			</div>
@@ -20,19 +21,19 @@
 			</p>
 			<div class="service-features">
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.cloud_feat1')}</strong> – {$t('services.cloud_feat1_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.cloud_feat2')}</strong> – {$t('services.cloud_feat2_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.cloud_feat3')}</strong> – {$t('services.cloud_feat3_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.cloud_feat4')}</strong> – {$t('services.cloud_feat4_desc')}</span>
 				</div>
 			</div>
@@ -40,14 +41,14 @@
 				{$t('services.cloud_desc')}
 			</p>
 			<a href="/datacenter" class="service-link">
-				{$t('services.cloud_link')} <i class="bi bi-arrow-right"></i>
+				{$t('services.cloud_link')} <ArrowRight size={14} />
 			</a>
 		</div>
 
 		<div class="service-card studio">
 			<div class="service-header">
 				<div class="service-icon">
-					<i class="bi bi-code-slash"></i>
+					<Code size={24} />
 				</div>
 				<h3>{$t('services.studio_title')}</h3>
 			</div>
@@ -56,19 +57,19 @@
 			</p>
 			<div class="service-features">
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.studio_feat1')}</strong> – {$t('services.studio_feat1_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.studio_feat2')}</strong> – {$t('services.studio_feat2_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.studio_feat3')}</strong> – {$t('services.studio_feat3_desc')}</span>
 				</div>
 				<div class="feature">
-					<i class="bi bi-check-circle-fill"></i>
+					<CheckCircle size={16} />
 					<span><strong>{$t('services.studio_feat4')}</strong> – {$t('services.studio_feat4_desc')}</span>
 				</div>
 			</div>
@@ -76,7 +77,7 @@
 				{$t('services.studio_desc')}
 			</p>
 			<a href="/uw-studio" class="service-link">
-				{$t('services.studio_link')} <i class="bi bi-arrow-right"></i>
+				{$t('services.studio_link')} <ArrowRight size={14} />
 			</a>
 		</div>
 	</div>
@@ -93,8 +94,7 @@
 		gap: 15px;
 		margin-bottom: 50px;
 	}
-	#our-services .section-title i{
-		font-size: 32px;
+	#our-services .section-title :global(svg){
 		animation: float 3s ease-in-out infinite;
 	}
 	@keyframes float {
@@ -147,8 +147,7 @@
 		justify-content: center;
 		flex-shrink: 0;
 	}
-	.service-icon i{
-		font-size: 24px;
+	.service-icon :global(svg){
 		color: #050c9c;
 	}
 	.service-card h3{
@@ -175,9 +174,8 @@
 		align-items: flex-start;
 		gap: 12px;
 	}
-	.feature i{
+	.feature :global(svg){
 		color: #050c9c;
-		font-size: 16px;
 		margin-top: 3px;
 		flex-shrink: 0;
 	}
@@ -209,8 +207,5 @@
 	}
 	.service-link:hover{
 		gap: 12px;
-	}
-	.service-link i{
-		font-size: 14px;
 	}
 </style>

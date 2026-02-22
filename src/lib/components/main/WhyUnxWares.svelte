@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Gem } from 'lucide-svelte';
 </script>
 
 <section id="why-unxwares">
 	<div class="section-title">
-		<i class="bi bi-gem"></i>
+		<Gem size={32} />
 		<h2>{$t('why.title')}</h2>
 	</div>
 	<div class="why-content">
@@ -45,8 +46,7 @@
 		gap: 15px;
 		margin-bottom: 25px;
 	}
-	#why-unxwares .section-title i{
-		font-size: 32px;
+	#why-unxwares .section-title :global(svg){
 		animation: float 3s ease-in-out infinite;
 	}
 	@keyframes float {

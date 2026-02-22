@@ -3,6 +3,7 @@
     "discover": "Entdecken Sie uns"
   },
   "home": {
+    "blog": "Blog",
     "welcome": "Willkommen",
     "intro_p1": "Wir sind UnxWares, ein französisches Unternehmen mit Sitz in der Normandie, mit einem Rechenzentrum in Caen. Wir arbeiten intensiv daran, jedem, der von unserem Fachwissen profitieren möchte, dies zu ermöglichen, auch mit einem manchmal begrenzten Budget.",
     "intro_p2": "Deshalb bieten wir über UnxWares Cloud sofort einsatzbereite und maßgeschneiderte Hosting-Lösungen an, damit unsere Kunden die für ihre Bedürfnisse am besten geeignete Option zu einem fairen Preis auswählen können.",
@@ -104,6 +105,7 @@
   },
   "navbar": {
     "home": "Startseite",
+    "blog": "Blog",
     "product": "Produkt",
     "company": "Unternehmen",
     "legal": "Rechtliches",
@@ -535,6 +537,7 @@
   },
   "pages": {
     "home": {
+    "blog": "Blog",
       "title": "UnxWares - Willkommen"
     },
     "whoarewe": {
@@ -1038,5 +1041,23 @@
     "normal_desc": "< 24h für contact@unxwares.com. Wir lassen Emails nicht schleifen.",
     "sales_contact_title": "Kommerzielle Fragen",
     "sales_contact_desc": "< 48h für ein detailliertes Angebot. Wir nehmen uns Zeit, Ihren Bedarf zu verstehen."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Entdecken Sie unsere neuesten technischen Artikel und Neuigkeiten",
+    "read_more": "Weiterlesen",
+    "reading_time": "Lesezeit",
+    "category": "Kategorie",
+    "tags": "Tags",
+    "all_categories": "Alle Kategorien",
+    "all_tags": "Alle Tags",
+    "no_posts": "Keine Artikel verfügbar",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "back_to_list": "Zurück zu den Artikeln",
+    "category_description": "Artikel in Kategorie {category}",
+    "posts_in_category": "{count, plural, =0 {Keine Artikel} =1 {1 Artikel} other {# Artikel}} in Kategorie {category}",
+    "tag_description": "Artikel mit Tag {tag}",
+    "posts_with_tag": "{count, plural, =0 {Keine Artikel} =1 {1 Artikel} other {# Artikel}} mit Tag {tag}"
   }
 }

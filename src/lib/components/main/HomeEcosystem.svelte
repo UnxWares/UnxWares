@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Layers, Train, ArrowRight, Cpu, Users } from 'lucide-svelte';
 </script>
 
 <section class="home-ecosystem">
 	<div class="section-header">
-		<i class="bi bi-layers-fill"></i>
+		<Layers size={32} />
 		<h2>{$t('ecosystem.title')}</h2>
 	</div>
 	<p class="intro">
@@ -14,7 +15,7 @@
 	<div class="projects-grid">
 		<a href="" target="_blank" class="project-card vff">
 			<div class="card-icon">
-				<i class="bi bi-train-freight-front"></i>
+				<Train size={24} />
 			</div>
 			<div class="card-content">
 				<h3>{$t('ecosystem.vff_title')}</h3>
@@ -22,13 +23,13 @@
 				<p>{$t('ecosystem.vff_desc')}</p>
 			</div>
 			<div class="card-arrow">
-				<i class="bi bi-arrow-right-short"></i>
+				<ArrowRight size={24} />
 			</div>
 		</a>
 
 		<div class="project-card raiemus">
 			<div class="card-icon">
-				<i class="bi bi-cpu"></i>
+				<Cpu size={24} />
 			</div>
 			<div class="card-content">
 				<h3>{$t('ecosystem.raiemus_title')}</h3>
@@ -39,7 +40,7 @@
 
 		<div class="project-card asso">
 			<div class="card-icon">
-				<i class="bi bi-people"></i>
+				<Users size={24} />
 			</div>
 			<div class="card-content">
 				<h3>{$t('ecosystem.asso_title')}</h3>
@@ -63,8 +64,7 @@
 		justify-content: center;
 	}
 
-	.section-header i {
-		font-size: 32px;
+	.section-header :global(svg) {
 		animation: float 3s ease-in-out infinite;
 	}
 	@keyframes float {
@@ -124,7 +124,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 24px;
 		flex-shrink: 0;
 	}
 
@@ -178,7 +177,6 @@
 		align-items: center;
 		justify-content: center;
 		color: #050c9c;
-		font-size: 24px;
 		opacity: 0;
 		transform: translateX(-10px);
 		transition: all 0.3s ease;

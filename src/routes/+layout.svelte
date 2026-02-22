@@ -13,6 +13,10 @@
 	let previousPath = $state($page.url.pathname);
 	let headerKey = $state(0);
 
+	// Détermine si la vidéo doit être chargée sur la page actuelle
+	// Vidéo affichée uniquement sur la page d'accueil et la page 404
+	let showBackground = $derived($page.url.pathname === '/' || $page.error !== null);
+
 	$effect(() => {
 		const currentPath = $page.url.pathname;
 		if (currentPath !== previousPath) {
@@ -52,7 +56,7 @@
 		<div class="loading-spinner"></div>
 	</div>
 {:else}
-	<Background />
+	<Background show={showBackground} />
 	<Navbar />
 	{#if $page.url.pathname === '/'}
 		{#key headerKey}

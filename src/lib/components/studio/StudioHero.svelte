@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { MessageCircle, Folder } from 'lucide-svelte';
 </script>
 
 <section id="studio-hero">
@@ -29,8 +30,8 @@
 	<p class="intro">{$t('studio_page.hero.intro')}</p>
 
 	<div class="hero-buttons">
-		<a href="https://www.unxwares.studio" target="_blank" rel="noopener noreferrer"><i class="bi bi-chat-dots-fill"></i> {$t('studio_page.hero.cta_contact')}</a>
-		<a href="#projects"><i class="bi bi-folder-fill"></i> {$t('studio_page.hero.cta_projects')}</a>
+		<a href="https://www.unxwares.studio" target="_blank" rel="noopener noreferrer"><MessageCircle size={16} /> {$t('studio_page.hero.cta_contact')}</a>
+		<a href="#projects"><Folder size={16} /> {$t('studio_page.hero.cta_projects')}</a>
 	</div>
 </section>
 
@@ -235,10 +236,6 @@
 		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.3);
 	}
 
-	.hero-buttons a i {
-		font-size: 16px;
-	}
-
 	@media (max-width: 768px) {
 		.hero-buttons {
 			padding: 0 30px;
@@ -281,7 +278,7 @@
 			line-height: 1.3;
 		}
 
-		.hero-buttons a i {
+		.hero-buttons a :global(svg) {
 			flex-shrink: 0;
 		}
 	}
@@ -295,10 +292,6 @@
 			font-size: 11px;
 			padding: 10px 14px;
 			gap: 6px;
-		}
-
-		.hero-buttons a i {
-			font-size: 13px;
 		}
 	}
 </style>

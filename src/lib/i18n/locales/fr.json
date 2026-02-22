@@ -104,6 +104,7 @@
   },
   "navbar": {
     "home": "Accueil",
+    "blog": "Blog",
     "product": "Produit",
     "company": "Entreprise",
     "legal": "Légal",
@@ -1038,5 +1039,23 @@
     "normal_desc": "< 24h pour contact@unxwares.com. On ne laisse pas traîner les emails.",
     "sales_contact_title": "Questions Commerciales",
     "sales_contact_desc": "< 48h pour un devis détaillé. On prend le temps de comprendre votre besoin."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Découvrez nos derniers articles techniques et actualités",
+    "read_more": "Lire la suite",
+    "reading_time": "Temps de lecture",
+    "category": "Catégorie",
+    "tags": "Tags",
+    "all_categories": "Toutes les catégories",
+    "all_tags": "Tous les tags",
+    "no_posts": "Aucun article disponible",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "back_to_list": "Retour aux articles",
+    "category_description": "Articles dans la catégorie {category}",
+    "posts_in_category": "{count, plural, =0 {Aucun article} =1 {1 article} other {# articles}} dans la catégorie {category}",
+    "tag_description": "Articles avec le tag {tag}",
+    "posts_with_tag": "{count, plural, =0 {Aucun article} =1 {1 article} other {# articles}} avec le tag {tag}"
   }
 }

@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Users, Globe } from 'lucide-svelte';
 </script>
 
 <section id="short-whoarewe">
@@ -13,8 +14,8 @@
 	<p>{$t('home.intro_p4')}</p>
 	<p>{$t('home.intro_p5')}</p>
 	<div class="short-whoarewe-buttons">
-		<a href="/whoarewe"><i class="bi bi-people"></i> {$t('home.our_story')}</a>
-		<a href="/certifications-and-responsibility"><i class="bi bi-globe-europe-africa-fill"></i> {$t('home.certifications')}</a>
+		<a href="/whoarewe"><Users size={16} /> {$t('home.our_story')}</a>
+		<a href="/certifications-and-responsibility"><Globe size={16} /> {$t('home.certifications')}</a>
 	</div>
 </section>
 
@@ -23,8 +24,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-			margin-bottom: 35px;
-			font-size: 26px;
+		margin-bottom: 35px;
+		font-size: 26px;
     }
 	#short-whoarewe .unxwares-title img{
         width:120px;
@@ -99,7 +100,7 @@
     }
     #short-whoarewe .short-whoarewe-buttons{
         text-align: center;
-			margin-top: 45px;
+		margin-top: 45px;
     }
     #short-whoarewe .short-whoarewe-buttons a{
         text-decoration: none;
@@ -109,18 +110,17 @@
         text-transform: uppercase;
         padding: 12px 30px;
         margin: 8px 15px 18px;
-        display: inline-block;
+        display: inline-flex;
+		align-items: center;
+		gap: 8px;
         outline: none;
         transition: all .3s ease;
         transform: initial;
         color: #fff;
-			font-weight: bold;
+		font-weight: bold;
         background-color: #050c9c;
         font-family: Gabarito, Poppins, sans-serif;
         box-shadow: 0 2px 8px rgba(5, 12, 156, 0.15);
-    }
-    #short-whoarewe .short-whoarewe-buttons a i{
-			margin-right: 8px;
     }
     #short-whoarewe .short-whoarewe-buttons a:hover{
         text-decoration: none;

@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Layers, Server, Code2, Shield, Database } from 'lucide-svelte';
 </script>
 
 <section id="tech-stack">
 	<div class="section-title">
-		<i class="bi bi-stack"></i>
+		<Layers size={32} />
 		<h2>{$t('techstack.title')}</h2>
 	</div>
 	<p class="tech-intro">
@@ -13,7 +14,7 @@
 	<div class="tech-categories">
 		<div class="tech-category">
 			<div class="category-header">
-				<i class="bi bi-server"></i>
+				<Server size={24} />
 				<h4>{$t('techstack.infra_title')}</h4>
 			</div>
 			<p class="category-desc">
@@ -29,7 +30,7 @@
 		</div>
 		<div class="tech-category">
 			<div class="category-header">
-				<i class="bi bi-code-square"></i>
+				<Code2 size={24} />
 				<h4>{$t('techstack.dev_title')}</h4>
 			</div>
 			<p class="category-desc">
@@ -46,7 +47,7 @@
 		</div>
 		<div class="tech-category">
 			<div class="category-header">
-				<i class="bi bi-shield-lock"></i>
+				<Shield size={24} />
 				<h4>{$t('techstack.network_title')}</h4>
 			</div>
 			<p class="category-desc">
@@ -61,7 +62,7 @@
 		</div>
 		<div class="tech-category">
 			<div class="category-header">
-				<i class="bi bi-database"></i>
+				<Database size={24} />
 				<h4>{$t('techstack.db_title')}</h4>
 			</div>
 			<p class="category-desc">
@@ -89,8 +90,7 @@
 		gap: 15px;
 		margin-bottom: 15px;
 	}
-	#tech-stack .section-title i{
-		font-size: 32px;
+	#tech-stack .section-title :global(svg){
 		animation: float 3s ease-in-out infinite;
 	}
 	@keyframes float {
@@ -143,8 +143,7 @@
 		gap: 12px;
 		margin-bottom: 12px;
 	}
-	.category-header i{
-		font-size: 24px;
+	.category-header :global(svg){
 		color: #050c9c;
 	}
 	.tech-category h4{

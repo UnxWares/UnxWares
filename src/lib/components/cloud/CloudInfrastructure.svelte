@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Network, Building, Flag, Settings, ArrowRightCircle } from 'lucide-svelte';
 </script>
 
 <section id="cloud-infrastructure">
 	<div class="section-title">
-		<i class="bi bi-diagram-3"></i>
+		<Network size={32} color="#050c9c" />
 		<h2>{$t('cloud_page.infrastructure.title')}</h2>
 	</div>
 
@@ -13,7 +14,7 @@
 	<div class="infrastructure-highlight">
 		<div class="highlight-card">
 			<div class="highlight-icon">
-				<i class="bi bi-building"></i>
+				<Building size={32} color="white" />
 			</div>
 			<h3>{$t('cloud_page.infrastructure.hardware_title')}</h3>
 			<p>{$t('cloud_page.infrastructure.hardware_desc')}</p>
@@ -21,7 +22,7 @@
 
 		<div class="highlight-card">
 			<div class="highlight-icon">
-				<i class="bi bi-flag-fill"></i>
+				<Flag size={32} color="white" />
 			</div>
 			<h3>{$t('cloud_page.infrastructure.sovereignty_title')}</h3>
 			<p>{$t('cloud_page.infrastructure.sovereignty_desc')}</p>
@@ -29,7 +30,7 @@
 
 		<div class="highlight-card">
 			<div class="highlight-icon">
-				<i class="bi bi-gear-wide-connected"></i>
+				<Settings size={32} color="white" />
 			</div>
 			<h3>{$t('cloud_page.infrastructure.orchestration_title')}</h3>
 			<p>{$t('cloud_page.infrastructure.orchestration_desc')}</p>
@@ -38,7 +39,7 @@
 
 	<div class="infrastructure-cta">
 		<a href="/datacenter" class="infrastructure-link">
-			<i class="bi bi-arrow-right-circle-fill"></i>
+			<ArrowRightCircle size={20} />
 			{$t('cloud_page.infrastructure.cta_link')}
 		</a>
 	</div>
@@ -57,10 +58,8 @@
 		margin-bottom: 25px;
 	}
 
-	.section-title i {
-		font-size: 32px;
+	.section-title :global(svg) {
 		animation: pulse 2s ease-in-out infinite;
-		color: #050c9c;
 	}
 
 	@keyframes pulse {
@@ -128,11 +127,6 @@
 		backdrop-filter: blur(10px);
 	}
 
-	.highlight-icon i {
-		font-size: 32px;
-		color: white;
-	}
-
 	.highlight-card h3 {
 		font-size: 20px;
 		font-weight: 600;
@@ -177,12 +171,11 @@
 		box-shadow: 0 4px 16px rgba(5, 12, 156, 0.3);
 	}
 
-	.infrastructure-link i {
-		font-size: 20px;
+	.infrastructure-link :global(svg) {
 		transition: transform 0.3s ease;
 	}
 
-	.infrastructure-link:hover i {
+	.infrastructure-link:hover :global(svg) {
 		transform: translateX(3px);
 	}
 
@@ -225,10 +218,6 @@
 			height: 60px;
 		}
 
-		.highlight-icon i {
-			font-size: 28px;
-		}
-
 		.highlight-card h3 {
 			font-size: 18px;
 		}
@@ -250,8 +239,7 @@
 			line-height: 1.4;
 		}
 
-		.infrastructure-link i {
-			font-size: 14px;
+		.infrastructure-link :global(svg) {
 			flex-shrink: 0;
 		}
 	}

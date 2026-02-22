@@ -3,6 +3,7 @@
     "discover": "Descúbrenos"
   },
   "home": {
+    "blog": "Blog",
     "welcome": "Bienvenido",
     "intro_p1": "Somos UnxWares, una empresa francesa con sede en Normandía, con un centro de datos ubicado en Caen. Trabajamos extensamente para permitir que cualquiera que desee beneficiarse de nuestra experiencia, incluso con un presupuesto a veces limitado.",
     "intro_p2": "Por eso ofrecemos, a través de UnxWares Cloud, soluciones de alojamiento listas para usar y personalizadas, para que nuestros clientes puedan seleccionar la opción que mejor se adapte a sus necesidades, a un precio justo.",
@@ -104,6 +105,7 @@
   },
   "navbar": {
     "home": "Inicio",
+    "blog": "Blog",
     "product": "Producto",
     "company": "Empresa",
     "legal": "Legal",
@@ -535,6 +537,7 @@
   },
   "pages": {
     "home": {
+    "blog": "Blog",
       "title": "UnxWares - Bienvenido"
     },
     "whoarewe": {
@@ -1038,5 +1041,24 @@
     "normal_desc": "< 24h para contact@unxwares.com. No dejamos emails arrastrando.",
     "sales_contact_title": "Preguntas Comerciales",
     "sales_contact_desc": "< 48h para presupuesto detallado. Tomamos tiempo para entender tu necesidad."
+  }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Descubra nuestros últimos artículos técnicos y noticias",
+    "read_more": "Leer más",
+    "reading_time": "Tiempo de lectura",
+    "category": "Categoría",
+    "tags": "Etiquetas",
+    "all_categories": "Todas las categorías",
+    "all_tags": "Todas las etiquetas",
+    "no_posts": "No hay artículos disponibles",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "back_to_list": "Volver a los artículos",
+    "category_description": "Artículos en categoría {category}",
+    "posts_in_category": "{count, plural, =0 {Ningún artículo} =1 {1 artículo} other {# artículos}} en categoría {category}",
+    "tag_description": "Artículos con etiqueta {tag}",
+    "posts_with_tag": "{count, plural, =0 {Ningún artículo} =1 {1 artículo} other {# artículos}} con etiqueta {tag}"
   }
 }

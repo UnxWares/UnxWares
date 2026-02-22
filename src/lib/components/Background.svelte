@@ -1,10 +1,17 @@
-<video
-	src="/videos/blured_video.mp4"
-	autoplay
-	muted
-	loop
-	class="background-video">
-</video>
+<script lang="ts">
+	let { show = true } = $props();
+</script>
+
+{#if show}
+	<video
+		src="/videos/blured_video.mp4"
+		autoplay
+		muted
+		loop
+		playsinline
+		class="background-video">
+	</video>
+{/if}
 
 <style>
     .background-video {

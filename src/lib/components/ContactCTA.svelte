@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Mail, MessageCircle } from 'lucide-svelte';
 </script>
 
 <section class="contact-cta">
@@ -8,11 +9,11 @@
 		<p>{$t('contact_cta.description')}</p>
 		<div class="cta-buttons">
 			<a href="/contact" class="btn-primary" data-sveltekit-preload-data="hover">
-				<i class="bi bi-envelope-fill"></i>
+				<Mail size={20} />
 				{$t('contact_cta.button')}
 			</a>
 			<a href="https://discord.gg/PPRacEf7yB" class="btn-secondary" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-discord"></i>
+				<MessageCircle size={20} />
 				Discord
 			</a>
 		</div>
@@ -92,11 +93,6 @@
 		background: rgba(255, 255, 255, 0.1);
 		border-color: white;
 		transform: translateY(-2px);
-	}
-
-	.btn-primary i,
-	.btn-secondary i {
-		font-size: 20px;
 	}
 
 	@media (max-width: 768px) {

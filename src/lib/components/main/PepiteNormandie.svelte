@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Rocket, Award, TrendingUp, Users, Lightbulb } from 'lucide-svelte';
 </script>
 
 <section id="pepite-normandie">
 	<div class="pepite-title">
-		<i class="bi bi-rocket-takeoff-fill"></i>
+		<Rocket size={32} />
 		<h2>{$t('pepite.title')}</h2>
 	</div>
 	<div class="pepite-logos">
@@ -15,28 +16,28 @@
 	<h3>{$t('pepite.objectives_title')}</h3>
 	<div class="engagement-points">
 		<div class="engagement-item">
-			<i class="bi bi-award-fill"></i>
+			<Award size={26} />
 			<div>
 				<h4>{$t('pepite.obj1_title')}</h4>
 				<p>{$t('pepite.obj1_desc')}</p>
 			</div>
 		</div>
 		<div class="engagement-item">
-			<i class="bi bi-graph-up-arrow"></i>
+			<TrendingUp size={26} />
 			<div>
 				<h4>{$t('pepite.obj2_title')}</h4>
 				<p>{$t('pepite.obj2_desc')}</p>
 			</div>
 		</div>
 		<div class="engagement-item">
-			<i class="bi bi-people-fill"></i>
+			<Users size={26} />
 			<div>
 				<h4>{$t('pepite.obj3_title')}</h4>
 				<p>{$t('pepite.obj3_desc')}</p>
 			</div>
 		</div>
 		<div class="engagement-item">
-			<i class="bi bi-lightbulb-fill"></i>
+			<Lightbulb size={26} />
 			<div>
 				<h4>{$t('pepite.obj4_title')}</h4>
 				<p>{$t('pepite.obj4_desc')}</p>
@@ -57,8 +58,7 @@
         gap: 15px;
         margin-bottom: 45px;
     }
-    #pepite-normandie .pepite-title i{
-        font-size: 32px;
+    #pepite-normandie .pepite-title :global(svg){
         animation: float 3s ease-in-out infinite;
     }
     @keyframes float {
@@ -158,14 +158,13 @@
         box-shadow: 0 8px 16px rgba(5, 12, 156, 0.1);
         border-color: #050c9c;
     }
-    #pepite-normandie .engagement-item i{
-        font-size: 26px;
+    #pepite-normandie .engagement-item :global(svg){
         color: #050c9c;
         flex-shrink: 0;
         margin-top: 2px;
         transition: transform 0.3s ease;
     }
-    #pepite-normandie .engagement-item:hover i{
+    #pepite-normandie .engagement-item:hover :global(svg){
         transform: scale(1.1);
     }
     #pepite-normandie .engagement-item h4{

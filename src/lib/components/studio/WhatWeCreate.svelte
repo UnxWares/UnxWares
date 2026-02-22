@@ -1,10 +1,11 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { Palette, Globe, Server, Monitor, Smartphone, Gamepad2, Settings } from 'lucide-svelte';
 </script>
 
 <section id="what-we-create">
 	<div class="section-title">
-		<i class="bi bi-palette-fill"></i>
+		<Palette size={32} />
 		<h2>{$t('studio_page.what.title')}</h2>
 	</div>
 
@@ -13,7 +14,7 @@
 	<div class="creations-grid">
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-globe"></i>
+				<Globe size={28} />
 			</div>
 			<h3>{$t('studio_page.what.web_title')}</h3>
 			<p>{$t('studio_page.what.web_desc')}</p>
@@ -21,7 +22,7 @@
 
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-server"></i>
+				<Server size={28} />
 			</div>
 			<h3>{$t('studio_page.what.backend_title')}</h3>
 			<p>{$t('studio_page.what.backend_desc')}</p>
@@ -29,7 +30,7 @@
 
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-pc-display"></i>
+				<Monitor size={28} />
 			</div>
 			<h3>{$t('studio_page.what.software_title')}</h3>
 			<p>{$t('studio_page.what.software_desc')}</p>
@@ -37,7 +38,7 @@
 
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-phone"></i>
+				<Smartphone size={28} />
 			</div>
 			<h3>{$t('studio_page.what.mobile_title')}</h3>
 			<p>{$t('studio_page.what.mobile_desc')}</p>
@@ -45,7 +46,7 @@
 
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-controller"></i>
+				<Gamepad2 size={28} />
 			</div>
 			<h3>{$t('studio_page.what.games_title')}</h3>
 			<p>{$t('studio_page.what.games_desc')}</p>
@@ -53,7 +54,7 @@
 
 		<div class="creation-card">
 			<div class="creation-icon">
-				<i class="bi bi-gear-fill"></i>
+				<Settings size={28} />
 			</div>
 			<h3>{$t('studio_page.what.infra_title')}</h3>
 			<p>{$t('studio_page.what.infra_desc')}</p>
@@ -74,8 +75,7 @@
 		margin-bottom: 25px;
 	}
 
-	.section-title i {
-		font-size: 32px;
+	.section-title :global(svg) {
 		animation: float 3s ease-in-out infinite;
 		color: #050c9c;
 	}
@@ -150,8 +150,7 @@
 		justify-content: center;
 	}
 
-	.creation-icon i {
-		font-size: 28px;
+	.creation-icon :global(svg) {
 		color: #050c9c;
 	}
 
