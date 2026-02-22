@@ -1,21 +1,17 @@
-<script>
-import { PrivacyPolicy } from '@unxwares/ui-core';
+<script lang="ts">
+	import { t } from 'svelte-i18n';
+	import LegalContent from '$lib/components/LegalContent.svelte';
+
+	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>UnxWares - Confidentialité</title>
-
-	<meta property="og:title" content="UnxWares - Confidentialité">
-	<meta name="twitter:title" content="UnxWares - Confidentialité">
-
-	<meta property="og:url" content="https://www.unxwares.com/privacy">
-	<meta name="twitter:site" content="https://www.unxwares.com/privacy">
+	<title>{$t('footer.privacy')} - UnxWares</title>
+	<meta name="description" content={$t('footer.privacy')} />
+	<meta property="og:title" content="{$t('footer.privacy')} - UnxWares" />
+	<meta name="twitter:title" content="{$t('footer.privacy')} - UnxWares" />
+	<meta property="og:url" content="https://www.unxwares.com/privacy" />
+	<meta name="twitter:site" content="https://www.unxwares.com/privacy" />
 </svelte:head>
 
-<main>
-	<PrivacyPolicy />
-</main>
-
-<style>
-
-</style>
+<LegalContent content={data.content} />

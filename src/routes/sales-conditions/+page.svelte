@@ -1,21 +1,17 @@
-<script>
-import { SalesConditions } from '@unxwares/ui-core';
+<script lang="ts">
+	import { t } from 'svelte-i18n';
+	import LegalContent from '$lib/components/LegalContent.svelte';
+
+	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>UnxWares - CGV</title>
-
-	<meta property="og:title" content="UnxWares - CGV">
-	<meta name="twitter:title" content="UnxWares - CGV">
-
-	<meta property="og:url" content="https://www.unxwares.com/sales-conditions">
-	<meta name="twitter:site" content="https://www.unxwares.com/sales-conditions">
+	<title>{$t('footer.sales')} - UnxWares</title>
+	<meta name="description" content={$t('footer.sales')} />
+	<meta property="og:title" content="{$t('footer.sales')} - UnxWares" />
+	<meta name="twitter:title" content="{$t('footer.sales')} - UnxWares" />
+	<meta property="og:url" content="https://www.unxwares.com/sales-conditions" />
+	<meta name="twitter:site" content="https://www.unxwares.com/sales-conditions" />
 </svelte:head>
 
-<main>
-	<SalesConditions />
-</main>
-
-<style>
-
-</style>
+<LegalContent content={data.content} />

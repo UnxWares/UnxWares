@@ -1,6 +1,7 @@
 <script>
 	import { locale, locales } from 'svelte-i18n';
 	import { ChevronDown } from 'lucide-svelte';
+	import { invalidateAll } from '$app/navigation';
 
 	let dropdownOpen = $state(false);
 
@@ -22,9 +23,13 @@
 		it: '🇮🇹'
 	};
 
-	function switchLanguage(lang) {
+	async function switchLanguage(lang) {
 		locale.set(lang);
 		dropdownOpen = false;
+		// Petit délai pour laisser le cookie se définir
+		await new Promise(resolve => setTimeout(resolve, 100));
+		// Recharger les données serveur avec le nouveau cookie
+		await invalidateAll();
 	}
 
 	function toggleDropdown() {

@@ -1,21 +1,17 @@
-<script>
-import { LegalNotices } from '@unxwares/ui-core';
+<script lang="ts">
+	import { t } from 'svelte-i18n';
+	import LegalContent from '$lib/components/LegalContent.svelte';
+
+	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>UnxWares - Légal</title>
-
-	<meta property="og:title" content="UnxWares - Légal">
-	<meta name="twitter:title" content="UnxWares - Légal">
-
-	<meta property="og:url" content="https://www.unxwares.com/legal">
-	<meta name="twitter:site" content="https://www.unxwares.com/legal">
+	<title>{$t('footer.legal')} - UnxWares</title>
+	<meta name="description" content={$t('footer.legal')} />
+	<meta property="og:title" content="{$t('footer.legal')} - UnxWares" />
+	<meta name="twitter:title" content="{$t('footer.legal')} - UnxWares" />
+	<meta property="og:url" content="https://www.unxwares.com/legal" />
+	<meta name="twitter:site" content="https://www.unxwares.com/legal" />
 </svelte:head>
 
-<main>
-	<LegalNotices />
-</main>
-
-<style>
-
-</style>
+<LegalContent content={data.content} />

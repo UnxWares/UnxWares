@@ -33,14 +33,23 @@ function getInitialLocale() {
 	return getNormalizedLocale();
 }
 
+const initialLocale = getInitialLocale();
+
 init({
 	fallbackLocale: 'fr',
-	initialLocale: getInitialLocale(),
+	initialLocale,
 });
 
-// Sauvegarder la langue dans localStorage quand elle change
+// Définir le cookie initial pour le serveur
+if (typeof window !== 'undefined' && initialLocale) {
+	document.cookie = `locale=${initialLocale}; path=/; max-age=31536000; SameSite=Lax`;
+}
+
+// Sauvegarder la langue dans localStorage et cookie quand elle change
 locale.subscribe((value) => {
 	if (typeof window !== 'undefined' && value) {
 		localStorage.setItem(LOCALE_STORAGE_KEY, value);
+		// Définir aussi un cookie pour le serveur (expire dans 1 an)
+		document.cookie = `locale=${value}; path=/; max-age=31536000; SameSite=Lax`;
 	}
 });
