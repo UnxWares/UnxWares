@@ -3,7 +3,7 @@
 	import { t } from 'svelte-i18n';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
-	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
+	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, Palette, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
 	let mobileMenuOpen = $state(false);
 	let scrolled = $state(false);
@@ -133,6 +133,13 @@
 								<div class="dropdown-item-content">
 									<span class="dropdown-item-label">{$t('navbar.infrastructure')}</span>
 									<span class="dropdown-item-desc">{$t('navbar.infrastructure_desc')}</span>
+								</div>
+							</a>
+							<a href="/brand-kit" class="dropdown-item" class:active={$page.url.pathname === '/brand-kit'} onclick={closeMobileMenu} data-sveltekit-preload-data="hover">
+								<Palette size={20} />
+								<div class="dropdown-item-content">
+									<span class="dropdown-item-label">{$t('navbar.brand_kit')}</span>
+									<span class="dropdown-item-desc">{$t('navbar.brand_kit_desc')}</span>
 								</div>
 							</a>
 						</div>
