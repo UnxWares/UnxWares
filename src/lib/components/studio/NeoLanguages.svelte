@@ -128,13 +128,13 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.8;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 50px auto;
 		max-width: 850px;
 	}
 
 	.why-neolang {
-		background: #f8f9fa;
+		background: var(--bg-secondary);
 		padding: 40px;
 		border-radius: 12px;
 		margin-bottom: 50px;
@@ -145,13 +145,13 @@
 		font-weight: 600;
 		margin: 0 0 15px 0;
 		text-align: center;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.why-neolang > p {
 		text-align: center;
 		margin: 0 0 35px 0;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		font-size: 15px;
 	}
 
@@ -172,10 +172,10 @@
 	}
 
 	.advantage-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 25px;
 		border-radius: 10px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 	}
 
@@ -194,13 +194,13 @@
 		font-size: 17px;
 		font-weight: 600;
 		margin: 0 0 10px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.advantage-card p {
 		font-size: 14px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 		text-align: justify;
 		text-justify: inter-word;
@@ -221,7 +221,7 @@
 	}
 
 	.lang-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 35px;
 		border-radius: 12px;
 		border: 2px solid #e8e8e8;
@@ -297,7 +297,7 @@
 		font-size: 22px;
 		font-weight: 700;
 		margin: 0 0 5px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.lang-subtitle {
@@ -323,7 +323,7 @@
 	.lang-desc {
 		font-size: 15px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 0 20px 0;
 		text-align: justify;
 		text-justify: inter-word;
@@ -333,13 +333,13 @@
 	.lang-use {
 		font-size: 14px;
 		line-height: 1.6;
-		color: #666;
+		color: var(--text-secondary);
 		padding-top: 20px;
-		border-top: 1px solid #f0f0f0;
+		border-top: 1px solid var(--border-color);
 	}
 
 	.lang-use strong {
-		color: #1a1a1a;
+		color: var(--text-primary);
 		font-weight: 600;
 	}
 </style>

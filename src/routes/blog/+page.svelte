@@ -77,12 +77,12 @@
 		font-size: 3rem;
 		font-weight: 700;
 		margin-bottom: 1rem;
-		color: var(--text-primary, #212529);
+		color: var(--text-primary);
 	}
 
 	.blog-description {
 		font-size: 1.25rem;
-		color: var(--text-secondary, #495057);
+		color: var(--text-secondary);
 		max-width: 600px;
 		margin: 0 auto 1.5rem;
 	}
@@ -100,10 +100,10 @@
 		align-items: center;
 		gap: 0.5rem;
 		padding: 0.5rem 1rem;
-		background: #f8f9fa;
-		border: 1px solid #dee2e6;
+		background: var(--bg-secondary);
+		border: 1px solid var(--border-color);
 		border-radius: 8px;
-		color: #050c9c;
+		color: var(--primary-text);
 		text-decoration: none;
 		font-size: 0.875rem;
 		font-weight: 600;
@@ -111,9 +111,9 @@
 	}
 
 	.feed-link:hover {
-		background: #050c9c;
+		background: var(--primary);
 		color: white;
-		border-color: #050c9c;
+		border-color: var(--primary);
 		transform: translateY(-2px);
 		box-shadow: 0 4px 8px rgba(5, 12, 156, 0.2);
 	}
@@ -132,7 +132,7 @@
 	.no-posts {
 		text-align: center;
 		padding: 4rem 2rem;
-		color: var(--text-muted, #6c757d);
+		color: var(--text-secondary);
 	}
 
 	.no-posts :global(svg) {

@@ -91,7 +91,7 @@
 
 <style>
 	.blog-article {
-		background-color: white;
+		background-color: var(--bg-primary);
 	}
 
 	.blog-article-container {
@@ -136,7 +136,7 @@
 		align-items: center;
 		gap: 0.5rem;
 		padding: 0.75rem 1.5rem;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		border: 1px solid var(--border-color, #dee2e6);
 		border-radius: 0.5rem;
 		color: var(--text-primary, #212529);

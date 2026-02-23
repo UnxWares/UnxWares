@@ -114,7 +114,7 @@
 		border-radius: 0.5rem;
 		overflow: hidden;
 		aspect-ratio: 16 / 9;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 	}
 
 	.blog-header-image img {

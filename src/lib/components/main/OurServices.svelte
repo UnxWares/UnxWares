@@ -121,15 +121,15 @@
 	}
 	.service-card{
 		padding: 40px 35px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		border-radius: 12px;
 		transition: all 0.3s ease;
-		background-color: #ffffff;
+		background-color: var(--bg-primary);
 	}
 	.service-card:hover{
 		transform: translateY(-3px);
 		box-shadow: 0 10px 25px rgba(5, 12, 156, 0.1);
-		border-color: #050c9c;
+		border-color: var(--primary);
 	}
 	.service-header{
 		display: flex;
@@ -141,25 +141,25 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 10px;
-		background-color: #f0f2ff;
+		background-color: var(--primary-light);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-shrink: 0;
 	}
 	.service-icon :global(svg){
-		color: #050c9c;
+		color: var(--primary-text);
 	}
 	.service-card h3{
 		font-size: 22px;
 		font-weight: 600;
 		margin: 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 	.service-tagline{
 		font-size: 16px;
 		font-style: italic;
-		color: #050c9c;
+		color: var(--primary-text);
 		margin: 0 0 25px 0;
 		line-height: 1.6;
 	}
@@ -175,31 +175,31 @@
 		gap: 12px;
 	}
 	.feature :global(svg){
-		color: #050c9c;
+		color: var(--primary-text);
 		margin-top: 3px;
 		flex-shrink: 0;
 	}
 	.feature span{
 		font-size: 14px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 	}
 	.service-description{
 		font-size: 15px;
 		line-height: 1.8;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 0 25px 0;
 		text-align: justify;
 		text-justify: inter-word;
 		word-spacing: -0.05em;
 		padding-top: 20px;
-		border-top: 1px solid #f0f0f0;
+		border-top: 1px solid var(--border-color);
 	}
 	.service-link{
 		display: inline-flex;
 		align-items: center;
 		gap: 8px;
-		color: #050c9c;
+		color: var(--primary-text);
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 15px;

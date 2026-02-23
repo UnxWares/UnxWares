@@ -83,7 +83,7 @@
 	.lang-button {
 		background: transparent;
 		border: 1px solid rgba(0, 0, 0, 0.15);
-		color: #1a1a1a;
+		color: var(--text-primary);
 		padding: 6px 12px;
 		border-radius: 6px;
 		cursor: pointer;
@@ -123,7 +123,7 @@
 		top: calc(100% + 8px);
 		right: 0;
 		min-width: 160px;
-		background: white;
+		background: var(--bg-primary);
 		border-radius: 8px;
 		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 		border: 1px solid rgba(0, 0, 0, 0.08);
@@ -156,7 +156,7 @@
 		font-family: 'Poppins', sans-serif;
 		font-size: 14px;
 		font-weight: 500;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		transition: all 0.2s ease;
 		text-align: left;
 	}

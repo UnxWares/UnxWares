@@ -87,7 +87,7 @@
 		text-align: center;
 		max-width: 700px;
 		margin: 0 auto 40px;
-		color: #555;
+		color: var(--text-secondary);
 	}
 
 	.projects-grid {
@@ -97,7 +97,7 @@
 	}
 
 	.project-card {
-		background: white;
+		background: var(--bg-primary);
 		border-radius: 12px;
 		padding: 25px;
 		display: flex;
@@ -105,7 +105,7 @@
 		gap: 20px;
 		text-decoration: none;
 		color: inherit;
-		border: 1px solid rgba(0,0,0,0.05);
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 		position: relative;
 		overflow: hidden;
@@ -113,8 +113,8 @@
 
 	.project-card:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-		border-color: rgba(5, 12, 156, 0.2);
+		box-shadow: var(--shadow-md);
+		border-color: var(--primary);
 	}
 
 	.card-icon {
@@ -138,7 +138,7 @@
 	.card-content h3 {
 		margin: 0 0 5px 0;
 		font-size: 18px;
-		color: #333;
+		color: var(--text-primary);
 		display: flex;
 		align-items: center;
 		gap: 10px;
@@ -152,8 +152,8 @@
 		border-radius: 4px;
 		font-weight: 700;
 		letter-spacing: 0.5px;
-		background: #f0f0f0;
-		color: #666;
+		background: var(--bg-secondary);
+		color: var(--text-secondary);
 		display: inline-block;
 		margin-bottom: 8px;
 	}
@@ -165,7 +165,7 @@
 	.card-content p {
 		margin: 0;
 		font-size: 14px;
-		color: #666;
+		color: var(--text-secondary);
 		line-height: 1.5;
 		text-align: justify;
 		text-justify: inter-word;
@@ -176,7 +176,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: #050c9c;
+		color: var(--primary-text);
 		opacity: 0;
 		transform: translateX(-10px);
 		transition: all 0.3s ease;

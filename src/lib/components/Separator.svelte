@@ -19,7 +19,7 @@
 	.classic-separator .line {
 		height: 1px;
 		flex: 1;
-		background: linear-gradient(to var(--direction, right), transparent, rgba(0, 0, 0, 0.2));
+		background: linear-gradient(to var(--direction, right), transparent, var(--border-color));
 	}
 
 	.classic-separator .line:last-child {
@@ -30,5 +30,9 @@
 		width: 20px;
 		height: 20px;
 		filter: grayscale(100%);
+	}
+
+	:global([data-theme="dark"]) .classic-separator img {
+		filter: grayscale(100%) brightness(10);
 	}
 </style>

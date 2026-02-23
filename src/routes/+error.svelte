@@ -82,7 +82,7 @@
 	}
 
 	.error-icon :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 		animation: float 3s ease-in-out infinite;
 	}
 
@@ -98,7 +98,7 @@
 	.error-number {
 		font-size: 120px;
 		font-weight: 900;
-		color: #050c9c;
+		color: var(--primary-text);
 		margin: 0 0 20px 0;
 		line-height: 1;
 		font-family: 'Poppins', sans-serif;
@@ -107,14 +107,14 @@
 	.error-hero h1 {
 		font-size: 42px;
 		font-weight: 700;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		margin: 0 0 25px 0;
 		font-family: 'Poppins', sans-serif;
 	}
 
 	.error-message {
 		font-size: 18px;
-		color: #666;
+		color: var(--text-secondary);
 		line-height: 1.8;
 		margin: 0 0 40px 0;
 		max-width: 600px;
@@ -158,8 +158,8 @@
 
 	.btn-secondary {
 		background: transparent;
-		color: #050c9c;
-		border: 2px solid #050c9c;
+		color: var(--primary-text);
+		border: 2px solid var(--primary);
 	}
 
 	.btn-secondary:hover {
@@ -171,12 +171,12 @@
 	.suggestions-section {
 		padding: 60px 20px 80px;
 		margin: 0;
-		background: #f8f9fa;
+		background: var(--bg-secondary);
 	}
 
 	.suggestions-title {
 		font-size: 20px;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 0 30px 0;
 		font-weight: 600;
 		text-align: center;
@@ -197,8 +197,8 @@
 		align-items: center;
 		gap: 12px;
 		padding: 30px 20px;
-		background: white;
-		color: #050c9c;
+		background: var(--bg-primary);
+		color: var(--primary-text);
 		text-decoration: none;
 		border-radius: 12px;
 		font-size: 16px;
@@ -209,7 +209,7 @@
 	}
 
 	.suggestion-card:hover {
-		border-color: #050c9c;
+		border-color: var(--primary);
 		transform: translateY(-5px);
 		box-shadow: 0 4px 16px rgba(5, 12, 156, 0.15);
 	}

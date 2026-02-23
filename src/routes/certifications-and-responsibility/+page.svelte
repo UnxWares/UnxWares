@@ -375,7 +375,7 @@
 
 	.intro {
 		font-size: 18px;
-		color: #666;
+		color: var(--text-secondary);
 		line-height: 1.8;
 		text-align: center;
 	}
@@ -402,7 +402,7 @@
 	.section-intro {
 		text-align: center;
 		font-size: 16px;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 0 50px 0;
 		line-height: 1.8;
 	}
@@ -419,10 +419,10 @@
 	}
 
 	.cert-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 30px;
 		border-radius: 12px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 		text-align: center;
 	}
@@ -437,7 +437,7 @@
 		width: 60px;
 		height: 60px;
 		margin: 0 auto 20px auto;
-		background: #f0f2ff;
+		background: var(--bg-tertiary);
 		border-radius: 12px;
 		display: flex;
 		align-items: center;
@@ -480,13 +480,13 @@
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0 0 12px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.cert-card p {
 		font-size: 14px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 		text-align: justify;
 		text-justify: inter-word;
@@ -574,7 +574,7 @@
 		align-items: flex-start;
 		gap: 15px;
 		padding: 20px;
-		background: white;
+		background: var(--bg-primary);
 		border-left: 4px solid #050c9c;
 		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -595,7 +595,7 @@
 		margin: 0;
 		font-size: 15px;
 		line-height: 1.6;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		text-align: left;
 	}
 
@@ -636,10 +636,10 @@
 
 	.timeline-content {
 		padding: 20px;
-		background: white;
+		background: var(--bg-primary);
 		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 	}
 
@@ -660,7 +660,7 @@
 		margin: 0;
 		font-size: 14px;
 		line-height: 1.6;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		text-align: left;
 	}
 

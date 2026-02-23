@@ -123,7 +123,7 @@
 	}
 
 	.tags-cloud {
-		background: #f8f9fa;
+		background: var(--bg-secondary);
 		border-radius: 12px;
 		padding: 1.5rem;
 		margin-bottom: 3rem;
@@ -147,7 +147,7 @@
 		align-items: center;
 		gap: 0.375rem;
 		padding: 0.375rem 0.75rem;
-		background: white;
+		background: var(--bg-primary);
 		border: 1px solid #dee2e6;
 		border-radius: 6px;
 		color: #050c9c;

@@ -23,5 +23,6 @@
         object-fit: cover;
         object-position: left top;
         z-index: -1;
+        pointer-events: none;
     }
 </style>

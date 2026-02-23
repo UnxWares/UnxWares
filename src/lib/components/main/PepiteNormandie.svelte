@@ -94,6 +94,9 @@
     #pepite-normandie .mesr-logo:hover{
         transform: scale(1.05);
     }
+    :global([data-theme="dark"]) #pepite-normandie .mesr-logo{
+        filter: brightness(0) invert(1);
+    }
     @media (max-width: 768px) {
         #pepite-normandie .pepite-logos{
             gap: 40px;
@@ -147,19 +150,19 @@
         gap: 18px;
         align-items: flex-start;
         padding: 25px;
-        background-color: #ffffff;
+        background-color: var(--bg-primary);
         border-radius: 12px;
-        border: 1px solid #e8e8e8;
+        border: 1px solid var(--border-color);
         transition: all 0.3s ease;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     }
     #pepite-normandie .engagement-item:hover{
         transform: translateY(-3px);
         box-shadow: 0 8px 16px rgba(5, 12, 156, 0.1);
-        border-color: #050c9c;
+        border-color: var(--primary);
     }
     #pepite-normandie .engagement-item :global(svg){
-        color: #050c9c;
+        color: var(--primary-text);
         flex-shrink: 0;
         margin-top: 2px;
         transition: transform 0.3s ease;
@@ -171,7 +174,7 @@
         margin: 0 0 10px 0;
         font-size: 16px;
         font-weight: 600;
-        color: #1a1a1a;
+        color: var(--text-primary);
     }
     #pepite-normandie .engagement-item p{
         margin: 0;
@@ -180,6 +183,6 @@
         text-align: justify;
         text-justify: inter-word;
         word-spacing: -0.05em;
-        color: #4a4a4a;
+        color: var(--text-secondary);
     }
 </style>

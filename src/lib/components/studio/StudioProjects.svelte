@@ -71,7 +71,7 @@
 
 	.section-title :global(svg) {
 		animation: float 3s ease-in-out infinite;
-		color: #050c9c;
+		color: var(--primary-text);
 	}
 
 	@keyframes float {
@@ -95,7 +95,7 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.8;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 50px auto;
 		max-width: 850px;
 	}
@@ -113,10 +113,10 @@
 	}
 
 	.project-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 30px;
 		border-radius: 12px;
-		border: 2px solid #e8e8e8;
+		border: 2px solid var(--border-color);
 		transition: all 0.3s ease;
 		display: flex;
 		flex-direction: column;
@@ -125,12 +125,12 @@
 	.project-card:hover {
 		transform: translateY(-3px);
 		box-shadow: 0 8px 20px rgba(5, 12, 156, 0.1);
-		border-color: #050c9c;
+		border-color: var(--primary);
 	}
 
 	.project-card.featured {
-		border-color: #050c9c;
-		background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+		border-color: var(--primary);
+		background: var(--bg-secondary);
 	}
 
 	.project-card.upcoming {
@@ -141,8 +141,8 @@
 	.project-tag {
 		display: inline-block;
 		padding: 5px 12px;
-		background: #f0f2ff;
-		color: #050c9c;
+		background: var(--bg-tertiary);
+		color: var(--primary-text);
 		font-size: 11px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -153,7 +153,7 @@
 	}
 
 	.project-card.featured .project-tag {
-		background: #050c9c;
+		background: var(--primary);
 		color: white;
 	}
 
@@ -161,13 +161,13 @@
 		font-size: 20px;
 		font-weight: 700;
 		margin: 0 0 15px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.project-desc {
 		font-size: 15px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 0 20px 0;
 		flex: 1;
 		text-align: justify;
@@ -177,9 +177,9 @@
 
 	.project-tech {
 		font-size: 13px;
-		color: #666;
+		color: var(--text-secondary);
 		padding-top: 20px;
-		border-top: 1px solid #f0f0f0;
+		border-top: 1px solid var(--border-color);
 		font-weight: 500;
 	}
 </style>

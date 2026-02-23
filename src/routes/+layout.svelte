@@ -2,12 +2,14 @@
 	import '../styles/app.css';
 	import '$lib/i18n';
 	import { isLoading, locale } from 'svelte-i18n';
+	import { theme } from '$lib/stores/theme';
 	import Background from "$lib/components/Background.svelte";
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
+	import { browser } from '$app/environment';
 	let { children } = $props();
 
 	let previousPath = $state($page.url.pathname);
@@ -33,6 +35,40 @@
 	$effect(() => {
 		if ($locale && typeof document !== 'undefined') {
 			document.documentElement.lang = $locale;
+		}
+	});
+
+	// Initialize theme on mount
+	$effect(() => {
+		if (browser) {
+			const stored = localStorage.getItem('theme');
+			if (stored === 'light' || stored === 'dark') {
+				document.documentElement.setAttribute('data-theme', stored);
+			} else {
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const initialTheme = prefersDark ? 'dark' : 'light';
+				document.documentElement.setAttribute('data-theme', initialTheme);
+			}
+		}
+	});
+
+	// Update theme attribute when theme changes
+	$effect(() => {
+		if (browser) {
+			document.documentElement.setAttribute('data-theme', $theme);
+		}
+	});
+
+	// Add/remove class to body when showing background video
+	$effect(() => {
+		if (browser) {
+			if (showBackground) {
+				document.body.classList.add('has-video-background');
+				document.documentElement.classList.add('has-video-background');
+			} else {
+				document.body.classList.remove('has-video-background');
+				document.documentElement.classList.remove('has-video-background');
+			}
 		}
 	});
 </script>
@@ -82,14 +118,14 @@
 		align-items: center;
 		width: 100vw;
 		height: 100vh;
-		background-color: #ffffff;
+		background-color: var(--bg-primary);
 	}
 
 	.loading-spinner {
 		width: 50px;
 		height: 50px;
-		border: 4px solid #f0f2ff;
-		border-top: 4px solid #050c9c;
+		border: 4px solid var(--spinner-bg);
+		border-top: 4px solid var(--spinner-color);
 		border-radius: 50%;
 		animation: spin 1s linear infinite;
 	}

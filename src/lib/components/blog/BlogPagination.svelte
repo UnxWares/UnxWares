@@ -77,7 +77,7 @@
 		align-items: center;
 		gap: 0.5rem;
 		padding: 0.5rem 1rem;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		border: 1px solid var(--border-color, #dee2e6);
 		border-radius: 0.375rem;
 		font-weight: 500;
@@ -117,7 +117,7 @@
 	}
 
 	.pagination-page:hover {
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 	}
 
 	.pagination-page.active {

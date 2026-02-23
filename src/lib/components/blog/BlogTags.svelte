@@ -33,18 +33,18 @@
 		align-items: center;
 		gap: 0.25rem;
 		padding: 0.25rem 0.75rem;
-		background-color: var(--bg-secondary, #f8f9fa);
-		border: 1px solid var(--border-color, #dee2e6);
+		background-color: var(--bg-secondary);
+		border: 1px solid var(--border-color);
 		border-radius: 1rem;
 		font-size: 0.875rem;
-		color: var(--text-primary, #212529);
+		color: var(--text-primary);
 		text-decoration: none;
 		transition: all 0.2s ease;
 	}
 
 	a.tag:hover {
-		background-color: #050c9c;
+		background-color: var(--primary);
 		color: white;
-		border-color: #050c9c;
+		border-color: var(--primary);
 	}
 </style>

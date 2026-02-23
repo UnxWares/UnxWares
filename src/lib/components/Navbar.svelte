@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { t } from 'svelte-i18n';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
+	import ThemeToggle from './ThemeToggle.svelte';
 	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
 	let mobileMenuOpen = $state(false);
@@ -69,6 +70,7 @@
 				</div>
 
 				<div class="mobile-lang-switcher">
+					<ThemeToggle />
 					<LanguageSwitcher />
 				</div>
 
@@ -178,6 +180,7 @@
 			</div>
 
 			<div class="navbar-actions">
+				<ThemeToggle />
 				<LanguageSwitcher />
 				<a href="https://customers.unxwares.com" target="_blank" rel="noopener noreferrer" class="btn-primary customer-portal-btn">{$t('navbar.customer_portal')}</a>
 			</div>
@@ -209,16 +212,16 @@
 	}
 
 	.navbar {
-		background: white;
-		border: 1px solid rgba(0, 0, 0, 0.08);
+		background: var(--bg-primary);
+		border: 1px solid var(--border-color);
 		border-radius: 16px;
 		transition: all 0.2s ease-in-out;
-		box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+		box-shadow: var(--shadow-sm);
 		pointer-events: all;
 	}
 
 	.navbar.scrolled {
-		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+		box-shadow: var(--shadow-md);
 	}
 
 	.navbar-container {
@@ -252,7 +255,7 @@
 	.brand-name {
 		font-family: 'Poppins', sans-serif;
 		font-size: 24px;
-		color: #050c9c;
+		color: var(--primary-text);
 		font-weight: 700;
 		line-height: 1;
 		margin: 0;
@@ -277,7 +280,7 @@
 		align-items: center;
 		padding: 10px 16px;
 		text-decoration: none;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		font-family: 'Poppins', sans-serif;
 		font-size: 15px;
 		font-weight: 600;
@@ -287,12 +290,12 @@
 	}
 
 	.nav-link:hover {
-		background: rgba(0, 0, 0, 0.04);
+		background: var(--hover-bg);
 	}
 
 	.nav-link.active {
-		background: rgba(5, 12, 156, 0.08);
-		color: #050c9c;
+		background: var(--active-bg);
+		color: var(--primary-text);
 	}
 
 	.nav-item {
@@ -302,7 +305,7 @@
 		padding: 10px 16px;
 		background: none;
 		border: none;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		font-family: 'Poppins', sans-serif;
 		font-size: 15px;
 		font-weight: 600;
@@ -313,12 +316,12 @@
 	}
 
 	.nav-item:hover {
-		background: rgba(0, 0, 0, 0.04);
+		background: var(--hover-bg);
 	}
 
 	.nav-item.active {
-		background: rgba(5, 12, 156, 0.08);
-		color: #050c9c;
+		background: var(--active-bg);
+		color: var(--primary-text);
 	}
 
 	:global(.chevron) {
@@ -334,10 +337,10 @@
 		top: calc(100% + 8px);
 		left: 0;
 		min-width: 280px;
-		background: white;
+		background: var(--bg-primary);
 		border-radius: 12px;
-		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
-		border: 1px solid rgba(0, 0, 0, 0.08);
+		box-shadow: var(--shadow-md);
+		border: 1px solid var(--border-color);
 		padding: 8px;
 		animation: dropdownFadeIn 0.2s ease-in-out;
 		z-index: 100;
@@ -360,21 +363,21 @@
 		gap: 12px;
 		padding: 12px;
 		text-decoration: none;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		border-radius: 8px;
 		transition: all 0.2s ease-in-out;
 	}
 
 	.dropdown-item:hover {
-		background: rgba(0, 0, 0, 0.04);
+		background: var(--hover-bg);
 	}
 
 	.dropdown-item.active {
-		background: rgba(5, 12, 156, 0.08);
+		background: var(--active-bg);
 	}
 
 	.dropdown-item :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 		margin-top: 2px;
 		flex-shrink: 0;
 	}
@@ -389,13 +392,13 @@
 		font-family: 'Poppins', sans-serif;
 		font-size: 14px;
 		font-weight: 600;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.dropdown-item-desc {
 		font-family: 'Poppins', sans-serif;
 		font-size: 13px;
-		color: #666;
+		color: var(--text-secondary);
 		line-height: 1.4;
 	}
 
@@ -430,7 +433,7 @@
 		background: none;
 		border: none;
 		font-size: 24px;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		cursor: pointer;
 		padding: 8px;
 		border-radius: 8px;
@@ -438,7 +441,7 @@
 	}
 
 	.mobile-menu-toggle:hover {
-		background: rgba(0, 0, 0, 0.04);
+		background: var(--hover-bg);
 	}
 
 	@media (max-width: 1100px) {
@@ -506,7 +509,7 @@
 		.mobile-brand-name {
 			font-family: 'Poppins', sans-serif;
 			font-size: 32px;
-			color: #050c9c;
+			color: var(--primary-text);
 			font-weight: 700;
 		}
 
@@ -514,6 +517,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			gap: 12px;
 			padding: 0;
 			margin: 0 auto 24px auto;
 		}
@@ -532,7 +536,7 @@
 			bottom: 0;
 			width: 100vw;
 			height: 100vh;
-			background: white;
+			background: var(--bg-primary);
 			display: block;
 			overflow-y: auto;
 			overflow-x: hidden;
@@ -580,7 +584,7 @@
 			text-align: center;
 			border-radius: 12px;
 			margin: 0 auto 12px auto;
-			background: #f8f9fa;
+			background: var(--bg-secondary);
 			border: 2px solid transparent;
 			transition: all 0.25s ease;
 			display: block;
@@ -591,9 +595,9 @@
 		}
 
 		.nav-link.active {
-			background: #050c9c;
+			background: var(--primary);
 			color: white;
-			border-color: #050c9c;
+			border-color: var(--primary);
 		}
 
 		.nav-item-wrapper {
@@ -615,7 +619,7 @@
 			justify-content: center;
 			gap: 10px;
 			border-radius: 12px;
-			background: #f8f9fa;
+			background: var(--bg-secondary);
 			border: 2px solid transparent;
 			transition: all 0.25s ease;
 		}
@@ -625,9 +629,9 @@
 		}
 
 		.nav-item.active {
-			background: #050c9c;
+			background: var(--primary);
 			color: white;
-			border-color: #050c9c;
+			border-color: var(--primary);
 		}
 
 		.nav-item.active :global(.chevron) {
@@ -664,8 +668,8 @@
 			border-radius: 10px;
 			margin: 0 auto;
 			gap: 10px;
-			background: #ffffff;
-			border: 1px solid rgba(0, 0, 0, 0.08);
+			background: var(--bg-primary);
+			border: 1px solid var(--border-color);
 			min-width: 240px;
 			max-width: 280px;
 			transition: all 0.2s ease;
@@ -676,12 +680,12 @@
 		}
 
 		.dropdown-item.active {
-			background: rgba(5, 12, 156, 0.08);
-			border-color: #050c9c;
+			background: var(--active-bg);
+			border-color: var(--primary);
 		}
 
 		.dropdown-item :global(svg) {
-			color: #050c9c;
+			color: var(--primary-text);
 		}
 
 		.dropdown-item-content {
@@ -695,7 +699,7 @@
 
 		.dropdown-item-desc {
 			font-size: 12px;
-			color: #777;
+			color: var(--text-tertiary);
 		}
 	}
 

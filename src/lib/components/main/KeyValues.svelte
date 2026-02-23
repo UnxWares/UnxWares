@@ -60,12 +60,12 @@
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0 0 12px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 	.value-item p{
 		font-size: 14px;
 		line-height: 1.6;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 	}
 </style>

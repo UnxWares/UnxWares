@@ -40,7 +40,7 @@
 
 	.category-chip {
 		padding: 0.5rem 1rem;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		border: 2px solid var(--border-color, #dee2e6);
 		border-radius: 2rem;
 		font-weight: 500;

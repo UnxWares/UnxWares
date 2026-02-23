@@ -112,7 +112,7 @@
 	.tagline {
 		font-size: 18px;
 		font-style: italic;
-		color: #666;
+		color: var(--text-secondary);
 		margin: 0 0 25px 0;
 		text-align: center;
 		line-height: 1.6;
@@ -147,7 +147,7 @@
 
 	.stat-label {
 		font-size: 14px;
-		color: #666;
+		color: var(--text-secondary);
 		font-weight: 500;
 	}
 
@@ -195,7 +195,7 @@
 	#cloud-hero p.intro {
 		font-size: 16px;
 		line-height: 1.8;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 0 35px 0;
 		text-align: justify;
 		text-justify: inter-word;

@@ -83,7 +83,7 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.8;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 50px auto;
 		max-width: 850px;
 	}
@@ -151,7 +151,7 @@
 		align-items: center;
 		gap: 12px;
 		padding: 16px 32px;
-		background: white;
+		background: var(--bg-primary);
 		color: #050c9c;
 		text-decoration: none;
 		border-radius: 10px;

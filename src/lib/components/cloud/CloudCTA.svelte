@@ -30,7 +30,7 @@
 	}
 
 	.cta-container {
-		background: white;
+		background: var(--bg-primary);
 		border: 2px solid #050c9c;
 		border-radius: 12px;
 		padding: 40px;
@@ -70,14 +70,14 @@
 	h3 {
 		font-size: 22px;
 		font-weight: 600;
-		color: #1a1a1a;
+		color: var(--text-primary);
 		margin: 0 0 12px 0;
 		line-height: 1.3;
 	}
 
 	p {
 		font-size: 15px;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		line-height: 1.7;
 		margin: 0;
 		text-align: justify;

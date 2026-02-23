@@ -72,7 +72,7 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.8;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 20px auto;
 		max-width: 850px;
 	}
@@ -89,9 +89,9 @@
 	}
 	.diff-item{
 		padding: 30px;
-		background-color: #fafbfc;
+		background-color: var(--bg-secondary);
 		border-radius: 10px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 	}
 	.diff-item:hover{
@@ -102,12 +102,12 @@
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0 0 12px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 	.diff-item p{
 		font-size: 15px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 		text-align: justify;
 		text-justify: inter-word;

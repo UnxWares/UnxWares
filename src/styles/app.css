@@ -12,12 +12,61 @@
     font-weight: normal;
 }
 
+/* Theme variables */
+:root,
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #f0f2ff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-tertiary: #666666;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(0, 0, 0, 0.12);
+    --hover-bg: rgba(0, 0, 0, 0.04);
+    --active-bg: rgba(5, 12, 156, 0.08);
+    --shadow-sm: 0 2px 16px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+    --primary: #050c9c;
+    --primary-text: #050c9c;
+    --primary-hover: #040a7a;
+    --primary-light: rgba(5, 12, 156, 0.1);
+    --spinner-bg: #f0f2ff;
+    --spinner-color: #050c9c;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #242424;
+    --bg-tertiary: #2a2a3a;
+    --text-primary: #e5e5e5;
+    --text-secondary: #c4c4c4;
+    --text-tertiary: #a0a0a0;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --border-hover: rgba(255, 255, 255, 0.18);
+    --hover-bg: rgba(255, 255, 255, 0.08);
+    --active-bg: rgba(5, 12, 156, 0.15);
+    --shadow-sm: 0 2px 16px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --primary: #050c9c;
+    --primary-text: #6b78ff;
+    --primary-hover: #040a7a;
+    --primary-light: rgba(5, 12, 156, 0.15);
+    --spinner-bg: #2a2a3a;
+    --spinner-color: #050c9c;
+}
+
 html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -26,6 +75,28 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     overflow-x: hidden;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+html.has-video-background,
+body.has-video-background {
+    background-color: transparent;
+}
+
+html.has-video-background {
+    background: transparent;
+}
+
+/* Fix table headers in datacenter */
+table thead tr {
+    background-color: var(--bg-secondary) !important;
+}
+
+table th,
+table td {
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main{
-    background-color: #ffffff;
+    background-color: var(--bg-primary);
     margin:0;
     padding: 120px 0 100px 0;
     display: flex;

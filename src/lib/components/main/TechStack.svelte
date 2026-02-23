@@ -111,7 +111,7 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0 auto 45px auto;
 		max-width: 750px;
 	}
@@ -128,13 +128,13 @@
 	}
 	.tech-category{
 		padding: 30px;
-		background-color: #fafbfc;
+		background-color: var(--bg-secondary);
 		border-radius: 12px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 	}
 	.tech-category:hover{
-		border-color: #050c9c;
+		border-color: var(--primary);
 		box-shadow: 0 4px 12px rgba(5, 12, 156, 0.08);
 	}
 	.category-header{
@@ -144,18 +144,18 @@
 		margin-bottom: 12px;
 	}
 	.category-header :global(svg){
-		color: #050c9c;
+		color: var(--primary-text);
 	}
 	.tech-category h4{
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 	.category-desc{
 		font-size: 14px;
 		line-height: 1.7;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 0 18px 0;
 	}
 	.tech-tags{
@@ -166,17 +166,17 @@
 	.tech-tag{
 		display: inline-block;
 		padding: 7px 14px;
-		background-color: #ffffff;
-		border: 1px solid #d8d8d8;
+		background-color: var(--bg-primary);
+		border: 1px solid var(--border-color);
 		border-radius: 6px;
 		font-size: 13px;
-		color: #2a2a2a;
+		color: var(--text-primary);
 		font-weight: 500;
 		transition: all 0.2s ease;
 	}
 	.tech-tag:hover{
-		border-color: #050c9c;
-		background-color: #f0f2ff;
+		border-color: var(--primary);
+		background-color: var(--bg-tertiary);
 		transform: translateY(-2px);
 	}
 </style>

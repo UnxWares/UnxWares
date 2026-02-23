@@ -100,7 +100,7 @@
 		text-align: center;
 		font-size: 16px;
 		line-height: 1.8;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 50px auto;
 		max-width: 850px;
 	}
@@ -124,10 +124,10 @@
 	}
 
 	.feature-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 30px;
 		border-radius: 12px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 		text-align: center;
 	}
@@ -142,7 +142,7 @@
 		width: 60px;
 		height: 60px;
 		margin: 0 auto 20px auto;
-		background: #f0f2ff;
+		background: var(--bg-tertiary);
 		border-radius: 12px;
 		display: flex;
 		align-items: center;
@@ -153,13 +153,13 @@
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0 0 12px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.feature-card p {
 		font-size: 14px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 		text-align: justify;
 		text-justify: inter-word;

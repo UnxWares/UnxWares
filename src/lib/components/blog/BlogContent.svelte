@@ -72,7 +72,7 @@
 	/* Code */
 	.blog-content :global(code) {
 		padding: 0.2rem 0.4rem;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		border: 1px solid var(--border-color, #dee2e6);
 		border-radius: 0.25rem;
 		font-family: 'Courier New', monospace;
@@ -101,7 +101,7 @@
 		margin: 1.5rem 0;
 		padding: 1rem 1.5rem;
 		border-left: 4px solid #050c9c;
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		font-style: italic;
 	}
 
@@ -132,7 +132,7 @@
 	}
 
 	.blog-content :global(th) {
-		background-color: var(--bg-secondary, #f8f9fa);
+		background-color: var(--bg-secondary);
 		font-weight: 600;
 	}
 

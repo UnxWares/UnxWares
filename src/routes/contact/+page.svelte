@@ -200,7 +200,7 @@
 	}
 
 	.hero-icon :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 		animation: pulse 2s ease-in-out infinite;
 	}
 
@@ -221,7 +221,7 @@
 
 	.intro {
 		font-size: 18px;
-		color: #666;
+		color: var(--text-secondary);
 		line-height: 1.8;
 		text-align: center;
 		max-width: 800px;
@@ -241,7 +241,7 @@
 	}
 
 	.section-header :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 	}
 
 	.section-header h2 {
@@ -254,7 +254,7 @@
 	.section-intro {
 		text-align: center;
 		font-size: 16px;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 0 50px 0;
 		line-height: 1.8;
 	}
@@ -267,10 +267,10 @@
 	}
 
 	.contact-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 30px;
 		border-radius: 12px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 		text-align: center;
 	}
@@ -278,14 +278,14 @@
 	.contact-card:hover {
 		transform: translateY(-5px);
 		box-shadow: 0 8px 20px rgba(5, 12, 156, 0.1);
-		border-color: #050c9c;
+		border-color: var(--primary);
 	}
 
 	.card-icon {
 		width: 60px;
 		height: 60px;
 		margin: 0 auto 20px auto;
-		background: #f0f2ff;
+		background: var(--bg-tertiary);
 		border-radius: 12px;
 		display: flex;
 		align-items: center;
@@ -309,7 +309,7 @@
 	}
 
 	.card-icon :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 	}
 
 	.card-icon.purple :global(svg) {
@@ -332,7 +332,7 @@
 		font-size: 18px;
 		font-weight: 600;
 		margin: 0 0 15px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.contact-detail {
@@ -342,51 +342,51 @@
 	}
 
 	.contact-detail a {
-		color: #050c9c;
+		color: var(--primary-text);
 		text-decoration: none;
 		transition: all 0.2s ease;
 		word-break: break-all;
 	}
 
 	.contact-detail a:hover {
-		color: #0408b8;
+		color: var(--primary-hover);
 		text-decoration: underline;
 	}
 
 	.address-text {
 		font-size: 14px;
 		line-height: 1.8;
-		color: #050c9c;
+		color: var(--primary-text);
 		font-weight: 500;
 	}
 
 	.contact-desc {
 		font-size: 14px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 	}
 
 	.location-card {
 		max-width: 800px;
 		margin: 0 auto;
-		background: white;
+		background: var(--bg-primary);
 		padding: 40px;
 		border-radius: 12px;
-		border: 1px solid #e8e8e8;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 	}
 
 	.location-card:hover {
 		box-shadow: 0 8px 20px rgba(5, 12, 156, 0.1);
-		border-color: #050c9c;
+		border-color: var(--primary);
 	}
 
 	.location-content h3 {
 		font-size: 22px;
 		font-weight: 600;
 		margin: 0 0 20px 0;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.address {
@@ -395,7 +395,7 @@
 		gap: 12px;
 		font-size: 18px;
 		font-weight: 500;
-		color: #050c9c;
+		color: var(--primary-text);
 		margin: 0 0 20px 0;
 	}
 
@@ -403,7 +403,7 @@
 	.location-desc {
 		font-size: 15px;
 		line-height: 1.7;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 		margin: 0;
 	}
 
@@ -420,8 +420,8 @@
 		align-items: flex-start;
 		gap: 20px;
 		padding: 25px;
-		background: white;
-		border-left: 4px solid #050c9c;
+		background: var(--bg-primary);
+		border-left: 4px solid var(--primary);
 		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 		transition: all 0.3s ease;
@@ -433,7 +433,7 @@
 	}
 
 	.response-item > :global(svg) {
-		color: #050c9c;
+		color: var(--primary-text);
 		flex-shrink: 0;
 		margin-top: 2px;
 	}
@@ -442,14 +442,14 @@
 		margin: 0 0 8px 0;
 		font-size: 18px;
 		font-weight: 600;
-		color: #1a1a1a;
+		color: var(--text-primary);
 	}
 
 	.response-item p {
 		margin: 0;
 		font-size: 15px;
 		line-height: 1.6;
-		color: #4a4a4a;
+		color: var(--text-secondary);
 	}
 
 	@media (max-width: 1024px) {

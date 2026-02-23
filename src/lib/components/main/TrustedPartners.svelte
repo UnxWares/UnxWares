@@ -1,5 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
+	import { theme } from '$lib/stores/theme';
 </script>
 
 <section id="trusted-partners">
@@ -10,7 +11,11 @@
 	<div class="partners-grid">
 		<div class="partner-card">
 			<div class="partner-logo">
-				<img src="https://panel-cloud.netario.fr/client/assets/logo_custom.svg" alt="Netario" />
+				{#if $theme === 'dark'}
+					<img src="https://netario.fr/images/logos/logo_white.svg" alt="Netario" />
+				{:else}
+					<img src="https://panel-cloud.netario.fr/client/assets/logo_custom.svg" alt="Netario" />
+				{/if}
 			</div>
 			<p class="partner-desc">{$t('partners.netario_desc')}</p>
 		</div>
@@ -42,7 +47,7 @@
 	#trusted-partners {
 		margin: 0;
 		padding: 25px 40px;
-		background-color: #fafbfc;
+		background-color: var(--bg-secondary);
 		border-radius: 12px;
 	}
 
@@ -69,7 +74,7 @@
 		text-align: center;
 		font-size: 15px;
 		line-height: 1.6;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0 auto 40px auto;
 		max-width: 650px;
 	}
@@ -88,10 +93,10 @@
 	}
 
 	.partner-card {
-		background: white;
+		background: var(--bg-primary);
 		padding: 30px;
 		border-radius: 10px;
-		border: 1px solid #e0e0e0;
+		border: 1px solid var(--border-color);
 		transition: all 0.3s ease;
 		display: flex;
 		flex-direction: column;
@@ -99,7 +104,7 @@
 	}
 
 	.partner-card:hover {
-		border-color: #050c9c;
+		border-color: var(--primary);
 		box-shadow: 0 4px 16px rgba(5, 12, 156, 0.1);
 		transform: translateY(-3px);
 	}
@@ -125,11 +130,19 @@
 		filter: grayscale(0%) opacity(1);
 	}
 
+	:global([data-theme="dark"]) .partner-logo img {
+		filter: grayscale(100%) opacity(0.7);
+	}
+
+	:global([data-theme="dark"]) .partner-card:hover .partner-logo img {
+		filter: grayscale(0%) opacity(1);
+	}
+
 	.partner-desc {
 		text-align: center;
 		font-size: 14px;
 		line-height: 1.6;
-		color: #5a5a5a;
+		color: var(--text-secondary);
 		margin: 0;
 	}
 

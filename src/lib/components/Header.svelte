@@ -6,12 +6,12 @@
 	import { ChevronsDown } from 'lucide-svelte';
 
 	const greetings = {
-		fr: 'Salut toi &#x1F44B;, Nous sommes <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
-		en: 'Hi there &#x1F44B;, We are <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
-		de: 'Hallo &#x1F44B;, Wir sind <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
-		nl: 'Hallo &#x1F44B;, Wij zijn <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
-		es: 'Hola &#x1F44B;, Somos <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000',
-		it: 'Ciao &#x1F44B;, Siamo <span style="color: #050c9c; font-family: Peanut, cursive;">UnxWares</span> ^5000'
+		fr: 'Salut toi &#x1F44B;, Nous sommes <span class="brand-text">UnxWares</span> ^5000',
+		en: 'Hi there &#x1F44B;, We are <span class="brand-text">UnxWares</span> ^5000',
+		de: 'Hallo &#x1F44B;, Wir sind <span class="brand-text">UnxWares</span> ^5000',
+		nl: 'Hallo &#x1F44B;, Wij zijn <span class="brand-text">UnxWares</span> ^5000',
+		es: 'Hola &#x1F44B;, Somos <span class="brand-text">UnxWares</span> ^5000',
+		it: 'Ciao &#x1F44B;, Siamo <span class="brand-text">UnxWares</span> ^5000'
 	};
 
 	const allLanguages = ['fr', 'en', 'de', 'nl', 'es', 'it'];
@@ -83,6 +83,11 @@
 </header>
 
 <style>
+    :global(.brand-text) {
+        color: #050c9c !important;
+        font-family: Peanut, cursive !important;
+    }
+
     header{
         display: flex;
         justify-content: center;
@@ -115,6 +120,7 @@
         text-align: center;
         max-width: 90vw;
         line-height: 1.4;
+        color: #1a1a1a;
     }
 
     header .scroll-button{
