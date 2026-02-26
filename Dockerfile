@@ -20,9 +20,9 @@ COPY package.json pnpm-lock.yaml .npmrc ./
 # Authenticate for private packages (Repoflow)
 RUN if [ -n "$NPM_USERNAME" ] && [ -n "$NPM_PASSWORD" ]; then \
     AUTH=$(node -e "console.log(Buffer.from('$NPM_USERNAME:$NPM_PASSWORD').toString('base64'))"); \
-    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:_auth=${AUTH}" >> .npmrc; \
-    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:always-auth=true" >> .npmrc; \
-    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:email=ci@unxwares.com" >> .npmrc; \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js/:_auth=${AUTH}" >> .npmrc; \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js/:always-auth=true" >> .npmrc; \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js/:email=ci@unxwares.com" >> .npmrc; \
     fi
 
 # Install dependencies
