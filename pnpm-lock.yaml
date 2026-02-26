@@ -975,7 +975,7 @@ packages:
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
   '@unxwares/ui-core@0.1.34':
-    resolution: {integrity: sha512-xlhIpcCpTucgoYmvRH+ZsS7uihbxaOfl4qyo6hDXVzZgFhCUuqf/VgVaVuApiPOgoiN/Ln9mHBDwe0WgpBZ8Qw==, 
+    resolution: {integrity: sha512-xlhIpcCpTucgoYmvRH+ZsS7uihbxaOfl4qyo6hDXVzZgFhCUuqf/VgVaVuApiPOgoiN/Ln9mHBDwe0WgpBZ8Qw==}
     peerDependencies:
       svelte: ^5.0.0
 
