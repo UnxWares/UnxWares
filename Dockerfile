@@ -1,67 +1,60 @@
-# -------------------------
-# Image de base Node.js LTS 22
-# -------------------------
-FROM node:22-alpine AS base
+# Stage 1: Build stage
+FROM node:22 AS builder
+ARG NPM_USERNAME
+ARG NPM_PASSWORD
 
-# Installer pnpm globalement
+# Force IPv4 priority at the system level for the resolver
+RUN echo "precedence ::ffff:0:0/96  100" >> /etc/gai.conf
+
+# Force IPv4 priority for Node.js
+ENV NODE_OPTIONS="--dns-result-order=ipv4first"
+
+WORKDIR /app
+
+# Install pnpm
 RUN npm install -g pnpm
 
-# -------------------------
-# Étape de build
-# -------------------------
-FROM base AS build
+# Copy package files and .npmrc
+COPY package.json pnpm-lock.yaml .npmrc ./
 
-WORKDIR /app
+# Authenticate for private packages (Repoflow)
+RUN if [ -n "$NPM_USERNAME" ] && [ -n "$NPM_PASSWORD" ]; then \
+    AUTH=$(node -e "console.log(Buffer.from('$NPM_USERNAME:$NPM_PASSWORD').toString('base64'))"); \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:_auth=${AUTH}" >> .npmrc; \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:always-auth=true" >> .npmrc; \
+    echo "//lib.external.infra.unxwares.com/api/npm/unxwares/ui-js:email=ci@unxwares.com" >> .npmrc; \
+    fi
 
-# Copier les fichiers de configuration des dépendances
-COPY package.json pnpm-lock.yaml* ./
-
-# Définir l'ARG pour le token GitHub Packages
-ARG GH_ORG_PACKAGES
-
-# Authentification temporaire pour pnpm
-RUN echo "//npm.pkg.github.com/:_authToken=${GH_ORG_PACKAGES}" > ~/.npmrc
-
-# Installer toutes les dépendances
+# Install dependencies
 RUN pnpm install --frozen-lockfile
 
-# Supprimer le token pour sécuriser l'image
-RUN rm ~/.npmrc
-
-# Copier le code source
+# Copy source files
 COPY . .
 
-# Construire l'application
+# Build the application
 RUN pnpm run build
 
-# -------------------------
-# Étape runtime
-# -------------------------
-FROM base AS runtime
+# Stage 2: Runtime stage
+FROM node:22-slim AS runtime
+
+# Force IPv4 priority
+RUN echo "precedence ::ffff:0:0/96  100" >> /etc/gai.conf
+ENV NODE_OPTIONS="--dns-result-order=ipv4first"
 
 WORKDIR /app
 
-# Copier package.json et pnpm-lock.yaml
-COPY package.json pnpm-lock.yaml* ./
+# Copy built application from builder
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/node_modules ./node_modules
 
-# Définir l'ARG pour le token GitHub Packages
-ARG GH_ORG_PACKAGES
-
-# Authentification temporaire pour pnpm pour les dépendances de production
-RUN echo "//npm.pkg.github.com/:_authToken=${GH_ORG_PACKAGES}" > ~/.npmrc \
-    && pnpm install --prod --frozen-lockfile \
-    && rm ~/.npmrc
-
-# Copier les fichiers construits depuis l'étape build
-COPY --from=build /app/build ./build
-
-# Exposer le port
+# Expose the port
 EXPOSE 3000
 
-# Variables d'environnement
+# Environment variables
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV HOST=0.0.0.0
 
-# Démarrer l'application
+# Start the application
 CMD ["node", "build"]
