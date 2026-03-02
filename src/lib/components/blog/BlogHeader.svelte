@@ -33,7 +33,7 @@
 			<span>{post.frontmatter.author}</span>
 		</div>
 		<span class="divider">•</span>
-		<ReadingTime minutes={readingTime.minutes} locale={$locale} />
+		<ReadingTime minutes={readingTime.minutes} locale={$locale || 'fr'} />
 	</div>
 
 	{#if post.frontmatter.tags.length > 0}

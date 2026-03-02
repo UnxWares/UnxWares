@@ -97,7 +97,7 @@
 				<div class="mobile-lang-switcher">
 					<ThemeToggle />
 					<LanguageSwitcher
-					currentLocale={$locale}
+					currentLocale={$locale || 'fr'}
 					locales={$locales}
 					languageNames={languageNames}
 					languageFlags={languageFlags}
@@ -220,7 +220,7 @@
 			<div class="navbar-actions">
 				<ThemeToggle />
 				<LanguageSwitcher
-					currentLocale={$locale}
+					currentLocale={$locale || 'fr'}
 					locales={$locales}
 					languageNames={languageNames}
 					languageFlags={languageFlags}

@@ -34,7 +34,7 @@
 			<span class="divider">•</span>
 			<time datetime={post.frontmatter.date}>{formattedDate}</time>
 			<span class="divider">•</span>
-			<ReadingTime minutes={readingTime.minutes} locale={$locale} />
+			<ReadingTime minutes={readingTime.minutes} locale={$locale || 'fr'} />
 		</div>
 
 		<h2 class="blog-card-title">
