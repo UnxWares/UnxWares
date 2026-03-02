@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '@unxwares/ui-core/globals.css';
 	import '../styles/app.css';
 	import '$lib/i18n';
 	import { isLoading, locale } from 'svelte-i18n';

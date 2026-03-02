@@ -45,7 +45,7 @@
 		"vite": "^6.4.1"
 	},
 	"dependencies": {
-		"@unxwares/ui-core": "0.4.7",
+		"@unxwares/ui-core": "0.4.8",
 		"lucide-svelte": "^0.575.0",
 		"marked": "^17.0.3",
 		"svelte-i18n": "^4.0.1",
