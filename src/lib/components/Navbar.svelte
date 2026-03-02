@@ -1,8 +1,8 @@
 <script>
 	import { page } from '$app/stores';
-	import { t } from 'svelte-i18n';
-	import LanguageSwitcher from './LanguageSwitcher.svelte';
-	import { ThemeToggle } from '@unxwares/ui-core';
+	import { t, locale, locales } from 'svelte-i18n';
+	import { invalidateAll } from '$app/navigation';
+	import { ThemeToggle, LanguageSwitcher } from '@unxwares/ui-core';
 	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, Palette, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
 	let mobileMenuOpen = $state(false);
@@ -53,6 +53,31 @@
 	function toggleDropdown(id) {
 		activeDropdown = activeDropdown === id ? null : id;
 	}
+
+	// Language configuration for LanguageSwitcher
+	const languageNames = {
+		fr: 'Français',
+		en: 'English',
+		de: 'Deutsch',
+		nl: 'Nederlands',
+		es: 'Español',
+		it: 'Italiano'
+	};
+
+	const languageFlags = {
+		fr: '🇫🇷',
+		en: '🇬🇧',
+		de: '🇩🇪',
+		nl: '🇳🇱',
+		es: '🇪🇸',
+		it: '🇮🇹'
+	};
+
+	async function handleLanguageSwitch(lang) {
+		locale.set(lang);
+		await new Promise(resolve => setTimeout(resolve, 100));
+		await invalidateAll();
+	}
 </script>
 
 <div class="navbar-wrapper">
@@ -71,7 +96,13 @@
 
 				<div class="mobile-lang-switcher">
 					<ThemeToggle />
-					<LanguageSwitcher />
+					<LanguageSwitcher
+					currentLocale={$locale}
+					locales={$locales}
+					languageNames={languageNames}
+					languageFlags={languageFlags}
+					onSwitch={handleLanguageSwitch}
+				/>
 				</div>
 
 				<a href="/" class="nav-link" class:active={$page.url.pathname === '/'} onclick={closeMobileMenu}>
@@ -188,7 +219,13 @@
 
 			<div class="navbar-actions">
 				<ThemeToggle />
-				<LanguageSwitcher />
+				<LanguageSwitcher
+					currentLocale={$locale}
+					locales={$locales}
+					languageNames={languageNames}
+					languageFlags={languageFlags}
+					onSwitch={handleLanguageSwitch}
+				/>
 				<a href="https://customers.unxwares.com" target="_blank" rel="noopener noreferrer" class="btn-primary customer-portal-btn">{$t('navbar.customer_portal')}</a>
 			</div>
 

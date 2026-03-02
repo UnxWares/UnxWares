@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { t, locale } from 'svelte-i18n';
 	import type { LoadedPost } from '$lib/utils/blog/content-loader';
-	import ReadingTime from './ReadingTime.svelte';
-	import BlogTags from './BlogTags.svelte';
+	import { ReadingTime, TagList } from '@unxwares/ui-core';
 	import { calculateReadingTime } from '$lib/utils/blog/reading-time';
 	import { ArrowRight } from 'lucide-svelte';
 
@@ -35,7 +34,7 @@
 			<span class="divider">•</span>
 			<time datetime={post.frontmatter.date}>{formattedDate}</time>
 			<span class="divider">•</span>
-			<ReadingTime minutes={readingTime.minutes} />
+			<ReadingTime minutes={readingTime.minutes} locale={$locale} />
 		</div>
 
 		<h2 class="blog-card-title">
@@ -49,7 +48,11 @@
 		</p>
 
 		{#if post.frontmatter.tags.length > 0}
-			<BlogTags tags={post.frontmatter.tags} clickable={true} />
+			<TagList
+				tags={post.frontmatter.tags}
+				clickable={true}
+				href={(tag) => `/blog/tag/${encodeURIComponent(tag)}`}
+			/>
 		{/if}
 
 		<a href="/blog/{post.slug}" class="read-more">

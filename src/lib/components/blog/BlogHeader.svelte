@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
 	import type { LoadedPost } from '$lib/utils/blog/content-loader';
-	import ReadingTime from './ReadingTime.svelte';
-	import BlogTags from './BlogTags.svelte';
+	import { ReadingTime, TagList } from '@unxwares/ui-core';
 	import { calculateReadingTime } from '$lib/utils/blog/reading-time';
 	import { UserCircle } from 'lucide-svelte';
 
@@ -34,11 +33,15 @@
 			<span>{post.frontmatter.author}</span>
 		</div>
 		<span class="divider">•</span>
-		<ReadingTime minutes={readingTime.minutes} />
+		<ReadingTime minutes={readingTime.minutes} locale={$locale} />
 	</div>
 
 	{#if post.frontmatter.tags.length > 0}
-		<BlogTags tags={post.frontmatter.tags} clickable={true} />
+		<TagList
+			tags={post.frontmatter.tags}
+			clickable={true}
+			href={(tag) => `/blog/tag/${encodeURIComponent(tag)}`}
+		/>
 	{/if}
 
 	{#if post.frontmatter.image}
