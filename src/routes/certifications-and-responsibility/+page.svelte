@@ -1,6 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import Separator from '$lib/components/Separator.svelte';
+	import { Separator } from '@unxwares/ui-core';
 	import ContactCTA from '$lib/components/ContactCTA.svelte';
 	import {
 		ShieldCheck, Award, Lock, CloudCheck, Trees, Recycle, Zap, MapPin,
@@ -29,7 +29,7 @@
 		<p class="intro">{$t('certifications_page.intro')}</p>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Compliance & Certifications -->
 	<section class="content-section">
@@ -66,7 +66,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Environmental Responsibility -->
 	<section class="content-section">
@@ -103,7 +103,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Transparency & Ethics -->
 	<section class="content-section">
@@ -140,7 +140,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- CNCF Stack & Open Source Tools -->
 	<section class="content-section">
@@ -193,7 +193,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Open Source Credo -->
 	<section class="content-section">
@@ -238,7 +238,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Concrete Commitments -->
 	<section class="content-section">
@@ -276,7 +276,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Roadmap -->
 	<section class="content-section">
@@ -332,7 +332,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<ContactCTA />
 </main>

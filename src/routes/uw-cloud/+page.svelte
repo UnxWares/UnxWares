@@ -4,7 +4,7 @@
 	import CloudFeatures from '$lib/components/cloud/CloudFeatures.svelte';
 	import CloudInfrastructure from '$lib/components/cloud/CloudInfrastructure.svelte';
 	import CloudCTA from '$lib/components/cloud/CloudCTA.svelte';
-	import Separator from '$lib/components/Separator.svelte';
+	import { Separator } from '@unxwares/ui-core';
 </script>
 
 <svelte:head>
@@ -20,11 +20,11 @@
 <main>
 	<CloudHero />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<CloudFeatures />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<CloudInfrastructure />
 

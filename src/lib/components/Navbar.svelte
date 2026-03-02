@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { t } from 'svelte-i18n';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
+	import { ThemeToggle } from '@unxwares/ui-core';
 	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, Palette, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
 	let mobileMenuOpen = $state(false);

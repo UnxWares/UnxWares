@@ -3,7 +3,7 @@
 	import { Palette, Download, Type, Image, CheckCircle2, XCircle, LayoutGrid, Award, FileType } from 'lucide-svelte';
     import { fade } from 'svelte/transition';
     import ContactCTA from '$lib/components/ContactCTA.svelte';
-    import Separator from '$lib/components/Separator.svelte';
+    import { Separator } from '@unxwares/ui-core';
 
     let activeTab = 'logo'; // 'insigne', 'logo', 'logotype'
     let activeColorTab = 'light'; // 'light', 'dark'
@@ -65,7 +65,7 @@
 		<p class="intro">{$t('brand_kit.intro')}</p>
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
 	<!-- Logos Section with Tabs -->
 	<section class="content-section">
@@ -133,7 +133,7 @@
         {/key}
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
 	<!-- Brand Colors -->
 	<section class="content-section">
@@ -340,7 +340,7 @@
         {/key}
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
     <!-- Mockups Section -->
     <section class="content-section">
@@ -364,7 +364,7 @@
         </div>
     </section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
 	<!-- Typography -->
 	<section class="content-section">
@@ -406,7 +406,7 @@
 		</div>
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
 	<!-- Usage Guidelines -->
 	<section class="content-section">
@@ -447,7 +447,7 @@
 		</div>
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
 	<!-- Credits -->
 	<section class="content-section">
@@ -470,7 +470,7 @@
 		</div>
 	</section>
 
-    <Separator />
+    <Separator icon="/favicon.png" />
 
     <ContactCTA />
 </main>

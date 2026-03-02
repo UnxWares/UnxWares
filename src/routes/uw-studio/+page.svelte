@@ -5,7 +5,7 @@
 	import NeoLanguages from '$lib/components/studio/NeoLanguages.svelte';
 	import StudioProjects from '$lib/components/studio/StudioProjects.svelte';
 	import StudioCTA from '$lib/components/studio/StudioCTA.svelte';
-	import Separator from '$lib/components/Separator.svelte';
+	import { Separator } from '@unxwares/ui-core';
 </script>
 
 <svelte:head>
@@ -21,15 +21,15 @@
 <main>
 	<StudioHero />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<WhatWeCreate />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<NeoLanguages />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<StudioProjects />
 

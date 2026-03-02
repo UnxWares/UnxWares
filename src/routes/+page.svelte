@@ -8,7 +8,7 @@
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
 	import ContactCTA from '$lib/components/ContactCTA.svelte';
-	import Separator from '$lib/components/Separator.svelte';
+	import { Separator } from '@unxwares/ui-core';
 	import { t } from 'svelte-i18n';
 </script>
 
@@ -25,35 +25,35 @@
 <main>
 	<ShortWhoAreWe />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<WhyUnxWares />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<OurServices />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<TechStack />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<TechLogos />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<TrustedPartners />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<PepiteNormandie />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<HomeEcosystem />
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<ContactCTA />
 </main>

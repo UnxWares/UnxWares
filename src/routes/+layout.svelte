@@ -3,7 +3,7 @@
 	import '$lib/i18n';
 	import { isLoading, locale } from 'svelte-i18n';
 	import { theme } from '$lib/stores/theme';
-	import Background from "$lib/components/Background.svelte";
+	import { VideoBackground } from '@unxwares/ui-core';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -92,7 +92,7 @@
 		<div class="loading-spinner"></div>
 	</div>
 {:else}
-	<Background show={showBackground} />
+	<VideoBackground src="/videos/blured_video.mp4" show={showBackground} />
 	<Navbar />
 	{#if $page.url.pathname === '/'}
 		{#key headerKey}

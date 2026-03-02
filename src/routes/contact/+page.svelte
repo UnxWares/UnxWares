@@ -1,6 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import Separator from '$lib/components/Separator.svelte';
+	import { Separator } from '@unxwares/ui-core';
 	import { Mail, MessageCircle, AtSign, Mailbox, UserCog, Headphones, ShoppingCart, ShieldCheck, MapPin, Building2, Clock, Zap, Calendar } from 'lucide-svelte';
 </script>
 
@@ -23,7 +23,7 @@
 		<p class="intro">{$t('contact_page.intro')}</p>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Contact Methods -->
 	<section class="content-section">
@@ -75,7 +75,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Specialized Contacts -->
 	<section class="content-section">
@@ -124,7 +124,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Location -->
 	<section class="content-section">
@@ -146,7 +146,7 @@
 		</div>
 	</section>
 
-	<Separator />
+	<Separator icon="/favicon.png" />
 
 	<!-- Response Times -->
 	<section class="content-section">
