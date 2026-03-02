@@ -116,6 +116,7 @@
     }
     footer .footer-infos .footer-links ul li{
         display: block;
+        margin-bottom: 8px;
     }
     footer .footer-infos .footer-links ul li a{
         text-decoration: none;

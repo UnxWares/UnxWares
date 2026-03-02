@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { t, locale, locales } from 'svelte-i18n';
 	import { invalidateAll } from '$app/navigation';
+	import { theme } from '$lib/stores/theme';
 	import { ThemeToggle, LanguageSwitcher } from '@unxwares/ui-core';
 	import { ChevronDown, Cloud, Code, Users, ShieldCheck, Network, Palette, FileText, Lock, ClipboardCheck, ShoppingCart, X, Menu } from 'lucide-svelte';
 
@@ -95,7 +96,7 @@
 				</div>
 
 				<div class="mobile-lang-switcher">
-					<ThemeToggle />
+					<ThemeToggle {theme} />
 					<LanguageSwitcher
 					currentLocale={$locale || 'fr'}
 					locales={$locales}
@@ -218,7 +219,7 @@
 			</div>
 
 			<div class="navbar-actions">
-				<ThemeToggle />
+				<ThemeToggle {theme} />
 				<LanguageSwitcher
 					currentLocale={$locale || 'fr'}
 					locales={$locales}

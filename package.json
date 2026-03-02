@@ -37,6 +37,7 @@
 		"rehype-autolink-headings": "^7.1.0",
 		"rehype-slug": "^6.0.0",
 		"remark-gfm": "^4.0.1",
+		"sass-embedded": "^1.97.3",
 		"svelte": "^5.53.2",
 		"svelte-check": "^4.4.3",
 		"typescript": "^5.9.3",
@@ -44,7 +45,7 @@
 		"vite": "^6.4.1"
 	},
 	"dependencies": {
-		"@unxwares/ui-core": "0.4.1",
+		"@unxwares/ui-core": "0.4.7",
 		"lucide-svelte": "^0.575.0",
 		"marked": "^17.0.3",
 		"svelte-i18n": "^4.0.1",
