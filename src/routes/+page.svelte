@@ -7,9 +7,9 @@
 	import TrustedPartners from '$lib/components/main/TrustedPartners.svelte';
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import HomeEcosystem from '$lib/components/main/HomeEcosystem.svelte';
-	import ContactCTA from '$lib/components/ContactCTA.svelte';
-	import { Separator } from '@unxwares/ui-core';
+	import { Separator, CTASection } from '@unxwares/ui-core';
 	import { t } from 'svelte-i18n';
+	import { Mail, MessageCircle } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -55,5 +55,23 @@
 
 	<Separator icon="/favicon.png" />
 
-	<ContactCTA />
+	<CTASection
+		title={$t('contact_cta.title')}
+		description={$t('contact_cta.description')}
+		actions={[
+			{
+				label: $t('contact_cta.button'),
+				href: '/contact',
+				icon: Mail,
+				variant: 'primary'
+			},
+			{
+				label: 'Discord',
+				href: 'https://discord.gg/PPRacEf7yB',
+				icon: MessageCircle,
+				variant: 'secondary',
+				external: true
+			}
+		]}
+	/>
 </main>

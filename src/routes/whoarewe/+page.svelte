@@ -8,7 +8,8 @@
 	import WhatWeAreDoingTodayUWC from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWC.svelte';
 	import WhatWeAreDoingTodayUWS from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUWS.svelte';
 	import WhatWeAreDoingTodayUNX from '$lib/components/whoarewe/whatwearedoingtoday/WhatWeAreDoingTodayUNX.svelte';
-	import ContactCTA from '$lib/components/ContactCTA.svelte';
+	import { CTASection } from '@unxwares/ui-core';
+	import { Mail, MessageCircle } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -38,7 +39,25 @@
 		<WhatWeAreDoingTodayUNX/>
 		<WhatWeRemember/>
 
-		<ContactCTA />
+		<CTASection
+			title={$t('contact_cta.title')}
+			description={$t('contact_cta.description')}
+			actions={[
+				{
+					label: $t('contact_cta.button'),
+					href: '/contact',
+					icon: Mail,
+					variant: 'primary'
+				},
+				{
+					label: 'Discord',
+					href: 'https://discord.gg/PPRacEf7yB',
+					icon: MessageCircle,
+					variant: 'secondary',
+					external: true
+				}
+			]}
+		/>
 	</article>
 </main>
 

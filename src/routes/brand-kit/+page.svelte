@@ -1,9 +1,8 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import { Palette, Download, Type, Image, CheckCircle2, XCircle, LayoutGrid, Award, FileType } from 'lucide-svelte';
+	import { Palette, Download, Type, Image, CheckCircle2, XCircle, LayoutGrid, Award, FileType, Mail, MessageCircle } from 'lucide-svelte';
     import { fade } from 'svelte/transition';
-    import ContactCTA from '$lib/components/ContactCTA.svelte';
-    import { Separator } from '@unxwares/ui-core';
+    import { Separator, CTASection } from '@unxwares/ui-core';
 
     let activeTab = 'logo'; // 'insigne', 'logo', 'logotype'
     let activeColorTab = 'light'; // 'light', 'dark'
@@ -472,7 +471,25 @@
 
     <Separator icon="/favicon.png" />
 
-    <ContactCTA />
+    <CTASection
+		title={$t('contact_cta.title')}
+		description={$t('contact_cta.description')}
+		actions={[
+			{
+				label: $t('contact_cta.button'),
+				href: '/contact',
+				icon: Mail,
+				variant: 'primary'
+			},
+			{
+				label: 'Discord',
+				href: 'https://discord.gg/PPRacEf7yB',
+				icon: MessageCircle,
+				variant: 'secondary',
+				external: true
+			}
+		]}
+	/>
 </main>
 
 <style>

@@ -1,7 +1,7 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import { Separator } from '@unxwares/ui-core';
-	import ContactCTA from '$lib/components/ContactCTA.svelte';
+	import { Separator, CTASection } from '@unxwares/ui-core';
+	import { Mail, MessageCircle } from 'lucide-svelte';
 	import {
 		ShieldCheck, Award, Lock, CloudCheck, Trees, Recycle, Zap, MapPin,
 		Eye, CodeSquare, Euro, Users, Package, Octagon, Database, Cloud,
@@ -334,7 +334,25 @@
 
 	<Separator icon="/favicon.png" />
 
-	<ContactCTA />
+	<CTASection
+		title={$t('contact_cta.title')}
+		description={$t('contact_cta.description')}
+		actions={[
+			{
+				label: $t('contact_cta.button'),
+				href: '/contact',
+				icon: Mail,
+				variant: 'primary'
+			},
+			{
+				label: 'Discord',
+				href: 'https://discord.gg/PPRacEf7yB',
+				icon: MessageCircle,
+				variant: 'secondary',
+				external: true
+			}
+		]}
+	/>
 </main>
 
 <style>
