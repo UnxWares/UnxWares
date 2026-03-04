@@ -75,8 +75,16 @@
 	};
 
 	async function handleLanguageSwitch(lang) {
+		// Définir le cookie IMMÉDIATEMENT pour que le serveur le voie
+		document.cookie = `locale=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+
+		// Mettre à jour le store svelte-i18n
 		locale.set(lang);
-		await new Promise(resolve => setTimeout(resolve, 100));
+
+		// Attendre un peu pour que le cookie soit bien défini
+		await new Promise(resolve => setTimeout(resolve, 50));
+
+		// Invalider toutes les données pour recharger avec la nouvelle langue
 		await invalidateAll();
 	}
 </script>
