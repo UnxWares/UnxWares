@@ -77,18 +77,19 @@
     "intro": "Nuestras infraestructuras se basan en tecnologías de código abierto probadas y hardware profesional de calidad."
   },
   "pepite": {
-    "title": "Nuestra Solicitud Pépite Normandie",
-    "intro": "UnxWares ha solicitado el programa <strong>Pépite Normandie</strong>, el sistema nacional de apoyo al emprendimiento estudiantil. Nuestra solicitud está actualmente en proceso. Este apoyo nos proporcionará la experiencia y los recursos técnicos y empresariales necesarios para estructurar nuestro proyecto y pasar de la experiencia técnica a una empresa verdaderamente viable.",
+    "badge_text": "Galardonado Pépite Normandie",
+    "title": "Galardonado Pépite Normandie",
+    "intro": "UnxWares se enorgullece de formar parte del programa <strong>Pépite Normandie</strong>, el sistema nacional de apoyo al emprendimiento estudiantil. Este apoyo nos proporciona la experiencia y los recursos técnicos y empresariales necesarios para estructurar nuestro proyecto y pasar de la experiencia técnica a una empresa verdaderamente viable.",
     "objectives_title": "Los Objetivos de este Apoyo",
     "obj1_title": "Estatus Nacional de Estudiante-Emprendedor (SNEE)",
-    "obj1_desc": "Un reconocimiento oficial que dará credibilidad a nuestro enfoque con proveedores y nuestros primeros clientes B2B.",
+    "obj1_desc": "Un reconocimiento oficial que da credibilidad a nuestro enfoque con proveedores y nuestros primeros clientes B2B.",
     "obj2_title": "De la Tecnología al Emprendimiento",
     "obj2_desc": "Desarrollar nuestras habilidades en gestión, negocios y ventas para transformar nuestra experiencia técnica en una empresa sostenible.",
     "obj3_title": "Mentoría y Profesionalización",
-    "obj3_desc": "El apoyo de Pépite nos permitirá ser desafiados, salir de nuestra burbuja técnica y adoptar la postura de líderes responsables.",
+    "obj3_desc": "El apoyo de Pépite nos permite ser desafiados, salir de nuestra burbuja técnica y adoptar la postura de líderes responsables.",
     "obj4_title": "Recursos y Experiencia",
     "obj4_desc": "Acceso a una red de expertos, recursos técnicos y empresariales para estructurar y desarrollar nuestro proyecto de manera viable.",
-    "conclusion": "Este apoyo será esencial para UnxWares: la experiencia y los recursos de Pépite Normandie nos permitirán construir una empresa ética y viable, combinando excelencia técnica y rigor empresarial. Nuestra ambición es convertirnos en un actor de referencia en la nube soberana en Francia, y Pépite Normandie será la palanca que hará realizable esta ambición."
+    "conclusion": "Este apoyo es esencial para UnxWares: la experiencia y los recursos de Pépite Normandie nos permiten construir una empresa ética y viable, combinando excelencia técnica y rigor empresarial. Nuestra ambición es convertirnos en un actor de referencia en la nube soberana en Francia, y Pépite Normandie es la palanca que hace realizable esta ambición."
   },
   "ecosystem": {
     "title": "El Ecosistema UnxWares",

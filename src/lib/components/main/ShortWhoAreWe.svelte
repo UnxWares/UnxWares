@@ -1,6 +1,6 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import { Users, Globe } from 'lucide-svelte';
+	import { Users, Globe, Award, Rocket } from 'lucide-svelte';
 </script>
 
 <section id="short-whoarewe">
@@ -8,6 +8,11 @@
 		<img src="/favicon.png" alt="UnxWares favicon" />
 		<h1>UnxWares - {$t('home.welcome')} ✨</h1>
 	</div>
+	<a href="#pepite-normandie" class="pepite-badge">
+		<Award size={20} />
+		<span>{$t('pepite.badge_text')}</span>
+		<img src="https://www.pepite-normandie.fr/wp-content/uploads/sites/61/2024/02/LOGO_PEPITE_normandie_RVB.png" alt="Logo Pépite Normandie" />
+	</a>
 	<p>{$t('home.intro_p1')}</p>
 	<p>{$t('home.intro_p2')}</p>
 	<p>{$t('home.intro_p3')}</p>
@@ -16,10 +21,88 @@
 	<div class="short-whoarewe-buttons">
 		<a href="/whoarewe"><Users size={16} /> {$t('home.our_story')}</a>
 		<a href="/certifications-and-responsibility"><Globe size={16} /> {$t('home.certifications')}</a>
+		<a href="#pepite-normandie"><Rocket size={16} /> Pépite</a>
 	</div>
 </section>
 
 <style>
+    #short-whoarewe .pepite-badge{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 24px;
+        margin: -15px auto 30px;
+        width: fit-content;
+        background: linear-gradient(135deg, rgba(5, 12, 156, 0.1) 0%, rgba(5, 12, 156, 0.05) 100%);
+        border: 2px solid #050c9c;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(5, 12, 156, 0.15);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    :global([data-theme="dark"]) #short-whoarewe .pepite-badge{
+        background: linear-gradient(135deg, rgba(100, 150, 255, 0.15) 0%, rgba(100, 150, 255, 0.08) 100%);
+        border-color: #6496ff;
+        box-shadow: 0 4px 12px rgba(100, 150, 255, 0.2);
+    }
+    #short-whoarewe .pepite-badge:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(5, 12, 156, 0.25);
+    }
+    :global([data-theme="dark"]) #short-whoarewe .pepite-badge:hover{
+        box-shadow: 0 6px 20px rgba(100, 150, 255, 0.3);
+    }
+    #short-whoarewe .pepite-badge :global(svg){
+        color: #050c9c;
+        flex-shrink: 0;
+    }
+    :global([data-theme="dark"]) #short-whoarewe .pepite-badge :global(svg){
+        color: #6496ff;
+    }
+    #short-whoarewe .pepite-badge span{
+        font-weight: 600;
+        font-size: 15px;
+        color: #050c9c;
+        white-space: nowrap;
+    }
+    :global([data-theme="dark"]) #short-whoarewe .pepite-badge span{
+        color: #6496ff;
+    }
+    #short-whoarewe .pepite-badge img{
+        height: 30px;
+        width: auto;
+        flex-shrink: 0;
+    }
+    :global([data-theme="dark"]) #short-whoarewe .pepite-badge img{
+        filter: brightness(1.2);
+    }
+    @media (max-width: 768px) {
+        #short-whoarewe .pepite-badge{
+            padding: 10px 18px;
+            gap: 10px;
+        }
+        #short-whoarewe .pepite-badge span{
+            font-size: 13px;
+        }
+        #short-whoarewe .pepite-badge img{
+            height: 24px;
+        }
+    }
+    @media (max-width: 548px) {
+        #short-whoarewe .pepite-badge{
+            padding: 8px 14px;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        #short-whoarewe .pepite-badge span{
+            font-size: 12px;
+        }
+        #short-whoarewe .pepite-badge img{
+            height: 20px;
+        }
+    }
     #short-whoarewe .unxwares-title{
         display: flex;
         align-items: center;

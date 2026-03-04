@@ -41,7 +41,59 @@
 </main>
 
 <style>
-	hr{
-			margin: 40px auto;
+	hr {
+		margin: 60px auto;
+		border: none;
+		border-top: 1px solid var(--border-color);
+		opacity: 0.5;
+	}
+
+	article :global(section) {
+		margin: 40px 0;
+	}
+
+	article :global(h1) {
+		margin: 30px 0 20px;
+	}
+
+	article :global(h2) {
+		margin: 35px 0 20px;
+	}
+
+	article :global(h3) {
+		margin: 30px 0 15px;
+	}
+
+	article :global(p) {
+		margin: 15px 0;
+		line-height: 1.8;
+	}
+
+	article :global(ul),
+	article :global(ol) {
+		margin: 20px 0;
+		padding-left: 30px;
+	}
+
+	article :global(li) {
+		margin: 12px 0;
+		line-height: 1.7;
+	}
+
+	article :global(li p) {
+		margin: 0;
+		display: inline;
+	}
+
+	article :global(table) {
+		margin: 25px 0;
+	}
+
+	article :global(figure) {
+		margin: 30px 0;
+	}
+
+	article :global(img) {
+		margin: 15px 0;
 	}
 </style>

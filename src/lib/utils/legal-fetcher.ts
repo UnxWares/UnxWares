@@ -70,8 +70,11 @@ export async function fetchLegalDocument(
 
 	try {
 		const response = await fetch(fileUrl, {
-			// Cache for 1 hour
-			next: { revalidate: 3600 }
+			// Cache for 1 hour (standard fetch cache directive)
+			cache: 'default',
+			headers: {
+				'Cache-Control': 'max-age=3600'
+			}
 		});
 
 		if (!response.ok) {

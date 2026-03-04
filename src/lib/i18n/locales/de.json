@@ -77,18 +77,19 @@
     "intro": "Unsere Infrastrukturen stützen sich auf bewährte Open-Source-Technologien und professionelle Hardware."
   },
   "pepite": {
-    "title": "Unsere Pépite Normandie Bewerbung",
-    "intro": "UnxWares hat sich für das <strong>Pépite Normandie</strong>-Programm beworben, das nationale Unterstützungssystem für studentisches Unternehmertum. Unsere Bewerbung wird derzeit bearbeitet. Diese Unterstützung wird uns das Fachwissen und die technischen und unternehmerischen Ressourcen zur Verfügung stellen, die notwendig sind, um unser Projekt zu strukturieren und von technischem Fachwissen zu einem wirklich lebensfähigen Unternehmen überzugehen.",
+    "badge_text": "Pépite Normandie Preisträger",
+    "title": "Pépite Normandie Preisträger",
+    "intro": "UnxWares ist stolz darauf, Teil des <strong>Pépite Normandie</strong>-Programms zu sein, des nationalen Unterstützungssystems für studentisches Unternehmertum. Diese Unterstützung stellt uns das Fachwissen und die technischen und unternehmerischen Ressourcen zur Verfügung, die notwendig sind, um unser Projekt zu strukturieren und von technischem Fachwissen zu einem wirklich lebensfähigen Unternehmen überzugehen.",
     "objectives_title": "Die Ziele dieser Unterstützung",
     "obj1_title": "Nationaler Student-Unternehmer-Status (SNEE)",
     "obj1_desc": "Eine offizielle Anerkennung, die unserem Ansatz bei Lieferanten und unseren ersten B2B-Kunden Glaubwürdigkeit verleiht.",
     "obj2_title": "Von der Technik zum Unternehmertum",
     "obj2_desc": "Entwicklung unserer Fähigkeiten in Management, Business und Vertrieb, um unser technisches Fachwissen in ein nachhaltiges Unternehmen zu verwandeln.",
     "obj3_title": "Mentoring und Professionalisierung",
-    "obj3_desc": "Die Pépite-Unterstützung wird es uns ermöglichen, herausgefordert zu werden, aus unserer technischen Blase herauszutreten und die Haltung verantwortungsvoller Führungskräfte anzunehmen.",
+    "obj3_desc": "Die Pépite-Unterstützung ermöglicht es uns, herausgefordert zu werden, aus unserer technischen Blase herauszutreten und die Haltung verantwortungsvoller Führungskräfte anzunehmen.",
     "obj4_title": "Ressourcen und Expertise",
     "obj4_desc": "Zugang zu einem Netzwerk von Experten, technischen und unternehmerischen Ressourcen, um unser Projekt auf lebensfähige Weise zu strukturieren und zu entwickeln.",
-    "conclusion": "Diese Unterstützung wird für UnxWares unerlässlich sein: Das Fachwissen und die Ressourcen von Pépite Normandie werden es uns ermöglichen, ein ethisches und lebensfähiges Unternehmen aufzubauen, das technische Exzellenz und unternehmerische Strenge vereint. Unser Ziel ist es, ein führender Akteur im Bereich souveräner Cloud in Frankreich zu werden, und Pépite Normandie wird der Hebel sein, der diese Ambition realisierbar macht."
+    "conclusion": "Diese Unterstützung ist für UnxWares unerlässlich: Das Fachwissen und die Ressourcen von Pépite Normandie ermöglichen es uns, ein ethisches und lebensfähiges Unternehmen aufzubauen, das technische Exzellenz und unternehmerische Strenge vereint. Unser Ziel ist es, ein führender Akteur im Bereich souveräner Cloud in Frankreich zu werden, und Pépite Normandie ist der Hebel, der diese Ambition realisierbar macht."
   },
   "ecosystem": {
     "title": "Das UnxWares-Ökosystem",

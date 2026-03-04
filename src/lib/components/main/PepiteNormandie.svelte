@@ -50,6 +50,12 @@
 <style>
     #pepite-normandie{
         margin: 0;
+        scroll-margin-top: 140px;
+    }
+    @media (max-width: 768px) {
+        #pepite-normandie{
+            scroll-margin-top: 100px;
+        }
     }
     #pepite-normandie .pepite-title{
         display: flex;

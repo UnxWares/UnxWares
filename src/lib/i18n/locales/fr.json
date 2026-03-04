@@ -76,18 +76,19 @@
     "intro": "Nos infrastructures s'appuient sur des technologies open source éprouvées et du matériel professionnel de qualité."
   },
   "pepite": {
-    "title": "Notre Candidature Pépite Normandie",
-    "intro": "UnxWares a candidaté au programme <strong>Pépite Normandie</strong>, le dispositif national d'accompagnement à l'entrepreneuriat étudiant. Notre dossier est actuellement en cours de traitement. Cet accompagnement nous apportera l'expertise et les ressources techniques et entrepreneuriales nécessaires pour structurer notre projet et passer d'une expertise technique à une véritable entreprise viable.",
+    "badge_text": "Lauréat Pépite Normandie",
+    "title": "Lauréat Pépite Normandie",
+    "intro": "UnxWares est fier de faire partie du programme <strong>Pépite Normandie</strong>, le dispositif national d'accompagnement à l'entrepreneuriat étudiant. Cet accompagnement nous apporte l'expertise et les ressources techniques et entrepreneuriales nécessaires pour structurer notre projet et passer d'une expertise technique à une véritable entreprise viable.",
     "objectives_title": "Les Objectifs de cet Accompagnement",
     "obj1_title": "Statut National Étudiant-Entrepreneur (SNEE)",
-    "obj1_desc": "Une reconnaissance officielle qui crédibilisera notre démarche auprès des fournisseurs et de nos premiers clients B2B.",
+    "obj1_desc": "Une reconnaissance officielle qui crédibilise notre démarche auprès des fournisseurs et de nos premiers clients B2B.",
     "obj2_title": "De la Technique à l'Entrepreneuriat",
     "obj2_desc": "Développer nos compétences en gestion, business et vente pour transformer notre expertise technique en entreprise pérenne.",
     "obj3_title": "Mentorat et Professionnalisation",
-    "obj3_desc": "L'accompagnement Pépite nous permettra d'être challengés, de sortir de notre bulle technique et d'adopter la posture de dirigeants responsables.",
+    "obj3_desc": "L'accompagnement Pépite nous permet d'être challengés, de sortir de notre bulle technique et d'adopter la posture de dirigeants responsables.",
     "obj4_title": "Ressources et Expertise",
     "obj4_desc": "Accès à un réseau d'experts, de ressources techniques et entrepreneuriales pour structurer et développer notre projet de manière viable.",
-    "conclusion": "Cet accompagnement sera essentiel pour UnxWares : l'expertise et les ressources de Pépite Normandie nous permettront de construire une entreprise éthique et viable, alliant excellence technique et rigueur entrepreneuriale. Notre ambition est de devenir un acteur de référence du cloud souverain en France, et Pépite Normandie sera le levier qui rendra cette ambition réalisable."
+    "conclusion": "Cet accompagnement est essentiel pour UnxWares : l'expertise et les ressources de Pépite Normandie nous permettent de construire une entreprise éthique et viable, alliant excellence technique et rigueur entrepreneuriale. Notre ambition est de devenir un acteur de référence du cloud souverain en France, et Pépite Normandie est le levier qui rend cette ambition réalisable."
   },
   "ecosystem": {
     "title": "L'Écosystème UnxWares",

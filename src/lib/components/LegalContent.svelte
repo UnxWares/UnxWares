@@ -1,24 +1,54 @@
 <script lang="ts">
 	let { content }: { content: string } = $props();
 
+	// Fonction pour scroller vers un élément avec offset
+	function scrollToElement(element: HTMLElement) {
+		const headerOffset = window.innerWidth <= 768 ? 100 : 140;
+		const elementPosition = element.getBoundingClientRect().top;
+		const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: 'smooth'
+		});
+	}
+
 	$effect(() => {
-		// Appliquer le padding global pour compenser la navbar
-		document.documentElement.style.scrollPaddingTop = '120px';
-		
-		// Gérer le scroll au chargement initial (après que le loading screen disparaisse)
+		// Gérer le scroll au chargement initial
 		if (window.location.hash) {
 			const id = window.location.hash.substring(1);
 			const element = document.getElementById(id);
 			if (element) {
 				// Petit délai pour laisser le temps au navigateur de faire son rendu
 				setTimeout(() => {
-					element.scrollIntoView({ behavior: 'smooth' });
+					scrollToElement(element);
 				}, 100);
 			}
 		}
 
+		// Intercepter les clics sur tous les liens internes (#)
+		const handleAnchorClick = (e: MouseEvent) => {
+			const target = e.target as HTMLElement;
+			const link = target.closest('a');
+
+			if (link && link.hash && link.pathname === window.location.pathname) {
+				e.preventDefault();
+				const id = link.hash.substring(1);
+				const element = document.getElementById(id);
+
+				if (element) {
+					// Mettre à jour l'URL sans recharger
+					history.pushState(null, '', link.hash);
+					// Scroll vers l'élément avec offset
+					scrollToElement(element);
+				}
+			}
+		};
+
+		document.addEventListener('click', handleAnchorClick);
+
 		return () => {
-			document.documentElement.style.scrollPaddingTop = '';
+			document.removeEventListener('click', handleAnchorClick);
 		};
 	});
 </script>
@@ -49,6 +79,7 @@
 		margin: 2rem 0 1.5rem 0;
 		color: var(--primary-text);
 		line-height: 1.2;
+		scroll-margin-top: 140px;
 	}
 
 	.legal-content :global(h2) {
@@ -57,6 +88,7 @@
 		margin: 2.5rem 0 1rem 0;
 		color: var(--primary-text);
 		line-height: 1.3;
+		scroll-margin-top: 140px;
 	}
 
 	.legal-content :global(h3) {
@@ -65,6 +97,7 @@
 		margin: 2rem 0 1rem 0;
 		color: var(--text-primary);
 		line-height: 1.4;
+		scroll-margin-top: 140px;
 	}
 
 	.legal-content :global(h4) {
@@ -73,6 +106,7 @@
 		margin: 1.5rem 0 0.75rem 0;
 		color: var(--text-secondary);
 		line-height: 1.4;
+		scroll-margin-top: 140px;
 	}
 
 	.legal-content :global(p) {
@@ -214,18 +248,22 @@
 
 		.legal-content :global(h1) {
 			font-size: 2rem;
+			scroll-margin-top: 100px;
 		}
 
 		.legal-content :global(h2) {
 			font-size: 1.5rem;
+			scroll-margin-top: 100px;
 		}
 
 		.legal-content :global(h3) {
 			font-size: 1.25rem;
+			scroll-margin-top: 100px;
 		}
 
 		.legal-content :global(h4) {
 			font-size: 1.1rem;
+			scroll-margin-top: 100px;
 		}
 
 		.legal-content :global(ul),

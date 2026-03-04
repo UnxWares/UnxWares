@@ -2,8 +2,8 @@ import { fetchLegalDocument, markdownToHtml } from '$lib/utils/legal-fetcher';
 
 export const prerender = false;
 
-export async function load({ cookies }) {
-	const locale = cookies.get('locale') || 'fr';
+export async function load({ locals }) {
+	const locale = locals.locale || 'fr';
 
 	try {
 		const markdown = await fetchLegalDocument('UseConditions', locale);
