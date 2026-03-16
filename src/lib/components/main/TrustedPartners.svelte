@@ -1,6 +1,8 @@
 <script>
 	import { t } from 'svelte-i18n';
 	import { theme } from '$lib/stores/theme';
+
+	$: logoBase = $theme === 'dark' ? '/images/partners/dark' : '/images/partners/white';
 </script>
 
 <section id="trusted-partners">
@@ -11,32 +13,28 @@
 	<div class="partners-grid">
 		<div class="partner-card">
 			<div class="partner-logo">
-				{#if $theme === 'dark'}
-					<img src="https://netario.fr/images/logos/logo_white.svg" alt="Netario" />
-				{:else}
-					<img src="https://panel-cloud.netario.fr/client/assets/logo_custom.svg" alt="Netario" />
-				{/if}
+				<img src="{logoBase}/netaris.png" alt="Netaris" />
 			</div>
 			<p class="partner-desc">{$t('partners.netario_desc')}</p>
 		</div>
 
 		<div class="partner-card">
 			<div class="partner-logo">
-				<img src="https://www.teysalpi.ch/wp/wp-content/uploads/2025/10/vertical-blue.png" alt="Infomaniak" />
+				<img src="{logoBase}/infomaniak.png" alt="Infomaniak" />
 			</div>
 			<p class="partner-desc">{$t('partners.infomaniak_desc')}</p>
 		</div>
 
 		<div class="partner-card">
 			<div class="partner-logo">
-				<img src="https://www.bouyguestelecom-pro.fr/media/logo/stores/1/logo-bte_3.png" alt="Bouygues Entreprise" />
+				<img src="{logoBase}/bouygues-pro.png" alt="Bouygues Entreprise" />
 			</div>
 			<p class="partner-desc">{$t('partners.bouygues_desc')}</p>
 		</div>
 
 		<div class="partner-card">
 			<div class="partner-logo">
-				<img src="https://www.bouyguestelecom-solution.fr/wp-content/uploads/2025/06/logo-BTBusiness-Solution.png" alt="Bouygues Cyberdéfense" />
+				<img src="{logoBase}/bouygues-cyber.png" alt="Bouygues Cyberdéfense" />
 			</div>
 			<p class="partner-desc">{$t('partners.cyberdefense_desc')}</p>
 		</div>
@@ -127,14 +125,6 @@
 	}
 
 	.partner-card:hover .partner-logo img {
-		filter: grayscale(0%) opacity(1);
-	}
-
-	:global([data-theme="dark"]) .partner-logo img {
-		filter: grayscale(100%) opacity(0.7);
-	}
-
-	:global([data-theme="dark"]) .partner-card:hover .partner-logo img {
 		filter: grayscale(0%) opacity(1);
 	}
 
