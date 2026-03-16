@@ -1,5 +1,4 @@
 import { listBlogPosts } from '$lib/utils/blog/github-reader';
-import { translateBlogPost } from '$lib/utils/blog/runtime-translator';
 import { generateRSSFeed } from '$lib/utils/blog/feed-generator';
 
 export const prerender = false;
@@ -11,31 +10,20 @@ export async function GET({ url }) {
 	const validLocales = ['fr', 'en', 'de', 'nl', 'es', 'it'];
 	const targetLocale = validLocales.includes(locale) ? locale : 'fr';
 
-	// Fetch posts from GitHub
-	const allPosts = await listBlogPosts();
+	// Fetch posts from GitHub in the right locale
+	const allPosts = await listBlogPosts(targetLocale);
 
 	// Sort by date (newest first) and limit to 20
-	const sortedPosts = allPosts
+	const posts = allPosts
 		.sort((a, b) => {
 			return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
 		})
-		.slice(0, 20);
-
-	// Translate if needed
-	const posts = await Promise.all(
-		sortedPosts.map(async (post) => {
-			const { frontmatter, content } =
-				targetLocale === 'fr'
-					? { frontmatter: post.frontmatter, content: post.content }
-					: await translateBlogPost(post, targetLocale);
-
-			return {
-				slug: post.slug,
-				frontmatter,
-				content
-			};
-		})
-	);
+		.slice(0, 20)
+		.map((post) => ({
+			slug: post.slug,
+			frontmatter: post.frontmatter,
+			content: post.content
+		}));
 
 	// Generate RSS feed
 	const rss = generateRSSFeed(posts, targetLocale);
