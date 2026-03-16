@@ -7,12 +7,27 @@
 	let { data } = $props();
 
 	let post = $derived(data.post);
+	let locale = $derived(data.locale ?? 'fr');
 	let canonicalUrl = $derived(`https://unxwares.com/blog/${post.slug}`);
 	let imageUrl = $derived(
 		post.frontmatter.image
 			? `https://unxwares.com${post.frontmatter.image}`
 			: 'https://unxwares.com/og-image.jpg'
 	);
+
+	// Map locale codes to og:locale BCP47 format (article may use ?lang= override)
+	const OG_LOCALE_MAP: Record<string, string> = {
+		fr: 'fr_FR',
+		en: 'en_US',
+		de: 'de_DE',
+		nl: 'nl_NL',
+		es: 'es_ES',
+		it: 'it_IT'
+	};
+	const ALL_OG_LOCALES = ['fr_FR', 'en_US', 'de_DE', 'nl_NL', 'es_ES', 'it_IT'];
+
+	let ogLocale = $derived(OG_LOCALE_MAP[locale] ?? 'fr_FR');
+	let ogLocaleAlternates = $derived(ALL_OG_LOCALES.filter((l) => l !== ogLocale));
 </script>
 
 <svelte:head>
@@ -22,6 +37,10 @@
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="article" />
+	<meta property="og:locale" content={ogLocale} />
+	{#each ogLocaleAlternates as alt}
+		<meta property="og:locale:alternate" content={alt} />
+	{/each}
 	<meta property="og:title" content={post.frontmatter.title} />
 	<meta property="og:description" content={post.frontmatter.description} />
 	<meta property="og:url" content={canonicalUrl} />

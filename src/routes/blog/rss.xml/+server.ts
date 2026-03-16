@@ -3,11 +3,12 @@ import { generateRSSFeed } from '$lib/utils/blog/feed-generator';
 
 export const prerender = false;
 
-export async function GET({ url }) {
-	const locale = url.searchParams.get('lang') || 'fr';
-
-	// Validate locale
+export async function GET({ url, locals }) {
 	const validLocales = ['fr', 'en', 'de', 'nl', 'es', 'it'];
+
+	// ?lang= param > detected user locale (Accept-Language) > french fallback
+	const langParam = url.searchParams.get('lang');
+	const locale = langParam ?? locals.locale ?? 'fr';
 	const targetLocale = validLocales.includes(locale) ? locale : 'fr';
 
 	// Fetch posts from GitHub in the right locale

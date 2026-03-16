@@ -1061,7 +1061,8 @@
     "category_description": "Artikelen in categorie {category}",
     "posts_in_category": "{count, plural, =0 {Geen artikelen} =1 {1 artikel} other {# artikelen}} in categorie {category}",
     "tag_description": "Artikelen met tag {tag}",
-    "posts_with_tag": "{count, plural, =0 {Geen artikelen} =1 {1 artikel} other {# artikelen}} met tag {tag}"
+    "posts_with_tag": "{count, plural, =0 {Geen artikelen} =1 {1 artikel} other {# artikelen}} met tag {tag}",
+    "feed_language": "Feedtaal"
   },
   "brand_kit": {
     "title": "UnxWares Merkkit",

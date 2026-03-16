@@ -6,13 +6,14 @@
 	import StudioProjects from '$lib/components/studio/StudioProjects.svelte';
 	import StudioCTA from '$lib/components/studio/StudioCTA.svelte';
 	import { Separator } from '@unxwares/ui-core';
+	let { data } = $props();
 </script>
 
 <svelte:head>
 	<title>{$t('pages.studio.title')}</title>
 
-	<meta property="og:title" content="{$t('pages.studio.title')}">
-	<meta name="twitter:title" content="{$t('pages.studio.title')}">
+	<meta property="og:title" content={data.ogTitle}>
+	<meta name="twitter:title" content={data.ogTitle}>
 
 	<meta property="og:url" content="https://www.unxwares.com/uw-studio">
 	<meta name="twitter:site" content="https://www.unxwares.com/uw-studio">

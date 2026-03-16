@@ -46,6 +46,7 @@ export async function load({ url, cookies }) {
 		total,
 		totalPages,
 		currentPage: page,
-		categories
+		categories,
+		locale: currentLocale
 	};
 }

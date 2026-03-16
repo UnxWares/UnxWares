@@ -8,8 +8,8 @@
 <svelte:head>
 	<title>{$t('footer.terms')} - UnxWares</title>
 	<meta name="description" content={$t('footer.terms')} />
-	<meta property="og:title" content="{$t('footer.terms')} - UnxWares" />
-	<meta name="twitter:title" content="{$t('footer.terms')} - UnxWares" />
+	<meta property="og:title" content={data.ogTitle} />
+	<meta name="twitter:title" content={data.ogTitle} />
 	<meta property="og:url" content="https://www.unxwares.com/use-conditions" />
 	<meta name="twitter:site" content="https://www.unxwares.com/use-conditions" />
 </svelte:head>

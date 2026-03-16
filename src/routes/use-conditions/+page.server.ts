@@ -1,4 +1,5 @@
 import { fetchLegalDocument, markdownToHtml } from '$lib/utils/legal-fetcher';
+import { serverT } from '$lib/utils/server-t';
 
 export const prerender = false;
 
@@ -16,13 +17,15 @@ export async function load({ locals, setHeaders }) {
 
 		return {
 			content: html,
-			locale
+			locale,
+			ogTitle: `${serverT(locale, 'footer.terms')} - UnxWares`
 		};
 	} catch (error) {
 		console.error('Error loading use conditions:', error);
 		return {
 			content: '<p>Erreur lors du chargement des conditions d\'utilisation.</p>',
-			locale
+			locale,
+			ogTitle: `${serverT(locale, 'footer.terms')} - UnxWares`
 		};
 	}
 }

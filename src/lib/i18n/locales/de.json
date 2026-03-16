@@ -1061,7 +1061,8 @@
     "category_description": "Artikel in Kategorie {category}",
     "posts_in_category": "{count, plural, =0 {Keine Artikel} =1 {1 Artikel} other {# Artikel}} in Kategorie {category}",
     "tag_description": "Artikel mit Tag {tag}",
-    "posts_with_tag": "{count, plural, =0 {Keine Artikel} =1 {1 Artikel} other {# Artikel}} mit Tag {tag}"
+    "posts_with_tag": "{count, plural, =0 {Keine Artikel} =1 {1 Artikel} other {# Artikel}} mit Tag {tag}",
+    "feed_language": "Feed-Sprache"
   },
   "brand_kit": {
     "title": "UnxWares Marken-Kit",

@@ -8,13 +8,14 @@
 	import Network from '$lib/components/uw-cloud/datacenter/Network.svelte';
 	import Security from '$lib/components/uw-cloud/datacenter/Security.svelte';
 	import Ecology from '$lib/components/uw-cloud/datacenter/Ecology.svelte';
+	let { data } = $props();
 </script>
 
 <svelte:head>
 	<title>{$t('pages.datacenter.title')}</title>
 
-	<meta property="og:title" content={$t('pages.datacenter.title')}>
-	<meta name="twitter:title" content={$t('pages.datacenter.title')}>
+	<meta property="og:title" content={data.ogTitle}>
+	<meta name="twitter:title" content={data.ogTitle}>
 
 	<meta property="og:url" content="https://www.unxwares.com/datacenter">
 	<meta name="twitter:site" content="https://www.unxwares.com/datacenter">

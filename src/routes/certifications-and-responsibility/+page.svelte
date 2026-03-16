@@ -8,13 +8,14 @@
 		BarChart, Settings, Heart, Lightbulb, GitBranch, TrendingUp, TriangleAlert,
 		CheckCircle, Check, CalendarCheck
 	} from 'lucide-svelte';
+	let { data } = $props();
 </script>
 
 <svelte:head>
 	<title>{$t('certifications_page.title')}</title>
 
-	<meta property="og:title" content={$t('certifications_page.title')}>
-	<meta name="twitter:title" content={$t('certifications_page.title')}>
+	<meta property="og:title" content={data.ogTitle}>
+	<meta name="twitter:title" content={data.ogTitle}>
 
 	<meta property="og:url" content="https://www.unxwares.com/certifications-and-responsibility">
 	<meta name="twitter:site" content="https://www.unxwares.com/certifications-and-responsibility">

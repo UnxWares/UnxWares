@@ -10,13 +10,14 @@
 	import { Separator, CTASection } from '@unxwares/ui-core';
 	import { t } from 'svelte-i18n';
 	import { Mail, MessageCircle } from 'lucide-svelte';
+	let { data } = $props();
 </script>
 
 <svelte:head>
 	<title>{$t('pages.home.title')}</title>
 
-	<meta property="og:title" content="{$t('pages.home.title')}">
-	<meta name="twitter:title" content="{$t('pages.home.title')}">
+	<meta property="og:title" content={data.ogTitle}>
+	<meta name="twitter:title" content={data.ogTitle}>
 
 	<meta property="og:url" content="https://www.unxwares.com">
 	<meta name="twitter:site" content="https://www.unxwares.com">

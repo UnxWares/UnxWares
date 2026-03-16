@@ -11,13 +11,14 @@
 	import PepiteNormandie from '$lib/components/main/PepiteNormandie.svelte';
 	import { CTASection, Separator } from '@unxwares/ui-core';
 	import { Mail, MessageCircle } from 'lucide-svelte';
+	let { data } = $props();
 </script>
 
 <svelte:head>
 	<title>{$t('pages.whoarewe.title')}</title>
 
-	<meta property="og:title" content={$t('pages.whoarewe.title')}>
-	<meta name="twitter:title" content={$t('pages.whoarewe.title')}>
+	<meta property="og:title" content={data.ogTitle}>
+	<meta name="twitter:title" content={data.ogTitle}>
 
 	<meta property="og:url" content="https://www.unxwares.com/whoarewe">
 	<meta name="twitter:site" content="https://www.unxwares.com/whoarewe">

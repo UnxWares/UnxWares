@@ -3,7 +3,7 @@
 	import BlogCard from '$lib/components/blog/BlogCard.svelte';
 	import BlogPagination from '$lib/components/blog/BlogPagination.svelte';
 	import CategoryFilter from '$lib/components/blog/CategoryFilter.svelte';
-	import { FileText, Rss } from 'lucide-svelte';
+	import { FileText, Rss, ChevronDown } from 'lucide-svelte';
 
 	let { data } = $props();
 
@@ -12,18 +12,61 @@
 	let totalPages = $derived(data.totalPages);
 	let currentPage = $derived(data.currentPage);
 	let categories = $derived(data.categories);
+
+	const SUPPORTED_LOCALES = ['fr', 'en', 'de', 'nl', 'es', 'it'] as const;
+	const LOCALE_LABELS: Record<string, string> = {
+		fr: 'Français',
+		en: 'English',
+		de: 'Deutsch',
+		nl: 'Nederlands',
+		es: 'Español',
+		it: 'Italiano'
+	};
+
+	const LOCALE_FLAGS: Record<string, string> = {
+		fr: '🇫🇷',
+		en: '🇬🇧',
+		de: '🇩🇪',
+		nl: '🇳🇱',
+		es: '🇪🇸',
+		it: '🇮🇹'
+	};
+
+	let openDropdown = $state<'rss' | 'atom' | null>(null);
+
+	function toggleDropdown(type: 'rss' | 'atom') {
+		openDropdown = openDropdown === type ? null : type;
+	}
+
+	function closeDropdowns() {
+		openDropdown = null;
+	}
+
+	$effect(() => {
+		if (openDropdown === null) return;
+		function handleClickOutside(e: MouseEvent) {
+			const target = e.target as Element;
+			if (!target.closest('.feed-dropdown')) closeDropdowns();
+		}
+		function handleKeydown(e: KeyboardEvent) {
+			if (e.key === 'Escape') closeDropdowns();
+		}
+		document.addEventListener('click', handleClickOutside);
+		document.addEventListener('keydown', handleKeydown);
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+			document.removeEventListener('keydown', handleKeydown);
+		};
+	});
 </script>
 
 <svelte:head>
 	<title>{$t('blog.title')} - UnxWares</title>
 	<meta name="description" content={$t('blog.description')} />
-	<link rel="alternate" type="application/rss+xml" title="UnxWares Blog RSS" href="/blog/rss.xml" />
-	<link
-		rel="alternate"
-		type="application/atom+xml"
-		title="UnxWares Blog Atom"
-		href="/blog/atom.xml"
-	/>
+	{#each SUPPORTED_LOCALES as loc}
+		<link rel="alternate" type="application/rss+xml" title="UnxWares Blog RSS ({LOCALE_LABELS[loc]})" href="/blog/rss.xml?lang={loc}" />
+		<link rel="alternate" type="application/atom+xml" title="UnxWares Blog Atom ({LOCALE_LABELS[loc]})" href="/blog/atom.xml?lang={loc}" />
+	{/each}
 </svelte:head>
 
 <div class="blog-page">
@@ -32,14 +75,67 @@
 		<p class="blog-description">{$t('blog.description')}</p>
 
 		<div class="feed-links">
-			<a href="/blog/rss.xml" class="feed-link" target="_blank" rel="noopener noreferrer">
-				<Rss size={18} />
-				<span>RSS</span>
-			</a>
-			<a href="/blog/atom.xml" class="feed-link" target="_blank" rel="noopener noreferrer">
-				<Rss size={18} />
-				<span>Atom</span>
-			</a>
+			<!-- RSS dropdown -->
+			<div class="feed-dropdown">
+				<button
+					class="feed-link"
+					class:open={openDropdown === 'rss'}
+					onclick={() => toggleDropdown('rss')}
+					aria-expanded={openDropdown === 'rss'}
+					aria-haspopup="menu"
+				>
+					<Rss size={18} />
+					<span>RSS</span>
+					<ChevronDown size={14} class="chevron" />
+				</button>
+				{#if openDropdown === 'rss'}
+					<div class="feed-dropdown-menu" role="menu">
+						{#each SUPPORTED_LOCALES as loc}
+							<a
+								href="/blog/rss.xml?lang={loc}"
+								class="feed-dropdown-item"
+								target="_blank"
+								rel="noopener noreferrer"
+								onclick={closeDropdowns}
+								role="menuitem"
+							>
+								{LOCALE_FLAGS[loc]} {LOCALE_LABELS[loc]}
+							</a>
+						{/each}
+					</div>
+				{/if}
+			</div>
+
+			<!-- Atom dropdown -->
+			<div class="feed-dropdown">
+				<button
+					class="feed-link"
+					class:open={openDropdown === 'atom'}
+					onclick={() => toggleDropdown('atom')}
+					aria-expanded={openDropdown === 'atom'}
+					aria-haspopup="menu"
+				>
+					<Rss size={18} />
+					<span>Atom</span>
+					<ChevronDown size={14} class="chevron" />
+				</button>
+				{#if openDropdown === 'atom'}
+					<div class="feed-dropdown-menu" role="menu">
+						{#each SUPPORTED_LOCALES as loc}
+							<a
+								href="/blog/atom.xml?lang={loc}"
+								class="feed-dropdown-item"
+								target="_blank"
+								rel="noopener noreferrer"
+								onclick={closeDropdowns}
+								role="menuitem"
+							>
+								{LOCALE_FLAGS[loc]} {LOCALE_LABELS[loc]}
+							</a>
+						{/each}
+					</div>
+				{/if}
+			</div>
 		</div>
 	</div>
 
@@ -93,6 +189,11 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.feed-dropdown {
+		position: relative;
 	}
 
 	.feed-link {
@@ -103,23 +204,61 @@
 		background: var(--bg-secondary);
 		border: 1px solid var(--border-color);
 		border-radius: 8px;
-		color: var(--primary-text);
+		color: var(--text-primary);
 		text-decoration: none;
 		font-size: 0.875rem;
 		font-weight: 600;
+		cursor: pointer;
 		transition: all 0.2s ease;
 	}
 
-	.feed-link:hover {
+	.feed-link:hover,
+	.feed-link.open {
 		background: var(--primary);
 		color: white;
 		border-color: var(--primary);
-		transform: translateY(-2px);
 		box-shadow: 0 4px 8px rgba(5, 12, 156, 0.2);
 	}
 
 	.feed-link :global(svg) {
 		flex-shrink: 0;
+	}
+
+	.feed-link :global(.chevron) {
+		transition: transform 0.2s ease;
+	}
+
+	.feed-link.open :global(.chevron) {
+		transform: rotate(180deg);
+	}
+
+	.feed-dropdown-menu {
+		position: absolute;
+		top: calc(100% + 6px);
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--bg-secondary);
+		border: 1px solid var(--border-color);
+		border-radius: 8px;
+		overflow: hidden;
+		z-index: 100;
+		min-width: 130px;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	}
+
+	.feed-dropdown-item {
+		display: block;
+		padding: 0.5rem 1rem;
+		color: var(--text-primary);
+		text-decoration: none;
+		font-size: 0.875rem;
+		transition: background 0.15s ease;
+		white-space: nowrap;
+	}
+
+	.feed-dropdown-item:hover {
+		background: var(--primary);
+		color: white;
 	}
 
 	.blog-grid {

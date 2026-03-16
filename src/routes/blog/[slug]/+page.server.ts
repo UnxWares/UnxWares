@@ -4,8 +4,15 @@ import { error } from '@sveltejs/kit';
 
 export const prerender = false;
 
-export async function load({ params, cookies }) {
-	const currentLocale = cookies.get('locale') || 'fr';
+const VALID_LOCALES = ['fr', 'en', 'de', 'nl', 'es', 'it'];
+
+export async function load({ params, url, locals, cookies }) {
+	// Explicit ?lang= param takes priority (for social sharing with a specific language)
+	const langParam = url.searchParams.get('lang');
+	const currentLocale =
+		langParam && VALID_LOCALES.includes(langParam)
+			? langParam
+			: (locals.locale ?? cookies.get('locale') ?? 'fr');
 
 	// Fetch post from GitHub in the right locale (with fallback)
 	const post = await getBlogPost(params.slug, currentLocale);
@@ -22,6 +29,7 @@ export async function load({ params, cookies }) {
 			slug: post.slug,
 			frontmatter: post.frontmatter,
 			content: htmlContent
-		}
+		},
+		locale: currentLocale
 	};
 }
