@@ -52,5 +52,14 @@ node build
 <br/>
 🇺🇸 At UnxWares, we are deeply committed to actively supporting Open Source. While we remain a company and our work is naturally protected, openness and sharing are core values we uphold. That’s why a significant portion of the code we produce is published and made publicly accessible. We see code sharing as a fundamental pillar: enabling other developers to draw inspiration from, reuse, and improve upon what we create is a given for us. Every project we work on is intended to be useful beyond our own needs. That said, we ask that our intellectual property be respected. As such, our code cannot be reused in its entirety for commercial purposes without our explicit permission. However, each module, component, or feature we release is designed to be reusable, adaptable, and enhanced by the community. We firmly believe that a sustainable software ecosystem relies on collaboration, transparency, and shared innovation.
 
+# 📦 Partenaire Open Source / Open Source Partner
+
+<div align="center"><a href="https://repoflow.io" target="_blank"><img src="./static/images/partners/dark/repoflow.png" height="50" /></a></div>
+
+🇫🇷 Dans le cadre de notre engagement open source, nous bénéficions d'un partenariat avec **[Repoflow](https://repoflow.io)**. Repoflow nous fournit des licences qui nous permettent d'héberger souverainement notre propre package registry, dédié à la distribution de nos features et modules opensource. Ce partenariat s'inscrit pleinement dans notre démarche de maîtrise de notre infrastructure et de contribution à l'écosystème open source.
+<br/>
+<br/>
+🇺🇸 As part of our open source commitment, we benefit from a partnership with **[Repoflow](https://repoflow.io)**. Repoflow provides us with licenses enabling us to host our own sovereign package registry, dedicated to distributing our open source features and modules. This partnership is fully aligned with our approach to infrastructure sovereignty and contribution to the open source ecosystem.
+
 # Merci ❤️
 UnxWares SAS (Studio & Cloud) - SIREN 945207991 - UnxWares © 2023-2025 - Tous droits réservés

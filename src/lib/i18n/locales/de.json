@@ -74,7 +74,8 @@
   },
   "techlogos": {
     "title": "Unsere Vertrauenstechnologien",
-    "intro": "Unsere Infrastrukturen stützen sich auf bewährte Open-Source-Technologien und professionelle Hardware."
+    "intro": "Unsere Infrastrukturen stützen sich auf bewährte Open-Source-Technologien und professionelle Hardware.",
+    "repoflow_tooltip": "Open-Source-Partnerschaft — Repoflow stellt uns Lizenzen zur souveränen Hostung unserer Package Registry für unsere Open-Source-Features bereit."
   },
   "pepite": {
     "badge_text": "Begleitet von Pépite Normandie",

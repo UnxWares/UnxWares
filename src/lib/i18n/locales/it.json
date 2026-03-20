@@ -74,7 +74,8 @@
   },
   "techlogos": {
     "title": "Le Nostre Tecnologie di Fiducia",
-    "intro": "Le nostre infrastrutture si basano su tecnologie open source consolidate e hardware professionale di qualità."
+    "intro": "Le nostre infrastrutture si basano su tecnologie open source consolidate e hardware professionale di qualità.",
+    "repoflow_tooltip": "Partenariato opensource — Repoflow ci fornisce licenze per ospitare sovranamente il nostro package registry per le nostre feature opensource."
   },
   "pepite": {
     "badge_text": "Accompagnato da Pépite Normandie",

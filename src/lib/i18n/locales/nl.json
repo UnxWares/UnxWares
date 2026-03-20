@@ -74,7 +74,8 @@
   },
   "techlogos": {
     "title": "Onze Vertrouwde Technologieën",
-    "intro": "Onze infrastructuren vertrouwen op bewezen open source technologieën en professionele hardware van hoge kwaliteit."
+    "intro": "Onze infrastructuren vertrouwen op bewezen open source technologieën en professionele hardware van hoge kwaliteit.",
+    "repoflow_tooltip": "Open source partnerschap — Repoflow voorziet ons van licenties om ons package registry voor onze open source features soeverein te hosten."
   },
   "pepite": {
     "badge_text": "Begeleid door Pépite Normandie",

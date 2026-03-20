@@ -73,7 +73,8 @@
   },
   "techlogos": {
     "title": "Nos Technologies de Confiance",
-    "intro": "Nos infrastructures s'appuient sur des technologies open source éprouvées et du matériel professionnel de qualité."
+    "intro": "Nos infrastructures s'appuient sur des technologies open source éprouvées et du matériel professionnel de qualité.",
+    "repoflow_tooltip": "Partenariat opensource — Repoflow nous fournit des licences pour héberger souverainement notre package registry dédié à nos features opensource."
   },
   "pepite": {
     "badge_text": "Accompagné par Pépite Normandie",

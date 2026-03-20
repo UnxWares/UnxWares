@@ -73,7 +73,8 @@
   },
   "techlogos": {
     "title": "Our Trusted Technologies",
-    "intro": "Our infrastructures rely on proven open source technologies and professional-grade hardware."
+    "intro": "Our infrastructures rely on proven open source technologies and professional-grade hardware.",
+    "repoflow_tooltip": "Open source partnership — Repoflow provides us with licenses to host a sovereign package registry for our open source features."
   },
   "pepite": {
     "badge_text": "Accompanied by Pépite Normandie",

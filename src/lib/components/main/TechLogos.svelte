@@ -17,6 +17,9 @@
 		<figure class="logo-item">
 			<img src="{logoBase}/hpe.png" alt="HPE" />
 		</figure>
+		<figure class="logo-item has-tooltip" data-tooltip={$t('techlogos.repoflow_tooltip')}>
+			<img src="{logoBase}/repoflow.png" alt="Repoflow" />
+		</figure>
 		<figure class="logo-item">
 			<img src="{logoBase}/fortinet.png" alt="Fortinet" />
 		</figure>
@@ -120,6 +123,35 @@
 	}
 	.logo-item:hover{
 		transform: scale(1.1);
+	}
+	.logo-item.has-tooltip {
+		position: relative;
+	}
+	.logo-item.has-tooltip::after {
+		content: attr(data-tooltip);
+		position: absolute;
+		bottom: calc(100% + 10px);
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--bg-primary);
+		border: 1px solid var(--border-color);
+		color: var(--text-secondary);
+		padding: 8px 12px;
+		border-radius: 8px;
+		font-size: 12px;
+		line-height: 1.5;
+		width: 230px;
+		text-align: center;
+		white-space: normal;
+		text-align: justify;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.2s ease;
+		z-index: 100;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+	.logo-item.has-tooltip:hover::after {
+		opacity: 1;
 	}
 	.logo-item img{
 		max-width: 100%;
