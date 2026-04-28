@@ -1,6 +1,7 @@
 import type { Handle } from '@sveltejs/kit';
+import { env } from '$env/dynamic/private';
 
-if (!process.env.MATRIX_SERVER_URL) {
+if (!env.MATRIX_SERVER_URL) {
 	console.warn('[warn] MATRIX_SERVER_URL not set — /.well-known/matrix/* routes disabled');
 }
 
