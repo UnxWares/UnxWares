@@ -1,5 +1,9 @@
 import type { Handle } from '@sveltejs/kit';
 
+if (!process.env.MATRIX_SERVER_URL) {
+	console.warn('[warn] MATRIX_SERVER_URL not set — /.well-known/matrix/* routes disabled');
+}
+
 export const handle: Handle = async ({ event, resolve }) => {
 	// Get locale from cookie or Accept-Language header
 	let locale = event.cookies.get('locale');
