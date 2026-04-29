@@ -22,5 +22,5 @@ export const GET = async () => {
 		error(502, 'Invalid Matrix server discovery schema');
 	}
 
-	return json(data);
+	return json(data, { headers: { 'Access-Control-Allow-Origin': '*' } });
 };
